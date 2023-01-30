@@ -144,13 +144,22 @@ export default {
   @media screen and (max-width: 730px){
     .header{
       padding: 20px;
-      place-content: end;
+      justify-content: center;
     }
   .menu {
     display: flex;
     flex-direction: column;
     color: black;
   }
+    .logo-block{
+      display: block;
+      width: 288px;
+      height: 166px;
+    }
+    .logo-block img{
+      width: 288px;
+      height: 166px;
+    }
 
   .menu_burger{
     display: flex;
