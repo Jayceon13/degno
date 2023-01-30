@@ -29,40 +29,40 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'ProjectPage'
 })
 </script>
 
 <style scoped>
-  .parallax{
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
+.parallax{
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+.arrow-block{
+  height: 40px;
+  position: relative;
+}
+.arrow-block img{
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+  animation: moveImage 3s linear infinite;
+}
+@keyframes moveImage{
+  0%{
+    opacity: 0;
+    bottom: 40px;
   }
-  .arrow-block{
-    height: 40px;
-    position: relative;
+  25%{
+    opacity: 1;
   }
-  .arrow-block img{
-    height: 17px;
-    position: absolute;
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
     bottom: 0;
-    animation: moveImage 3s linear infinite;
   }
-  @keyframes moveImage{
-    0%{
-      opacity: 0;
-      bottom: 40px;
-    }
-    25%{
-      opacity: 1;
-    }
-    75%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-      bottom: 0;
-    }
-  }
+}
 </style>

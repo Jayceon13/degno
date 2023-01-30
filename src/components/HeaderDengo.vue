@@ -2,19 +2,22 @@
   <div class="header">
     <div class="buttons-block">
       <btn
-        class="buttons-header"
+        @click="$router.push('/')"
+        :class="$route.path === '/' ? 'active-button' : 'buttons-header'"
       >
-        Главная
+        Home
       </btn>
       <btn
-        class="buttons-header"
+        @click="$router.push('/about')"
+        :class="$route.path === '/about' ? 'active-button' : 'buttons-header'"
       >
-        О нас
+        About
       </btn>
       <btn
-        class="buttons-header"
+        @click="$router.push('/services')"
+        :class="$route.path === '/services' ? 'active-button' : 'buttons-header'"
       >
-        Наши Услуги
+        Services
       </btn>
     </div>
       <div class="logo-block">
@@ -22,19 +25,22 @@
       </div>
     <div class="buttons-block">
         <btn
-          class="buttons-header"
+          @click="$router.push('/projects')"
+          :class="$route.path === '/projects' ? 'active-button' : 'buttons-header'"
         >
-          Наши проекты
+          Projects
         </btn>
         <btn
-          class="buttons-header"
+          @click="$router.push('/partners')"
+          :class="$route.path === '/partners' ? 'active-button' : 'buttons-header'"
         >
-          Партнёры
+          Partners
         </btn>
         <btn
-          class="buttons-header"
+          @click="$router.push('/contacts')"
+          :class="$route.path === '/contacts' ? 'active-button' : 'buttons-header'"
         >
-          Контакты
+          Contacts
         </btn>
     </div>
   </div>
@@ -71,5 +77,10 @@ export default {
  .logo-block{
    width: 288px;
    height: 166px;
+ }
+  .active-button{
+    color: #4fdbe8;
+    cursor: pointer;
+    margin: 0 1em;
  }
 </style>
