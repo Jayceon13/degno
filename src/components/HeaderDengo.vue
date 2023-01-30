@@ -21,7 +21,7 @@
       </btn>
     </div>
       <div class="logo-block">
-
+        <img src="/icons/LOGO.svg">
       </div>
     <div class="buttons-block">
         <btn
@@ -101,16 +101,17 @@ export default {
   .buttons-block{
     display: none;
   }
-@media screen and (min-width: 650px){
+@media screen and (min-width: 730px){
   .header{
     padding: 64px 150px 0px;
     place-content: center;
   }
   .buttons-block{
     display: flex;
+    height: 100%;
   }
   .buttons-block .buttons-header{
-    display: block;
+    display: flex;
     color: white;
     transition: color 1s;
     background: transparent;
@@ -122,6 +123,11 @@ export default {
     cursor: pointer;
   }
   .logo-block{
+    display: block;
+    width: 288px;
+    height: 166px;
+  }
+  .logo-block img{
     width: 288px;
     height: 166px;
   }
@@ -131,10 +137,11 @@ export default {
     margin: 0 1em;
   }
 }
+
 .menu{
   display: none;
 }
-  @media screen and (max-width: 650px){
+  @media screen and (max-width: 730px){
     .header{
       padding: 20px;
       place-content: end;
