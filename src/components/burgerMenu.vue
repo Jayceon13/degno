@@ -18,28 +18,10 @@
           HOME
         </btn>
         <btn
-          @click="() => { $router.push('/about'); hideBlock() }"
-          class="buttons-header"
-        >
-          ABOUT
-        </btn>
-        <btn
           @click="() => { $router.push('/services'); hideBlock() }"
           class="buttons-header"
         >
-          SERVICES
-        </btn>
-        <btn
-          @click="() => { $router.push('/projects'); hideBlock() }"
-          class="buttons-header"
-        >
-          PROJECTS
-        </btn>
-        <btn
-          @click="() => { $router.push('/partners'); hideBlock() }"
-          class="buttons-header"
-        >
-          PARTNERS
+          LOCATIONS & SERVICES
         </btn>
         <btn
           @click="() => { $router.push('/contacts'); hideBlock() }"

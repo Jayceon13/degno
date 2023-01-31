@@ -12,42 +12,23 @@
       >
         Home
       </btn>
-      <btn
-        @click="$router.push('/about')"
-        :class="$route.path === '/about' ? 'active-button' : 'buttons-header'"
-      >
-        About
-      </btn>
+
       <btn
         @click="$router.push('/services')"
         :class="$route.path === '/services' ? 'active-button' : 'buttons-header'"
       >
-        Services
+        Locations & Services
+      </btn>
+      <btn
+        @click="$router.push('/contacts')"
+        :class="$route.path === '/contacts' ? 'active-button' : 'buttons-header'"
+      >
+        Contacts
       </btn>
     </div>
       <div class="logo-block">
         <img src="/icons/LOGO.svg">
       </div>
-    <div class="buttons-block">
-        <btn
-          @click="$router.push('/projects')"
-          :class="$route.path === '/projects' ? 'active-button' : 'buttons-header'"
-        >
-          Projects
-        </btn>
-        <btn
-          @click="$router.push('/partners')"
-          :class="$route.path === '/partners' ? 'active-button' : 'buttons-header'"
-        >
-          Partners
-        </btn>
-        <btn
-          @click="$router.push('/contacts')"
-          :class="$route.path === '/contacts' ? 'active-button' : 'buttons-header'"
-        >
-          Contacts
-        </btn>
-    </div>
   </div>
   <burger-menu v-model:show="showBurgerMenu"></burger-menu>
 </template>
@@ -89,6 +70,7 @@ export default {
   .header{
     padding: 64px 150px 0px;
     place-content: center;
+    flex-direction: column;
   }
   .buttons-block{
     display: flex;

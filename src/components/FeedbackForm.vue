@@ -52,7 +52,10 @@
 </template>
 
 <style>
-
+.q-gutter-md{
+  text-align: center;
+  margin-top: 40px;
+}
 </style>
 
 <script>
