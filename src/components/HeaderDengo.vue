@@ -26,7 +26,7 @@
       </btn>
     </div>
       <div class="logo-block">
-        <img src="/icons/LOGO.svg">
+        <img src="/icons/logoWhite.svg">
       </div>
     <div class="buttons-block">
         <btn
