@@ -1,11 +1,12 @@
 <template>
-  <div class="header">
+  <div class="header"
+       @mouseleave="showList = false">
     <div class="hamburger hamburger--elastic">
       <div class="hamburger-box" @click="blockBurgerMenu">
         <div class="hamburger-inner"></div>
       </div>
     </div>
-    <div class="buttons-block">
+    <div class="buttons-block" >
       <btn
         @click="$router.push('/')"
         :class="$route.path === '/' ? 'active-button' : 'buttons-header'"
@@ -19,6 +20,34 @@
       >
         Locations & Services
       </btn>
+      <div class="projects-btn"
+      style="display: flex; flex-direction: column">
+      <btn
+        @mouseover="showList = true"
+        class="buttons-header"
+      >
+        Achievements and Projects
+
+      </btn>
+        <transition name="list">
+      <div v-if="showList"
+           class="block-projects-1"
+           @mouseleave="showList = false">
+        <btn
+          @click="$router.push('/projects'); showList = false"
+          :class="$route.path === '/projects' ? 'active-button' : 'buttons-header'"
+        >
+          Projects
+        </btn>
+        <btn
+          @click="$router.push('/projects'); showList = false"
+          :class="$route.path === '/projects' ? 'active-button' : 'buttons-header'"
+        >
+          Achievements
+        </btn>
+      </div>
+        </transition>
+      </div>
       <btn
         @click="$router.push('/contacts')"
         :class="$route.path === '/contacts' ? 'active-button' : 'buttons-header'"
@@ -30,17 +59,55 @@
         <img src="/icons/LOGO.svg">
       </div>
   </div>
-  <burger-menu v-model:show="showBurgerMenu"></burger-menu>
+  <transition name="burger-animation">
+    <div class="burgerMenuLeft"
+         v-if="showBurgerMenu">
+
+      <div @click.stop class="my-btn" style="display: flex; align-items: center">
+        <div class="block-x">
+          <btn
+            @click="blockBurgerMenu"
+            class="xicon-btn"
+          >
+            <img class="img-x" src="/icons/xicon.svg">
+          </btn>
+        </div>
+        <div class="block-content">
+          <btn
+            @click="() => { $router.push('/'); hideBlock() }"
+            class="buttons-header"
+          >
+            HOME
+          </btn>
+          <btn
+            @click="() => { $router.push('/services'); hideBlock() }"
+            class="buttons-header"
+          >
+            LOCATIONS & SERVICES
+          </btn>
+          <btn
+            @click="() => { $router.push('/contacts'); hideBlock() }"
+            class="buttons-header"
+          >
+            CONTACTS
+          </btn>
+        </div>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <script>
 import {ref} from 'vue'
-import burgerMenu from "components/burgerMenu.vue";
 
 export default {
   name: 'HeaderDengo',
   components: {
-    burgerMenu,
+  },
+  data () {
+    return {
+      showList: false
+    }
   },
   setup() {
     const showBurgerMenu = ref(false)
@@ -246,5 +313,160 @@ export default {
     transform: translate3d(0, -20px, 0) rotate(-270deg);
     transition-delay: 0.075s;
   }
+  }
+  .block-projects-1{
+    width: 200px;
+    background: #062141;
+    position: absolute;
+    margin-top: 20px;
+  }
+  .list-enter-active, .list-leave-active {
+    transition: all 1s;
+  }
+  .list-enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  .list-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  .my-btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .burgerMenuLeft{
+    position: absolute;
+    background: black;
+    z-index: 9999;
+    height: 100%;
+    animation: slide-left 1s ease-in-out forwards;
+    width: 100%;
+  }
+  @keyframes slide-left {
+    0%{
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  .burgerMenuRight{
+    position: absolute;
+    background: black;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    animation: x-left 1s ease-in-out forwards;
+  }
+  @keyframes x-left {
+    0%{
+      width: 100%;
+      opacity: 0;
+    }
+    100%{
+      width: 60px;
+      opacity: 1;
+    }
+  }
+
+  .q-btn {
+    height: auto;
+    width: auto;
+    margin: 6px;
+  }
+
+  .q-btn:before {
+    box-shadow: none;
+  }
+  span.q-btn__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .BtnLink-contact {
+
+    margin: 6px 20px 0px;
+    font-size: 10px;
+    text-transform: none;
+  }
+  .my-btn{
+    font-size: 18px;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .my-btn-services {
+    font-size: 12px;
+    margin: 2px 0px;
+  }
+  @media (min-height: 736px) {
+    .logo {
+      margin: 70px 0px 0px;
+    }
+  }
+  .xicon-btn{
+    cursor: pointer;
+  }
+  .img-x{
+    margin-top: 20px;
+    width: 13px;
+  }
+  .block-x{
+    width: 60px;
+    height: 100%;
+    background-color: #9c9068;
+    animation: x-left 1s ease-in-out forwards;
+    text-align: center;
+  }
+  @keyframes slide-right {
+    0%{
+      width: 100%;
+      opacity: 0;
+    }
+    100%{
+      width: 60px;
+      opacity: 1;
+    }
+  }
+  .block-content{
+    align-self: flex-start;
+  }
+
+  .block-content .buttons-header{
+    display: flex;
+    color: white;
+    transition: color 1s;
+    background: transparent;
+    margin-top: 2em;
+    margin-left: 20px;
+  }
+  .block-content .buttons-header:hover {
+    color: #4fdbe8;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .burger-animation-leave-active {
+    animation: slide-right 1s ease-in-out forwards;
+  }
+  @keyframes slide-right {
+    0%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    100%{
+      transform: translateX(100%);
+      opacity: 0;
+    }
   }
 </style>
