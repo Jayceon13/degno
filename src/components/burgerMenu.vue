@@ -1,6 +1,6 @@
 <template>
-
-  <div :class="{ 'burgerMenuLeft': show, 'burgerMenuRight': !show }" v-if="show">
+  <div :class="{ 'burgerMenuLeft': show, 'burgerMenuRight': !show, }"
+       v-if="show">
     <div @click.stop class="my-btn" style="display: flex; align-items: center">
       <div class="block-x">
       <btn
@@ -15,37 +15,37 @@
           @click="() => { $router.push('/'); hideBlock() }"
           class="buttons-header"
         >
-          Home
+          HOME
         </btn>
         <btn
           @click="() => { $router.push('/about'); hideBlock() }"
           class="buttons-header"
         >
-          About
+          ABOUT
         </btn>
         <btn
           @click="() => { $router.push('/services'); hideBlock() }"
           class="buttons-header"
         >
-          Services
+          SERVICES
         </btn>
         <btn
           @click="() => { $router.push('/projects'); hideBlock() }"
           class="buttons-header"
         >
-          Projects
+          PROJECTS
         </btn>
         <btn
           @click="() => { $router.push('/partners'); hideBlock() }"
           class="buttons-header"
         >
-          Partners
+          PARTNERS
         </btn>
         <btn
           @click="() => { $router.push('/contacts'); hideBlock() }"
           class="buttons-header"
         >
-          Contacts
+          CONTACTS
         </btn>
       </div>
     </div>
@@ -194,7 +194,8 @@ span.q-btn__content {
   color: white;
   transition: color 1s;
   background: transparent;
-  margin: 0 1em;
+  margin-top: 2em;
+  margin-left: 20px;
 }
 .block-content .buttons-header:hover {
   color: #4fdbe8;
