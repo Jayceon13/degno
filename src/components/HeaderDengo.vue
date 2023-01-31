@@ -1,5 +1,10 @@
 <template>
   <div class="header">
+    <div class="hamburger hamburger--elastic">
+      <div class="hamburger-box" @click="blockBurgerMenu">
+        <div class="hamburger-inner"></div>
+      </div>
+    </div>
     <div class="buttons-block">
       <btn
         @click="$router.push('/')"
@@ -43,59 +48,38 @@
           Contacts
         </btn>
     </div>
-    <div :class="!rightDrawerOpen? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'">
-      <div class="hamburger-box" @click="toggleRightDrawer">
-        <div class="hamburger-inner"></div>
-      </div>
-    </div>
-    <q-drawer
-      v-model="rightDrawerOpen"
-      behavior="mobile"
-      :width="300"
-      :breakpoint="400"
-      side="right" bordered>
-      <div class="menu">
-        <div class="menu_burger">
-          <div :class="!rightDrawerOpen? 'hamburger hamburger--elastic': 'hamburger is-active hamburger--elastic'" style="padding-right: 32px">
-            <div class="hamburger-box" @click="toggleRightDrawer">
-              <div class="hamburger-inner"></div>
-            </div>
-          </div>
-        </div>
-        <q-btn class="menu_burger-button" @click="$router.push('/')">Main</q-btn>
-        <q-btn class="menu_burger-button" @click="$router.push('/about')">About us</q-btn>
-      </div>
-    </q-drawer>
   </div>
+  <burger-menu v-model:show="showBurgerMenu"></burger-menu>
 </template>
 
 <script>
 import {ref} from 'vue'
+import burgerMenu from "components/burgerMenu.vue";
 
 export default {
   name: 'HeaderDengo',
+  components: {
+    burgerMenu,
+  },
   setup() {
-    const rightDrawerOpen = ref(false)
-    const closeRightDrawer = () => {
-      rightDrawerOpen.value = false
-    }
+    const showBurgerMenu = ref(false)
     return {
-      rightDrawerOpen,
-      toggleRightDrawer() {
-        rightDrawerOpen.value = !rightDrawerOpen.value
-      },
-      closeRightDrawer
+      showBurgerMenu,
+      blockBurgerMenu() {
+        showBurgerMenu.value = !showBurgerMenu.value;
+      }
     }
   }
 }
 </script>
 
 <style scoped>
+
   .header{
     position: absolute;
     display: flex;
     width: 100vw;
-    z-index: 9999;
+    z-index: 999;
     align-items: center;
   }
   .buttons-block{
@@ -143,8 +127,10 @@ export default {
 }
   @media screen and (max-width: 730px){
     .header{
+      display: flex;
       padding: 20px;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
   .menu {
     display: flex;
@@ -153,11 +139,11 @@ export default {
   }
     .logo-block{
       display: block;
-      width: 288px;
+      width: 186px;
       height: 166px;
     }
     .logo-block img{
-      width: 288px;
+      width: 186px;
       height: 166px;
     }
 
@@ -168,6 +154,8 @@ export default {
   .menu_burger-button {
     padding: 10px 30px;
     font-size: 20px;
+    color: white;
+
   }
 
   .q-btn:before {
@@ -179,6 +167,7 @@ export default {
   }
 
   .hamburger {
+    align-self: flex-end;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -192,7 +181,6 @@ export default {
     border: 0;
     overflow: visible;
     margin: 0 0 0 30px;
-
   }
 
   .hamburger:hover {
@@ -206,7 +194,7 @@ export default {
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: black;
+    background-color: white;
   }
 
   .hamburger-box {
@@ -225,7 +213,7 @@ export default {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
