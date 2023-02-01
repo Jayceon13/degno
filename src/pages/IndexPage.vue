@@ -1,89 +1,97 @@
 <template>
   <q-page class="">
-    <q-parallax :height="700" class="parallax">
+    <q-parallax :height="900" class="parallax">
       <template v-slot:media>
         <video :height="1200"  class="video-background" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
-          <source type="video/mp4" src="/video/videobgInd.mp4">
+          <source type="video/webm" src="img/parHome.webm">
         </video>
       </template>
-      <p style="color: white">Welcome to Degno Group
-        Degno Group is a specialist in the oil and gas industry. </p>
-      <p style="color: white">We provide tailored solutions for our clients to meet
-        their unique needs, with a focus on quality and reliability.</p>
+      <div class="title-name">
+      <h1>Welcome to Degno Group </h1>
+        <h2>Degno Group is a specialist in the oil and gas industry.</h2>
+      <h2>We provide tailored solutions for our clients to meet
+        their unique needs, with a focus on quality and reliability.</h2>
+      </div>
       <div class="arrow-block">
         <img src="/icons/Arrow.svg"/>
       </div>
     </q-parallax>
-    <div class="index">
-    <div class="index-item">
-  <div class="index_block">
-    <div class="index_block-item">
-    <div class="index_block-item--info">
-      <h3>About Us:</h3>
-      <p>We are in a team of expert consultants with over twenty years of experience, providing our
-        Partners with the most competitive agency and consulting services, focused on sustainable
-        business development in the Chemical and Oil &amp; Gas industry.</p>
-    </div>
-      <div class="index_block-item--info pad-left">
-        <h4 >Our mission is to ensure and maintain sustainable growth for both our Clients and our Partners</h4>
-      </div>
-    </div>
-  </div>
-      <div class="index_block">
-        <div class="index_block-services">
-          <img class="services-img" src="img/imgIndexPage.jpg">
-        </div>
-        <div class="index_block-services">
-          <div class="index_block-services--item">
-          <h3>Services:</h3>
-          <p> "Our services include business development,
-            support, and project management, all focused
-            on driving growth and success in the chemical and oil and gas industry."</p>
-          </div>
-        </div>
-      </div>
-      <div class="index_block">
-        <div class="index_block-part">
-          <div class="index_block-part--item">
-          <h3>Our Partners</h3>
-          <p>We are an official representative developing business for leading
-            manufacturers and traders globally in the Turkmenistan market </p>
-        </div>
-        </div>
-        <div class="index_block-part">
-          <div class="index_block-part--logo">
-            <div class="index_block-part--logo_img">
-          <img class="part-img" src="img/ref1.png">
-            </div>
-            <div class="index_block-part--logo_img">
-              <img class="part-img" src="img/ref2.png">
-            </div>
-            <div class="index_block-part--logo_img">
-              <img class="part-img" src="img/ref3.png">
-            </div>
-            <div class="index_block-part--logo_img">
-              <img class="part-img" src="img/ref4.png">
-            </div>
-            <div class="index_block-part--logo_img">
-              <img class="part-img" src="img/ref5.png">
-            </div>
-            <div class="index_block-part--logo_img">
-              <img class="part-img" src="img/ref6.png">
-            </div>
-            <div class="index_block-part--logo_img">
-              <img class="part-img" src="img/ref7.png">
-            </div>
-            <div class="index_block-part--logo_img">
-              <img class="part-img" src="img/ref8.png">
-            </div>
-            <div class="index_block-part--logo_img">
-              <img class="part-img" src="img/ref9.jpeg">
-            </div>
-        </div>
-          </div>
-      </div>
 
-    </div>
+
+    <div class="index">
+      <div class="index_item">
+        <div class="index_item-block">
+          <div class="block_one">
+            <div class="block_one-item">
+              <h4 >Our mission is to ensure and maintain sustainable growth for both our Clients and our Partners</h4>
+              <h3>About Us:</h3>
+              <p>We are in a team of expert consultants with over twenty years of experience, providing our
+                Partners with the most competitive agency and consulting services, focused on sustainable
+                business development in the Chemical and Oil &amp; Gas industry.</p>
+            </div>
+            <div class="block_one-item">
+              <h3>Services:</h3>
+              <p> "Our services include business development,
+                support, and project management, all focused
+                on driving growth and success in the chemical and oil and gas industry."</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="index_item-block">
+          <div class="block_two">
+            <div class="block_two-item">]
+            </div>
+          </div>
+        </div>
+
+        <div class="index_item-block">
+          <div class="block_three">
+            <div class="block_three-item">
+              <div class="block_three-item--info">
+                <h3>Our Partners</h3>
+                <p>We are an official representative developing business for leading
+                  manufacturers and traders globally in the Turkmenistan market </p>
+              </div>
+              </div>
+            <div class="block_three-item">
+
+              <div class="block_three-item--logo">
+                <div class="block_three-item--logo_img">
+                  <img class="part-img" src="img/ref1.png">
+                </div>
+                <div class="block_three-item--logo_img">
+                  <img class="part-img" src="img/ref2.png">
+                </div>
+                <div class="block_three-item--logo_img">
+                  <img class="part-img" src="img/ref3.png">
+                </div>
+                <div class="block_three-item--logo_img">
+                  <img class="part-img" src="img/ref4.png">
+                </div>
+              </div>
+              <div class="block_three-item--logo">
+                <div class="block_three-item--logo_img">
+                  <img class="part-img" src="img/ref5.png">
+                </div>
+                <div class="block_three-item--logo_img">
+                  <img class="part-img" src="img/ref6.png">
+                </div>
+                <div class="block_three-item--logo_img">
+                  <img class="part-img" src="img/ref7.png">
+                </div>
+                <div class="block_three-item--logo_img">
+                  <img class="part-img" src="img/ref8.png">
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </q-page>
 </template>
@@ -97,6 +105,16 @@ export default defineComponent({
 </script>
 
 <style scoped>
+h1 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+h2 {
+  margin: 0 0 20px;
+  font-weight: 300;
+  font-size: 20px;
+}
 h3 {
   margin: 0 0 20px;
   font-weight: 900;
@@ -105,6 +123,7 @@ h4 {
   margin: 0 0 20px;
   font-style: italic;
 }
+
 .bold-p{
   font-weight: bold;
 }
@@ -116,10 +135,12 @@ h4 {
     padding-left: 0%;
   }
 }
+.title-name {
+  color: white;
+}
   .parallax{
     z-index: -1;
     width: 100vw;
-    height: 100vh;
   }
   .arrow-block{
     height: 40px;
@@ -147,114 +168,81 @@ h4 {
       bottom: 0;
     }
   }
-.index {
+.index_item {
   display: flex;
+  flex-direction: column;
+}
+.index_item-block {
+  height: 100vh;
+}
+.block_one {
+  display: flex;
+  height: 100%;
+  padding: 20%;
+}
+@media screen and (max-width: 700px) {
+  .block_one {
+    flex-direction: column;
+  }
+}
+.block_one-item{
+  padding: 0 30px 0 0;
+}
+
+.block_two-item{
+  background-image: url("/img/ParPartners.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 100vh;
+}
+.bg-block--two{
+  background-size: cover;
+}
+
+.block_three{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-  .index-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    padding: 80px 0;
+  background-color: black;
+  color: white;
+  height: 100%;
+  padding: 8%;
   }
-
-  .index_block {
-    display: flex;
-    width: 100%;
-    padding: 40px 0px;
-  }
-@media screen and (max-width: 700px) {
-  .index_block {
-    flex-direction: column;
-  }
-}
-  .index_block-item {
-    display: flex;
-    flex-flow: wrap;
-  }
-@media screen and (max-width: 700px) {
-  .index_block-item {
-    flex-direction: column;
-  }
-}
-
-  .index_block-item--info {
-    width: 50%;
-  }
-@media screen and (max-width: 700px) {
-  .index_block-item--info {
-    width: 100%;
-  }
-}
-  .index_block-services {
-    width: 50%;
-    display: flex;
-    align-items: center;
-  }
-@media screen and (max-width: 700px) {
-  .index_block-services {
-    width: 100%;
-  }
-}
-
-  .services-img {
-    width: 150%;
-    height: 100%;
-    object-fit: cover;
-  }
-@media screen and (max-width: 700px) {
-  .services-img {
-    width: 100%;
-  }
-}
-  .index_block-services--item {
-    background: white;
-    height: 80%;
-    padding: 15%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-@media screen and (max-width: 700px) {
-  .index_block-services--item {
-    padding: 20px 0;
-  }
-}
-.index_block-part{
-  width: 50%;
-}
-@media screen and (max-width: 700px) {
-  .index_block-part {
-    width: 100%;
-  }
-}
-.index_block-part--item {
-  padding: 50px 50px 50px 0;
-}
-@media screen and (max-width: 700px) {
-  .index_block-part--item {
-    padding: 0px;
-  }
-}
-.index_block-part--logo {
+.block_three-item{
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-
+  flex-wrap: wrap;;
+  align-items: center;
 }
-.index_block-part--logo_img {
+.block_three-item--logo{
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 30%;
-  padding: 0 0 40px;
-
+  justify-content: space-between;
 }
-.part-img{
-    width: 80%;
-
+@media screen and (max-width: 700px) {
+  .block_three-item--logo {
+    flex-wrap: wrap;
   }
+}
+.block_three-item--logo_img{
+  width: 10%;
+  padding: 30px 0;
+}
+@media screen and (max-width: 1300px) {
+  .block_three-item--logo_img {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .block_three-item--logo_img {
+    width: 50%;
+    padding: 50px;
+  }
+}
+
+.part-img {
+  width: 100%;
+}
 
 </style>

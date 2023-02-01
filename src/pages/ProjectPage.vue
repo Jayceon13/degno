@@ -1,10 +1,8 @@
 <template>
   <q-page class="">
-    <q-parallax :height="700" class="parallax">
+    <q-parallax :height="900" class="parallax">
       <template v-slot:media>
-        <video :height="1200"  class="video-background" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
-          <source type="video/mp4" src="/video/videobgInd.mp4">
-        </video>
+        <img src="img/ParProjects.jpg">
       </template>
       <p style="color: white">Welcome to Sman Group
         We are leading oil & gas and chemical industry specialists</p>

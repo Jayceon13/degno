@@ -1,10 +1,8 @@
 <template>
   <q-page class="">
-    <q-parallax :height="700" class="parallax">
+    <q-parallax :height="900" class="parallax">
       <template v-slot:media>
-        <video :height="1200"  class="video-background" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
-          <source type="video/mp4" src="/video/videobgInd.mp4">
-        </video>
+        <img src="img/ParAbout.jpg" alt="">
       </template>
       <p style="color: white">We offer a range of services, including consulting, agency and project management, to help clients and partners grow their businesses effectively. </p>
       <div class="arrow-block">
