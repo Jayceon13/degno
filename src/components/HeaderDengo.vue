@@ -26,7 +26,7 @@
         @mouseover="showList = true"
         class="buttons-header"
       >
-        Achievements and Projects
+        Achievements & Projects
 
       </btn>
         <transition name="list">
@@ -74,21 +74,48 @@
             <img class="img-x" src="/icons/xicon.svg">
           </btn>
         </div>
-        <div class="block-content">
+        <div class="block-content"
+          >
           <btn
-            @click="() => { $router.push('/'); hideBlock() }"
+            @click="() => { $router.push('/'); blockBurgerMenu() }"
             class="buttons-header"
           >
             HOME
           </btn>
           <btn
-            @click="() => { $router.push('/services'); hideBlock() }"
+            @click="() => { $router.push('/services'); blockBurgerMenu(); }"
             class="buttons-header"
           >
             LOCATIONS & SERVICES
           </btn>
           <btn
-            @click="() => { $router.push('/contacts'); hideBlock() }"
+            @click="showList2 = true"
+            class="buttons-header"
+          >
+            ACHIEVEMENTSS & PROJECTS
+          </btn>
+          <transition name="list-2">
+            <div v-if="showList2"
+                 class="list2"
+                 @click="showList2 = false">
+
+              <btn
+                @click="() => { $router.push('/projects'); blockBurgerMenu() }"
+                :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
+              >
+                PROJECTS
+              </btn>
+              <btn
+                @click="() => { $router.push('/achievements'); blockBurgerMenu() }"
+                :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
+              >
+                ACHIEVEMENTS
+              </btn>
+
+            </div>
+          </transition>
+          <btn
+            @click="() => { $router.push('/contacts'); blockBurgerMenu() }"
             class="buttons-header"
           >
             CONTACTS
@@ -108,7 +135,8 @@ export default {
   },
   data () {
     return {
-      showList: false
+      showList: false,
+      showList2: false,
     }
   },
   setup() {
@@ -332,6 +360,24 @@ export default {
   .list-leave-to {
     opacity: 0;
     transform: translateY(-10px);
+  }
+  .list2{
+    background: black;
+    z-index: 9999;
+    height: 100%;
+    animation: slide-left 1s ease-in-out forwards;
+    width: 100%;
+  }
+  .list2-enter-active, .list2-leave-active {
+    transition: all 1s;
+  }
+  .list2-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  .list2-leave-to {
+    opacity: 0;
+    transform: translateX(-100%);
   }
   .my-btn {
     height: 100%;
