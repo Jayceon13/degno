@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="footer_block-logo">
-
+  <img class="footer-logo" src="icons/logoWhite.svg">
     </div>
   </div>
   </div>
@@ -40,11 +40,19 @@ export default {
   color: white;
   width: 100%;
 }
+@media screen and (max-width: 700px) {
+  .footer_block {
+    flex-direction: column;
+  }
+}
 .footer_block-item{
-  width: 70%;
+  width: 80%;
 }
 .footer_block-logo {
-  width: 30%;
+  width: 20%;
+}
+.footer-logo {
+  width: 100%;
 }
 .footer_block-item--mail {
   display: flex;

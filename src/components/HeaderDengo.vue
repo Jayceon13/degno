@@ -29,10 +29,18 @@
         Achievements and Projects
 
       </btn>
+
+    </div>
+      <div class="logo-block">
+        <img src="/icons/logoWhite.svg">
+      </div>
+    <div class="buttons-block">
+
         <transition name="list">
       <div v-if="showList"
            class="block-projects-1"
            @mouseleave="showList = false">
+
         <btn
           @click="$router.push('/projects'); showList = false"
           :class="$route.path === '/projects' ? 'active-button' : 'buttons-header'"
