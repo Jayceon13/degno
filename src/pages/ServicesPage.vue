@@ -6,22 +6,30 @@
           <source type="video/mp4" src="/video/videobgInd.mp4">
         </video>
       </template>
-      <p style="color: white">Welcome to Sman Group
-        We are leading oil & gas and chemical industry specialists</p>
+      <p style="color: white">We offer a range of services, including consulting, agency and project management, to help clients and partners grow their businesses effectively. </p>
       <div class="arrow-block">
         <img src="/icons/Arrow.svg"/>
       </div>
     </q-parallax>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="services-page">
+      <div class="first-block">
+      <p>Our highly skilled team has global expertise and can support the successful execution of projects, regardless of their complexity.
+        Our company, SMAN, is adaptable in negotiations and provides expert guidance in business decision making. With a presence in Dubai, Moscow, Istanbul, and Ashgabat, we offer comprehensive regional coverage.
+      </p>
+      </div>
+      <div class="second-block">
+      <p>Our key element is the high level of support towards the client, that is why we offer:</p>
+        <li>Meetings & negotiations</li>
+        <li>Supplier & contractor search</li>
+        <li>Project implementation, support & coordination</li>
+        <li>Marketing, development & brand adaptation</li>
+        <li>Project and client search</li>
+        <li>Design, delivery & commissioning</li>
+        <li>Search for alternative solutions & adaptations</li>
+        <li>Risk Assessment</li>
+        <p>Supporting and guiding your requirement from the beginning to the very end. </p>
+        </div>
+    </div>
   </q-page>
 </template>
 
@@ -64,5 +72,9 @@ export default defineComponent({
     opacity: 0;
     bottom: 0;
   }
+}
+
+.services-page{
+  display: flex;
 }
 </style>
