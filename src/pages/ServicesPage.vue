@@ -76,5 +76,13 @@ export default defineComponent({
 
 .services-page{
   display: flex;
+  flex-flow: column;
+  margin: 100px;
+}
+@media (max-width: 736px) {
+  .services-page{
+    margin: 30px;
+    text-align: center;
+  }
 }
 </style>
