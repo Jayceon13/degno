@@ -5,12 +5,11 @@
     <q-page-container>
       <router-view />
     </q-page-container>
-    <footer-dengo class="footer" v-if="showFooter" @animationstart="scrollDown"/>
+    <footer-dengo class="footer" v-if="showFooter"/>
   </q-layout>
 </template>
-
 <script>
-import { defineComponent, ref, onMounted } from 'vue'
+import { defineComponent, ref, onMounted, nextTick } from 'vue'
 import HeaderDengo from "components/HeaderDengo.vue";
 import FooterDengo from "components/FooterDengo";
 import PreloaderMenu from "components/PreloaderMenu.vue";
@@ -34,6 +33,9 @@ export default defineComponent({
 
       if (window.pageYOffset + window.innerHeight >= height) {
         showFooter.value = true
+        nextTick(() => {
+          scrollDown()
+        })
       }
     }
 
@@ -53,7 +55,6 @@ export default defineComponent({
             window.requestAnimationFrame(step)
           }
         }
-
         window.requestAnimationFrame(step)
       }
     }
@@ -77,7 +78,6 @@ export default defineComponent({
   },
 })
 </script>
-
 <style scoped>
 @media  screen and (min-width: 720px) {
 
@@ -96,4 +96,5 @@ export default defineComponent({
     }
   }
 }
+
 </style>
