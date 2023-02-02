@@ -104,7 +104,7 @@ export default defineComponent({
 
 <style scoped>
 .bgvdo{
-  height: 190%;
+  height: 200%;
 }
 h1 {
   margin: 0 0 20px;
