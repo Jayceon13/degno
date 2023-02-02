@@ -1,12 +1,13 @@
 <template>
   <div class="preloader">
-    <div class="preloader-logo">KikaMakeUp</div>
+    <div class="preloader-logo">
+      <img src="/icons/logoWhite.svg">
+    </div>
   </div>
 </template>
 
 <style>
 .preloader {
-  font-family: 'PT Sans', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -20,10 +21,10 @@
   align-items: center;
   font-size: 50px;
   animation: slide-fade 1s ease-in-out forwards;
-  animation-delay: 1.3s;
+  animation-delay: 1.5s;
 }
 .preloader-logo {
-  animation: zoom .5s ease-in-out forwards;
+  animation: zoom 1s ease-in-out forwards;
   transform: scale(1);
   position: relative;
   overflow: hidden;
@@ -31,10 +32,10 @@
 
 @keyframes zoom {
   0%{
-    transform: scale(1);
+    transform: scale(0.5);
   }
   100%{
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }
 
@@ -75,7 +76,7 @@ position: absolute;
   background: black;
   transform: translateX(-110%);
   animation: slideRight 1s ease-in-out forwards;
-  animation-delay: .5s;
+  animation-delay: 1s;
 }
 </style>
 

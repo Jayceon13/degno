@@ -1,5 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
+    <preloader-menu></preloader-menu>
     <header-dengo> </header-dengo>
     <q-page-container>
       <router-view />
@@ -12,6 +13,7 @@
 import { defineComponent, ref } from 'vue'
 import HeaderDengo from "components/HeaderDengo.vue";
 import FooterDengo from "components/FooterDengo";
+import PreloaderMenu from "components/PreloaderMenu.vue";
 
 export default defineComponent({
   name: 'MainLayout',
@@ -19,6 +21,7 @@ export default defineComponent({
   components: {
     FooterDengo,
     HeaderDengo,
+    PreloaderMenu
   },
 })
 </script>
