@@ -3,7 +3,7 @@
     <q-parallax class="parallax window-height" speed="0.5">
       <template v-slot:media>
         <video class="bgvdo" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
-          <source type="video/webm" src="img/parHome.webm">
+          <source type="video/mp4" src="img/parHome.mp4">
         </video>
       </template>
       <div class="title-name">
