@@ -47,11 +47,9 @@
 
 @keyframes slide-fade {
   0%{
-    filter: blur(0);
     transform: translateY(0%);
   }
   100%{
-    filter: blur(40px);
     transform: translateY(-100%);
   }
 }
