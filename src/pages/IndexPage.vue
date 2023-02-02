@@ -1,33 +1,28 @@
 <template>
   <q-page class="">
-    <q-parallax class="parallax window-height" speed="0.5">
-      <template v-slot:media>
         <video class="bgvdo" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
           <source type="video/mp4" src="img/test1.mp4">
         </video>
-      </template>
       <div class="title-name">
       <h1>Welcome to Degno Group </h1>
-        <h2>Degno Group is a specialist in the oil and gas industry.</h2>
       <h2>We provide tailored solutions for our clients to meet
         their unique needs, with a focus on quality and reliability.</h2>
       </div>
       <div class="arrow-block">
         <img src="/icons/Arrow.svg"/>
       </div>
-    </q-parallax>
     <div class="index">
       <div class="index_item">
         <div class="index_item-block">
           <div class="block_one">
-            <div class="block_one-item">
+            <div class="block_one-item " data-aos="fade-right">
               <h4 >Our mission is to ensure and maintain sustainable growth for both our Clients and our Partners</h4>
               <h3>About Us:</h3>
               <p>We are in a team of expert consultants with over twenty years of experience, providing our
                 Partners with the most competitive agency and consulting services, focused on sustainable
                 business development in the Chemical and Oil &amp; Gas industry.</p>
             </div>
-            <div class="block_one-item">
+            <div class="block_one-item-2" data-aos="fade-left">
               <h3>Services:</h3>
               <p> "Our services include business development,
                 support, and project management, all focused
@@ -39,7 +34,12 @@
 
         <div class="index_item-block">
           <div class="block_two">
-            <div class="block_two-item">]
+            <div class="block_two-item">
+
+              <h3
+                data-aos="zoom-in"
+                data-aos-easing="ease"
+                data-aos-delay="800">Our Partners</h3>
             </div>
           </div>
         </div>
@@ -48,9 +48,8 @@
           <div class="block_three">
             <div class="block_three-item">
               <div class="block_three-item--info">
-                <h3>Our Partners</h3>
-                <p>We are an official representative developing business for leading
-                  manufacturers and traders globally in the Turkmenistan market </p>
+                <h4>We are an official representative developing business for leading
+                  manufacturers and traders globally in the Turkmenistan market </h4>
               </div>
               </div>
             <div class="block_three-item">
@@ -105,19 +104,49 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.bgvdo{
-  height: 120%;
-}
 
+.bgvdo{
+position: absolute;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 700px) {
+  .bgvdo {
+    width: 100%;
+    height: 600px;
+  }
+}
 h1 {
   margin: 0 0 20px;
-  font-size: 30px;
+  font-size: 70px;
   font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.5em;
+  }
 }
 h2 {
   margin: 0 0 20px;
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 200;
+  font-size: 40px;
+}
+@media screen and (max-width: 700px) {
+  h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.1em;
+}
 }
 h3 {
   margin: 0 0 20px;
@@ -133,12 +162,21 @@ h4 {
 }
 
 .title-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
   color: white;
+  height: 100vh;
+  padding: 100px 200px;
 }
-  .parallax{
-    z-index: -1;
-    width: 100vw;
+@media screen and (max-width: 700px) {
+  .title-name{
+    height: 600px;
+    padding: 100px 60px;
   }
+}
+
 
   .arrow-block{
     height: 40px;
@@ -173,30 +211,69 @@ h4 {
 .index_item-block {
   height: 100vh;
 }
+@media screen and (max-width: 700px) {
+  .index_item-block {
+    height: auto;
+  }
+}
 .block_one {
   display: flex;
   height: 100%;
-  padding: 20%;
 }
 @media screen and (max-width: 700px) {
   .block_one {
     flex-direction: column;
   }
-  .block_two{
-    margin-top: 120px;
-  }
 }
 .block_one-item{
-  padding: 0 30px 0 0;
+  width: 50%;
+  padding: 150px 40px 100px 200px;
+  border-right: solid 2px black;
 }
+@media screen and (max-width: 920px) {
+  .block_one-item {
+    padding: 150px 40px 100px 100px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .block_one-item {
+    width: 100%;
+    padding: 80px 60px;
+    border-right: none;
+  }
+}
+  .block_one-item-2{
+    width: 50%;
+    padding: 80px 200px 0px 40px;
+  }
+@media screen and (max-width: 920px) {
+  .block_one-item-2 {
+    padding: 80px 100px 0px 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .block_one-item-2 {
+    width: 100%;
+    padding: 80px 60px;
+  }
+}
+  .block_two{
 
+    margin-top: 120px;
+
+}
 .block_two-item{
-  background-image: url("/img/ParPartners.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/ParPartners.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   width: 100%;
   height: 100vh;
+  color: white;
+  text-transform: uppercase;
 }
 .bg-block--two{
   background-size: cover;
@@ -215,6 +292,9 @@ h4 {
   display: flex;
   flex-wrap: wrap;;
   align-items: center;
+}
+.block_three-item--info{
+  text-align: center;
 }
 .block_three-item--logo{
   display: flex;
