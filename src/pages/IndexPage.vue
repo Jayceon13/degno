@@ -3,7 +3,7 @@
     <q-parallax class="parallax window-height" speed="0.5">
       <template v-slot:media>
         <video class="bgvdo" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
-          <source type="video/mp4" src="img/parHome.mp4">
+          <source type="video/mp4" src="img/parHome3.mp4">
         </video>
       </template>
       <div class="title-name">
@@ -106,8 +106,9 @@ export default defineComponent({
 
 <style scoped>
 .bgvdo{
-  height: 200%;
+  height: 120%;
 }
+
 h1 {
   margin: 0 0 20px;
   font-size: 30px;
@@ -130,14 +131,7 @@ h4 {
 .bold-p{
   font-weight: bold;
 }
-.pad-left {
-  padding-left: 7.5%;
-}
-@media screen and (max-width: 700px) {
-  .pad-left {
-    padding-left: 0%;
-  }
-}
+
 .title-name {
   color: white;
 }
@@ -145,6 +139,7 @@ h4 {
     z-index: -1;
     width: 100vw;
   }
+
   .arrow-block{
     height: 40px;
     position: relative;
