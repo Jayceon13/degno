@@ -1,6 +1,5 @@
 <template>
-  <div class="header"
-       @mouseleave="showList = false">
+  <div class="header">
     <div class="hamburger hamburger--elastic">
       <div class="hamburger-box" @click="blockBurgerMenu">
         <div class="hamburger-inner"></div>
@@ -14,7 +13,8 @@
     <div class="burgerMenuLeft"
          v-if="showBurgerMenu">
 
-      <div @click.stop class="my-btn" style="display: flex; align-items: center">
+      <div @click.stop class="my-btn" style="display: flex; align-items: center"
+          >
         <div class="block-x">
           <btn
             @click="blockBurgerMenu"
@@ -25,50 +25,52 @@
         </div>
         <div class="block-content"
           >
+          <div class="buttons-block">
           <btn
             @click="() => { $router.push('/'); blockBurgerMenu() }"
             class="buttons-header"
           >
             HOME
           </btn>
+          </div>
+          <div class="buttons-block">
           <btn
             @click="() => { $router.push('/services'); blockBurgerMenu(); }"
             class="buttons-header"
           >
             LOCATIONS & SERVICES
           </btn>
+          </div>
+          <div class="buttons-block"
+               @mouseenter="checkScreenWidth"
+                @mouseleave="showList2 = false">
           <btn
             @click="showList2 = true"
             class="buttons-header"
           >
             ACHIEVEMENTSS & PROJECTS
           </btn>
-          <transition name="list-2">
+          <transition name="list-animation">
             <div v-if="showList2"
                  class="list2"
                  @click="showList2 = false">
 
               <btn
-                @click="() => { $router.push('/projects'); blockBurgerMenu() }"
+                @click="() => { $router.push('/projects'); blockBurgerMenu(); blockShowList()}"
                 :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
+                style="margin-bottom: 40px;"
               >
                 PROJECTS
               </btn>
               <btn
-                @click="() => { $router.push('/achievements'); blockBurgerMenu() }"
+                @click="() => { $router.push('/achievements'); blockBurgerMenu(); blockShowList() }"
                 :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
               >
                 ACHIEVEMENTS
               </btn>
-
             </div>
           </transition>
-          <btn
-            @click="() => { $router.push('/contacts'); blockBurgerMenu() }"
-            class="buttons-header"
-          >
-            CONTACTS
-          </btn>
+          </div>
         </div>
       </div>
     </div>
@@ -85,16 +87,25 @@ export default {
   data () {
     return {
       showList: false,
-      showList2: false,
     }
   },
   setup() {
+    const showList2 = ref(false)
     const showBurgerMenu = ref(false)
     return {
+      showList2,
+      blockShowList() {
+        showList2.value = !showList2.value
+      },
       showBurgerMenu,
       blockBurgerMenu() {
         showBurgerMenu.value = !showBurgerMenu.value;
-      }
+      },
+      checkScreenWidth() {
+        if (window.innerWidth > 720) {
+          this.showList2 = true;
+        }
+      },
     }
   }
 }
@@ -259,35 +270,7 @@ export default {
     position: absolute;
     margin-top: 20px;
   }
-  .list-enter-active, .list-leave-active {
-    transition: all 1s;
-  }
-  .list-enter {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  .list-leave-to {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  .list2{
-    background: black;
-    z-index: 9999;
-    height: 100%;
-    animation: slide-left 1s ease-in-out forwards;
-    width: 100%;
-  }
-  .list2-enter-active, .list2-leave-active {
-    transition: all 1s;
-  }
-  .list2-enter {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  .list2-leave-to {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
+
   .my-btn {
     height: 100%;
     width: 100%;
@@ -303,7 +286,7 @@ export default {
 
   .burgerMenuLeft{
     position: fixed;
-    background: black;
+    background: white;
     z-index: 9999;
     height: 100%;
     animation: slide-left 1s ease-in-out forwards;
@@ -322,7 +305,7 @@ export default {
 
   .burgerMenuRight{
     position: absolute;
-    background: black;
+    background: white;
     z-index: 9999;
     height: 100%;
     width: 100%;
@@ -382,7 +365,7 @@ export default {
   .block-x{
     width: 60px;
     height: 100%;
-    background-color: #9c9068;
+    background-color: black;
     animation: x-left 1s ease-in-out forwards;
     text-align: center;
   }
@@ -396,22 +379,100 @@ export default {
       opacity: 1;
     }
   }
+  @media screen and (min-width: 720px){
+    .block-content{
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
+    .block-content .buttons-block{
+      width: 33.3%;
+      display: flex;
+      color: black;
+      transition: color 1s;
+      background: transparent;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .block-content .buttons-block:hover {
+      color: #4fdbe8;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    .list2{
+      background: lightgray;
+      z-index: 9999;
+      height: 100%;
+      width: 33.3%;
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      animation: slide-down 0.5s ease-in-out forwards;
+    }
+    @keyframes slide-down {
+      0%{
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    .list-animation-leave-active {
+      animation: slide-up 1s ease-in-out forwards;
+    }
+    @keyframes slide-up {
+      0%{
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100%{
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+    }
+  }
+  @media  screen and (max-width: 720px){
+
   .block-content{
     align-self: flex-start;
   }
 
-  .block-content .buttons-header{
+  .block-content .buttons-block{
     display: flex;
-    color: white;
+    color: black;
     transition: color 1s;
     background: transparent;
     margin-top: 2em;
     margin-left: 20px;
   }
-  .block-content .buttons-header:hover {
+  .block-content .buttons-block:hover {
     color: #4fdbe8;
     background-color: transparent;
     cursor: pointer;
+  }
+    .list2{
+      background: white;
+      z-index: 9999;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      animation: slide-left-proj 0.5s ease-in-out forwards;
+    }
+    @keyframes slide-left-proj {
+      0%{
+      opacity: 0;
+      transform: translateX(100%);
+    }
+      100%{
+      opacity: 1;
+      transform: translateX(0%);
+    }}
   }
   .burger-animation-leave-active {
     animation: slide-right 1s ease-in-out forwards;
