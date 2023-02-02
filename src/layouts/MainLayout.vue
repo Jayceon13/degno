@@ -79,22 +79,20 @@ export default defineComponent({
 })
 </script>
 <style scoped>
-@media  screen and (min-width: 720px) {
-
-  .footer {
-    animation: slide-down 1s ease-in-out;
-  }
-
-  @keyframes slide-down {
-    0% {
-      z-index: -999;
-      transform: translateY(-100%);
+  @media  screen and (min-width: 720px) {
+    .footer {
+      animation: slide-down 1s ease-in-out;
     }
-    100% {
-      z-index: 1;
-      transform: translateY(0%);
+
+    @keyframes slide-down {
+      0% {
+        z-index: -999;
+        transform: translateY(-100%);
+      }
+      100% {
+        z-index: 1;
+        transform: translateY(0%);
+      }
     }
   }
-}
-
 </style>
