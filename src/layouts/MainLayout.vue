@@ -44,7 +44,7 @@ export default defineComponent({
         const footer = document.querySelector('.footer')
         const start = window.pageYOffset
         const end = footer.offsetTop + footer.offsetHeight
-        const duration = 2000
+        const duration = 300
         let startTime = null
 
         const step = (timestamp) => {
@@ -81,7 +81,7 @@ export default defineComponent({
 <style scoped>
   @media  screen and (min-width: 720px) {
     .footer {
-      animation: slide-down 1s ease-in-out;
+      animation: slide-down 0.2s ease-in-out;
     }
 
     @keyframes slide-down {
