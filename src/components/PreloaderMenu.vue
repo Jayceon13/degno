@@ -44,30 +44,15 @@
   }
 }
 
-@keyframes slideRight {
-  0%{
-    transform: translateX(-110%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slideRight {
-  0%{
-    transform: translateX(-110%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
-}
 
 @keyframes slide-fade {
   0%{
-    transform: translateX(0%);
+    filter: blur(0);
+    transform: translateY(0%);
   }
   100%{
-    transform: translateX(100%);
+    filter: blur(40px);
+    transform: translateY(-100%);
   }
 }
 
