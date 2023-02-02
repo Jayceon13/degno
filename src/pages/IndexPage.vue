@@ -8,9 +8,6 @@
       <h2>We provide tailored solutions for our clients to meet
         their unique needs, with a focus on quality and reliability.</h2>
       </div>
-      <div class="arrow-block">
-        <img src="/icons/Arrow.svg"/>
-      </div>
     <div class="index">
       <div class="index_item">
         <div class="index_item-block">
@@ -219,10 +216,12 @@ h4 {
 .block_one {
   display: flex;
   height: 100%;
+  padding: 40px 0;
 }
 @media screen and (max-width: 700px) {
   .block_one {
     flex-direction: column;
+    padding: 0px;
   }
 }
 .block_one-item{
@@ -257,11 +256,7 @@ h4 {
     padding: 80px 60px;
   }
 }
-  .block_two{
 
-    margin-top: 120px;
-
-}
 .block_two-item{
   display: flex;
   justify-content: center;
