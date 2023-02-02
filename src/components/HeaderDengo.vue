@@ -25,21 +25,53 @@
         </div>
         <div class="block-content"
           >
-          <div class="buttons-block">
+          <div class="buttons-block"
+               @mouseenter="checkScreenWidth3"
+               @mouseleave="showList3 = false">
           <btn
             @click="() => { $router.push('/'); blockBurgerMenu() }"
             class="buttons-header"
           >
             HOME
           </btn>
+            <transition name="list-animation">
+              <div v-if="showList3"
+                   class="list2"
+                   @click="showList3 = false">
+
+                <btn
+                  @click="() => { $router.push('/'); blockBurgerMenu(); blockShowList3()}"
+                  :class="$route.path === '/' ? 'active-button' : 'buttons-header'"
+                >
+                  HOME
+                </btn>
+
+              </div>
+            </transition>
           </div>
-          <div class="buttons-block">
+          <div class="buttons-block"
+               @mouseenter="checkScreenWidth1"
+               @mouseleave="showList1 = false">
           <btn
             @click="() => { $router.push('/services'); blockBurgerMenu(); }"
             class="buttons-header"
           >
             LOCATIONS & SERVICES
           </btn>
+            <transition name="list-animation">
+              <div v-if="showList1"
+                   class="list2"
+                   @click="showList1 = false">
+
+                <btn
+                  @click="() => { $router.push('/services'); blockBurgerMenu(); blockShowList1()}"
+                  :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
+                >
+                  LOCATIONS & SERVICES
+                </btn>
+
+              </div>
+            </transition>
           </div>
           <div class="buttons-block"
                @mouseenter="checkScreenWidth"
@@ -90,12 +122,22 @@ export default {
     }
   },
   setup() {
+    const showList1 = ref(false)
     const showList2 = ref(false)
+    const showList3 = ref(false)
     const showBurgerMenu = ref(false)
     return {
+      showList1,
       showList2,
+      showList3,
       blockShowList() {
         showList2.value = !showList2.value
+      },
+      blockShowList1() {
+        showList1.value = !showList1.value
+      },
+      blockShowList3() {
+        showList1.value = !showList1.value
       },
       showBurgerMenu,
       blockBurgerMenu() {
@@ -104,6 +146,16 @@ export default {
       checkScreenWidth() {
         if (window.innerWidth > 720) {
           this.showList2 = true;
+        }
+      },
+      checkScreenWidth1() {
+        if (window.innerWidth > 720) {
+          this.showList1 = true;
+        }
+      },
+      checkScreenWidth3() {
+        if (window.innerWidth > 720) {
+          this.showList3 = true;
         }
       },
     }
@@ -396,7 +448,6 @@ export default {
       justify-content: center;
     }
     .block-content .buttons-block:hover {
-      color: #4fdbe8;
       background-color: transparent;
       cursor: pointer;
     }
@@ -406,12 +457,13 @@ export default {
       width: 100%;
       justify-content: center;
       align-items: center;
+      font-weight: bold;
     }
     .list2{
-      background: lightgray;
+      background: #F0F0F0;
       z-index: 9999;
       height: 100%;
-      width: 33.3%;
+      width: 32%;
       display: flex;
       position: absolute;
       flex-direction: column;
@@ -457,7 +509,6 @@ export default {
     margin-left: 20px;
   }
   .block-content .buttons-block:hover {
-    color: #4fdbe8;
     background-color: transparent;
     cursor: pointer;
   }
