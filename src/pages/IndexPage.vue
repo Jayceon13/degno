@@ -1,5 +1,6 @@
 <template>
   <q-page class="">
+    <div class="video-parallax">
     <q-parallax :height="700" class="parallax">
       <template v-slot:media>
         <video :height="1200"  class="video-background" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
@@ -14,6 +15,7 @@
         <img src="/icons/Arrow.svg"/>
       </div>
     </q-parallax>
+    </div>
     <div class="index">
     <div class="index-item">
   <div class="index_block">
@@ -97,6 +99,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.video-parallax{
+  background: black;
+}
 h3 {
   margin: 0 0 20px;
   font-weight: 900;

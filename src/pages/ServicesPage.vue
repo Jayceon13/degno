@@ -1,6 +1,6 @@
 <template>
   <q-page class="">
-    <q-parallax :height="700" class="parallax">
+    <q-parallax :height="800" class="parallax">
       <template v-slot:media>
         <video :height="1200"  class="video-background" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
           <source type="video/mp4" src="/video/videobgInd.mp4">
