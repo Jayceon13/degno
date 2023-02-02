@@ -38,22 +38,24 @@ export default defineComponent({
     }
 
     const scrollDown = () => {
-      const footer = document.querySelector('.footer')
-      const start = window.pageYOffset
-      const end = footer.offsetTop + footer.offsetHeight
-      const duration = 2000
-      let startTime = null
+      if (window.innerWidth > 720) {
+        const footer = document.querySelector('.footer')
+        const start = window.pageYOffset
+        const end = footer.offsetTop + footer.offsetHeight
+        const duration = 2000
+        let startTime = null
 
-      const step = (timestamp) => {
-        if (!startTime) startTime = timestamp
-        const progress = timestamp - startTime
-        window.scrollTo(0, easeInOutQuad(progress, start, end, duration))
-        if (progress < duration) {
-          window.requestAnimationFrame(step)
+        const step = (timestamp) => {
+          if (!startTime) startTime = timestamp
+          const progress = timestamp - startTime
+          window.scrollTo(0, easeInOutQuad(progress, start, end, duration))
+          if (progress < duration) {
+            window.requestAnimationFrame(step)
+          }
         }
-      }
 
-      window.requestAnimationFrame(step)
+        window.requestAnimationFrame(step)
+      }
     }
 
     const easeInOutQuad = (t, b, c, d) => {
@@ -77,17 +79,21 @@ export default defineComponent({
 </script>
 
 <style scoped>
-  .footer{
+@media  screen and (min-width: 720px) {
+
+  .footer {
     animation: slide-down 1s ease-in-out;
   }
+
   @keyframes slide-down {
-    0%{
+    0% {
       z-index: -999;
       transform: translateY(-100%);
     }
-    100%{
+    100% {
       z-index: 1;
       transform: translateY(0%);
     }
   }
+}
 </style>
