@@ -25,10 +25,15 @@
 }
 .preloader-logo {
   animation: zoom 1s ease-in-out forwards;
-  transform: scale(1);
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 720px){
+  img{
+    width: 300px;
+  }
+}
+
 
 @keyframes zoom {
   0%{
