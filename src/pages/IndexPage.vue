@@ -2,7 +2,7 @@
   <q-page class="">
     <q-parallax :height="900" class="parallax">
       <template v-slot:media>
-        <video :height="1200"  class="video-background" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
+        <video :height="1200" class="video-background" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
           <source type="video/webm" src="img/parHome.webm">
         </video>
       </template>
@@ -181,6 +181,9 @@ h4 {
 @media screen and (max-width: 700px) {
   .block_one {
     flex-direction: column;
+  }
+  .block_two{
+    margin-top: 120px;
   }
 }
 .block_one-item{
