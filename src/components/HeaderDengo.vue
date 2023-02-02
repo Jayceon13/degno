@@ -58,14 +58,14 @@
               <btn
                 @click="() => { $router.push('/projects'); blockBurgerMenu(); blockShowList()}"
                 :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
-                style="margin-bottom: 40px;"
+                style="margin-bottom: 40px; align-items: flex-end"
               >
                 PROJECTS
               </btn>
               <btn
                 @click="() => { $router.push('/achievements'); blockBurgerMenu(); blockShowList() }"
                 :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
-              >
+                style="align-items: flex-start">
                 ACHIEVEMENTS
               </btn>
             </div>
@@ -399,6 +399,13 @@ export default {
       color: #4fdbe8;
       background-color: transparent;
       cursor: pointer;
+    }
+    .block-content .buttons-block btn{
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
     .list2{
       background: lightgray;

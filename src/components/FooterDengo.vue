@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="footer_block-logo">
-  <img class="footer-logo" src="icons/logoWhite.svg">
+  <img class="footer-logo" src="icons/logoBlack.svg">
     </div>
   </div>
   </div>
@@ -30,14 +30,14 @@ export default {
 .footer {
   display: flex;
   align-items: center;
-  background-color: #00011a;
+  background-color: white;
   min-height: 360px;
   padding: 80px;
 }
 .footer_block {
   display: flex;
   justify-content: center;
-  color: white;
+  color: black;
   width: 100%;
 }
 @media screen and (max-width: 700px) {
