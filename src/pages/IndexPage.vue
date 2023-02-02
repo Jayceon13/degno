@@ -16,8 +16,6 @@
         <img src="/icons/Arrow.svg"/>
       </div>
     </q-parallax>
-
-
     <div class="index">
       <div class="index_item">
         <div class="index_item-block">

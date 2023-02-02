@@ -1,5 +1,6 @@
 <template>
   <q-page class="">
+
     <q-parallax :height="900" class="parallax">
       <template v-slot:media>
         <img src="img/ParAbout.jpg" alt="">

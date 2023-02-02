@@ -6,57 +6,6 @@
         <div class="hamburger-inner"></div>
       </div>
     </div>
-    <div class="buttons-block" >
-      <btn
-        @click="$router.push('/')"
-        :class="$route.path === '/' ? 'active-button' : 'buttons-header'"
-      >
-        Home
-      </btn>
-
-      <btn
-        @click="$router.push('/services')"
-        :class="$route.path === '/services' ? 'active-button' : 'buttons-header'"
-      >
-        Locations & Services
-      </btn>
-      <div class="projects-btn"
-      style="display: flex; flex-direction: column">
-      <btn
-        @mouseover="showList = true"
-        class="buttons-header"
-      >
-        Achievements & Projects
-
-      </btn>
-        <transition name="list">
-      <div v-if="showList"
-           class="block-projects-1"
-           @mouseleave="showList = false">
-
-        <btn
-          @click="$router.push('/projects'); showList = false"
-          :class="$route.path === '/projects' ? 'active-button' : 'buttons-header'"
-        >
-          Projects
-        </btn>
-        <btn
-          @click="$router.push('/achievements'); showList = false"
-          :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
-        >
-          Achievements
-        </btn>
-
-      </div>
-        </transition>
-      </div>
-      <btn
-        @click="$router.push('/contacts')"
-        :class="$route.path === '/contacts' ? 'active-button' : 'buttons-header'"
-      >
-        Contacts
-      </btn>
-    </div>
       <div class="logo-block">
         <img src="/icons/logoWhite.svg">
       </div>
@@ -160,51 +109,7 @@ export default {
     z-index: 999;
     align-items: center;
   }
-  .buttons-block{
-    display: none;
-  }
-@media screen and (min-width: 730px){
-  .header{
-    padding: 64px 150px 0px;
-    place-content: center;
-    flex-direction: column;
-  }
-  .buttons-block{
-    display: flex;
-    height: 100%;
-  }
-  .buttons-block .buttons-header{
-    display: flex;
-    color: white;
-    transition: color 1s;
-    background: transparent;
-    margin: 0 1em;
-  }
-  .buttons-block .buttons-header:hover {
-    color: #4fdbe8;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  .logo-block{
-    display: block;
-    width: 288px;
-    height: 166px;
-  }
-  .logo-block img{
-    width: 288px;
-    height: 166px;
-  }
-  .active-button{
-    color: #4fdbe8;
-    cursor: pointer;
-    margin: 0 1em;
-  }
-}
 
-.menu{
-  display: none;
-}
-  @media screen and (max-width: 730px){
     .header{
       display: flex;
       padding: 20px;
@@ -246,6 +151,9 @@ export default {
   }
 
   .hamburger {
+    position: fixed;
+    margin-top: 20px;
+    margin-right: 20px;
     align-self: flex-end;
     display: flex;
     align-items: center;
@@ -259,7 +167,6 @@ export default {
     background-color: transparent;
     border: 0;
     overflow: visible;
-    margin: 0 0 0 30px;
   }
 
   .hamburger:hover {
@@ -292,7 +199,7 @@ export default {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: white;
+    background-color: darkblue;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -305,13 +212,16 @@ export default {
     display: block;
   }
 
+
   .hamburger-inner::before {
     top: -10px;
   }
 
+
   .hamburger-inner::after {
     bottom: -10px;
   }
+
 
   .hamburger--elastic .hamburger-inner {
     top: 2px;
@@ -342,7 +252,6 @@ export default {
   .hamburger--elastic.is-active .hamburger-inner::after {
     transform: translate3d(0, -20px, 0) rotate(-270deg);
     transition-delay: 0.075s;
-  }
   }
   .block-projects-1{
     width: 200px;
@@ -393,7 +302,7 @@ export default {
   }
 
   .burgerMenuLeft{
-    position: absolute;
+    position: fixed;
     background: black;
     z-index: 9999;
     height: 100%;
