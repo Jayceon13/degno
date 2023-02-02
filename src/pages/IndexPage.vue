@@ -2,7 +2,7 @@
   <q-page class="">
     <q-parallax class="parallax window-height">
       <template v-slot:media>
-        <video :height="1500" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
+        <video class="bgvdo" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
           <source type="video/webm" src="img/parHome.webm">
         </video>
       </template>
@@ -103,6 +103,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.bgvdo{
+  height: 190%;
+}
 h1 {
   margin: 0 0 20px;
   font-size: 30px;
