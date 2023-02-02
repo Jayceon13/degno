@@ -2,7 +2,7 @@
   <q-page class="">
     <q-parallax class="parallax window-height">
       <template v-slot:media>
-        <video :height="1200" class="video-background" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
+        <video :height="1500" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
           <source type="video/mp4" src="img/test.mp4">
         </video>
       </template>
@@ -99,22 +99,10 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'IndexPage',
-  data(){
-    return{
-      heightParallax: "100vh"
-    }
-  },
-  mounted() {
-    let vh = window.innerHeight * 0.01;
-    this.heightParallax = `${vh}px`;
-  }
 })
 </script>
 
 <style scoped>
-.q-parallax {
-  height: 100vh;
-}
 h1 {
   margin: 0 0 20px;
   font-size: 30px;
