@@ -472,7 +472,8 @@ export default {
       100%{
       opacity: 1;
       transform: translateX(0%);
-    }}
+    }
+    }
   }
   .burger-animation-leave-active {
     animation: slide-right 1s ease-in-out forwards;
