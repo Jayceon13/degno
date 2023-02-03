@@ -24,7 +24,9 @@
               <p> "Our services include business development,
                 support, and project management, all focused
                 on driving growth and success in the chemical and oil and gas industry."</p>
-              <q-btn class="btn-with-arrow" unelevated rounded color="black" >
+              <q-btn
+                @click="$router.push('/services')"
+                class="btn-with-arrow" unelevated rounded color="black" >
                 OUR SERVICES   <img class="arrow-btn" src="/icons/ArrowBtn.svg">
               </q-btn>
             </div>
