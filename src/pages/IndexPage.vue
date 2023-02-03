@@ -3,7 +3,10 @@
         <video class="bgvdo" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
           <source type="video/mp4" src="/img/test1.mp4">
         </video>
-      <div class="title-name">
+      <div class="title-name"
+           data-aos="zoom-in"
+           data-aos-easing="ease"
+           data-aos-delay="500">
       <h1>Welcome to Degno Group </h1>
       <h2>We provide tailored solutions for our clients to meet
         their unique needs, with a focus on quality and reliability.</h2>
@@ -49,12 +52,18 @@
         <div class="index_item-block">
           <div class="block_three">
             <div class="block_three-item">
-              <div class="block_three-item--info">
+              <div class="block_three-item--info"
+                   data-aos="zoom-in"
+                   data-aos-easing="ease"
+                   data-aos-delay="500">
                 <h4>We are an official representative developing business for leading
                   manufacturers and traders globally in the Turkmenistan market </h4>
               </div>
               </div>
-            <div class="block_three-item">
+            <div class="block_three-item"
+                 data-aos="zoom-in"
+                 data-aos-easing="ease"
+                 data-aos-delay="500">
 
               <div class="block_three-item--logo">
                 <div class="block_three-item--logo_img">
