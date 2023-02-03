@@ -72,13 +72,13 @@ export default {
   .footer_block-item {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .footer_block-logo {
     height: 100%;
     width: 20%;
-    padding: 30px;
+    padding: 20px;
   }
   .footer-logo {
     width: 100%;

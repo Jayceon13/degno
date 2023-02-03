@@ -1,14 +1,11 @@
 <template>
-  <q-page class="">
+  <q-page class="" style="">
 
-    <q-parallax :height="900" class="parallax">
+    <q-parallax :height="700" class="parallax">
       <template v-slot:media>
-        <img src="img/ParAbout.jpg" alt="">
+        <img src="/img/ParAbout.jpg" alt="">
       </template>
       <p style="color: white">We offer a range of services, including consulting, agency and project management, to help clients and partners grow their businesses effectively. </p>
-      <div class="arrow-block">
-        <img src="/icons/Arrow.svg"/>
-      </div>
     </q-parallax>
     <div class="services-page">
       <div class="first-block">
@@ -18,7 +15,7 @@
       </div>
       <div class="second-block">
       <p>Our key element is the high level of support towards the client, that is why we offer:</p>
-        <li>Meetings & negotiations</li>
+        <ol>Meetings & negotiations</ol>
         <li>Supplier & contractor search</li>
         <li>Project implementation, support & coordination</li>
         <li>Marketing, development & brand adaptation</li>
@@ -74,13 +71,14 @@ export default defineComponent({
 }
 
 .services-page{
+  background: white;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-flow: column;
-  margin: 100px;
 }
 @media (max-width: 736px) {
   .services-page{
-    margin: 30px;
     text-align: center;
   }
 }

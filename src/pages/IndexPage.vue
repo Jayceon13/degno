@@ -1,7 +1,7 @@
 <template>
   <q-page class="">
         <video class="bgvdo" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
-          <source type="video/mp4" src="img/test1.mp4">
+          <source type="video/mp4" src="/img/test1.mp4">
         </video>
       <div class="title-name">
       <h1>Welcome to Degno Group </h1>
@@ -27,7 +27,7 @@
               <q-btn
                 @click="$router.push('/services')"
                 class="btn-with-arrow" unelevated rounded color="black" >
-                OUR SERVICES   <img class="arrow-btn" src="/icons/ArrowBtn.svg">
+                OUR SERVICES   <img alt="" class="arrow-btn" src="/icons/ArrowBtn.svg">
               </q-btn>
             </div>
           </div>
@@ -58,30 +58,30 @@
 
               <div class="block_three-item--logo">
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="img/ref1.png">
+                  <img class="part-img" src="/img/ref1.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="img/ref2.png">
+                  <img class="part-img" src="/img/ref2.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="img/ref3.png">
+                  <img class="part-img" src="/img/ref3.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="img/ref4.png">
+                  <img class="part-img" src="/img/ref4.png">
                 </div>
               </div>
               <div class="block_three-item--logo">
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="img/ref5.png">
+                  <img class="part-img" src="/img/ref5.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="img/ref6.png">
+                  <img class="part-img" src="/img/ref6.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="img/ref7.png">
+                  <img class="part-img" src="/img/ref7.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="img/ref8.png">
+                  <img class="part-img" src="/img/ref8.png">
                 </div>
               </div>
 
@@ -180,10 +180,6 @@ h4 {
   font-style: italic;
 }
 
-.bold-p{
-  font-weight: bold;
-}
-
 .title-name {
   display: flex;
   flex-direction: column;
@@ -248,7 +244,7 @@ h4 {
 @media screen and (max-width: 700px) {
   .block_one {
     flex-direction: column;
-    padding: 0px;
+    padding: 0;
   }
 }
 .block_one-item{
@@ -256,9 +252,15 @@ h4 {
   padding: 150px 40px 100px 200px;
   border-right: solid 2px black;
 }
+@media screen and (max-width: 1000px) {
+  .block_one-item{
+    width: 50%;
+    padding: 150px 40px 100px 100px;
+  }
+}
 @media screen and (max-width: 920px) {
   .block_one-item {
-    padding: 150px 40px 100px 100px;
+    padding: 150px 40px 100px 70px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -270,7 +272,7 @@ h4 {
 }
   .block_one-item-2{
     width: 50%;
-    padding: 80px 200px 0px 40px;
+    padding: 80px 200px 0 40px;
   }
   .arrow-btn{
     margin-left: 15px;
@@ -279,13 +281,13 @@ h4 {
   }
 @media screen and (max-width: 920px) {
   .block_one-item-2 {
-    padding: 80px 100px 0px 40px;
+    padding: 80px 100px 0 40px;
   }
 }
 @media screen and (max-width: 700px) {
   .block_one-item-2 {
     width: 100%;
-    padding: 80px 60px;
+    padding: 30px 60px;
   }
 }
 
@@ -309,15 +311,14 @@ h4 {
 .block_three{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: black;
   color: white;
   height: 100%;
-  padding: 8%;
+  padding: 30px 8% 20px 8%;
   }
 .block_three-item{
   display: flex;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
   align-items: center;
 }
 .block_three-item--info{

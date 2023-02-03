@@ -9,7 +9,7 @@
       <p  style="color: white">Welcome to Sman Group
         We are leading oil & gas and chemical industry specialists</p>
       <div class="arrow-block">
-        <img src="/icons/Arrow.svg"/>
+        <img alt="" src="/icons/Arrow.svg"/>
       </div>
     </q-parallax>
     <div class="contacts-page">
