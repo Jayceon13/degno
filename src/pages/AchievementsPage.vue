@@ -72,7 +72,10 @@ export default defineComponent({
 .achieve-page{
   display: flex;
   justify-content: center;
-  margin: 100px;
+  background: white;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
 }
 h3{
   text-align: center;
@@ -89,7 +92,6 @@ h3{
   .achieve-page{
     display: flex;
     justify-content: center;
-    margin: 30px;
     flex-flow: column;
   }
   h3{

@@ -2,12 +2,12 @@
   <q-page class="">
     <q-parallax :height="900" class="parallax">
       <template v-slot:media>
-        <img src="img/ParProjects.jpg">
+        <img alt="" src="img/ParProjects.jpg">
       </template>
       <p style="color: white">Welcome to Sman Group
         We are leading oil & gas and chemical industry specialists</p>
       <div class="arrow-block">
-        <img src="/icons/Arrow.svg"/>
+        <img alt="" src="/icons/Arrow.svg"/>
       </div>
     </q-parallax>
 <div class="project">
@@ -15,7 +15,7 @@
       <div class="project_page-block">
         <div class="project_page-block--logo ">
           <div class="block_logo block_logo-first">
-            <img class="block_logo-img" src="img/ProjectsLogoTurkGaz.jpeg">
+            <img alt="" class="block_logo-img" src="img/ProjectsLogoTurkGaz.jpeg">
           </div>
         </div>
         <div class="project_page-block--item">
@@ -66,7 +66,7 @@
         <div class="project_page-block--item">
           <div class="block_items">
             <div class="block_logo">
-              <img class="block_logo-img" src="img/ProjectsLogoPetrofac.jpeg">
+              <img alt="" class="block_logo-img" src="img/ProjectsLogoPetrofac.jpeg">
             </div>
             <li>Project:  gas pipeline at the “Galkynysh” field</li>
 
@@ -76,7 +76,7 @@
           </div>
           <div class="block_items">
             <div class="block_logo">
-              <img class="block_logo-img" src="img/ProjectsLogoMitsubishi.jpeg">
+              <img alt="" class="block_logo-img" src="img/ProjectsLogoMitsubishi.jpeg">
             </div>
             <li>Project:  construction of the “Garabogazkarbamid” plant</li>
 
@@ -95,7 +95,7 @@
         <div class="project_page-block--item">
           <div class="block_items">
             <div class="block_logo">
-              <img class="block_logo-img" src="img/ProjectsLogoToyo.jpeg">
+              <img alt="" class="block_logo-img" src="img/ProjectsLogoToyo.jpeg">
             </div>
             <li>Project:  construction of the "Kiyanly" gas chemical complex</li>
 
@@ -109,7 +109,7 @@
           <div class="block_items">
 
             <div class="block_logo">
-              <img class="block_logo-img" src="img/ProjectsLogoBouygues.jpeg">
+              <img alt="" class="block_logo-img" src="img/ProjectsLogoBouygues.jpeg">
             </div>
             <li> Project:  construction of the "Arkadag" hotel</li>
 
@@ -128,7 +128,7 @@
         <div class="project_page-block--item">
           <div class="block_items">
             <div class="block_logo">
-              <img class="block_logo-img" src="img/ProjectsLogoRonesans.jpeg">
+              <img alt="" class="block_logo-img" src="img/ProjectsLogoRonesans.jpeg">
             </div>
             <li>Project: construction of the Garagum Hotel</li>
 
@@ -214,12 +214,14 @@ h3 {
 .project {
   display: flex;
   justify-content: center;
+  background: white;
 }
 .project_page {
   display: flex;
   flex-direction: column;
   width: 70%;
   padding: 80px 0;
+  background: white;
 }
 @media screen and (max-width: 700px) {
   .project_page {
@@ -248,7 +250,7 @@ h3 {
   text-align: center;
 }
 .block_logo-first {
-width: 70%;
+  width: 70%;
 }
 .block_logo-img {
   width: 100%;
