@@ -40,11 +40,10 @@
         <div class="index_item-block">
           <div class="block_two">
             <div class="block_two-item">
-
-              <h3
+              <h5
                 data-aos="zoom-in"
                 data-aos-easing="ease"
-                data-aos-delay="500">Our Partners</h3>
+                data-aos-delay="500">Our Partners</h5>
             </div>
           </div>
         </div>
@@ -188,7 +187,21 @@ h4 {
   margin: 0 0 20px;
   font-style: italic;
 }
-
+@media screen and (max-width: 700px) {
+  h4{
+    font-size: 20px;
+  }
+}
+h5 {
+  font-size: 60px;
+  margin: 0 0 20px;
+  font-weight: 900;
+}
+@media screen and (max-width: 700px) {
+  h5{
+    font-size: 30px;
+  }
+}
 .title-name {
   display: flex;
   flex-direction: column;
@@ -196,7 +209,7 @@ h4 {
   text-align: center;
   color: white;
   height: 100vh;
-  padding: 100px 200px;
+  padding: 50px 200px;
 }
 @media screen and (max-width: 700px) {
   .title-name{
@@ -234,7 +247,7 @@ h4 {
   flex-direction: column;
 }
 .index_item-block {
-  height: 100vh;
+
 }
 @media screen and (max-width: 700px) {
   .index_item-block {
@@ -307,10 +320,16 @@ h4 {
   background-position: top center;
   width: 100%;
   height: 100vh;
+  min-height: 600px;
   color: white;
   text-transform: uppercase;
 }
-
+@media screen and (max-width: 700px) {
+  .block_two-item {
+    height: 400px;
+    min-height: auto;
+  }
+}
 
 .block_three{
   display: flex;
