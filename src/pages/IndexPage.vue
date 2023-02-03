@@ -24,7 +24,7 @@
               <p> "Our services include business development,
                 support, and project management, all focused
                 on driving growth and success in the chemical and oil and gas industry."</p>
-              <q-btn unelevated rounded color="black" >
+              <q-btn class="btn-with-arrow" unelevated rounded color="black" >
                 OUR SERVICES   <img class="arrow-btn" src="/icons/ArrowBtn.svg">
               </q-btn>
             </div>
@@ -104,9 +104,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
+.btn-with-arrow{
+  display: flex;
+  width: 156px;
+}
 .bgvdo{
-position: absolute;
   height: 100vh;
   position: absolute;
   width: 100vw;
@@ -139,6 +141,9 @@ h1 {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.1em;
+  }
+  .arrow-btn{
+    display: flex;
   }
 
 }
@@ -268,6 +273,7 @@ h4 {
   .arrow-btn{
     margin-left: 15px;
     height: 10px;
+    width: 10px;
   }
 @media screen and (max-width: 920px) {
   .block_one-item-2 {
