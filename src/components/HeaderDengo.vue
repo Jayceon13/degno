@@ -174,6 +174,7 @@ export default {
   }
 
     .header{
+      mix-blend-mode: difference;
       display: flex;
       padding: 20px;
       flex-direction: column;
@@ -262,7 +263,7 @@ export default {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: darkblue;
+    background-color: white;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;

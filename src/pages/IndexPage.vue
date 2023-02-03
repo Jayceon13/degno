@@ -24,6 +24,9 @@
               <p> "Our services include business development,
                 support, and project management, all focused
                 on driving growth and success in the chemical and oil and gas industry."</p>
+              <q-btn unelevated rounded color="black" >
+                OUR SERVICES   <img class="arrow-btn" src="/icons/ArrowBtn.svg">
+              </q-btn>
             </div>
           </div>
         </div>
@@ -36,7 +39,7 @@
               <h3
                 data-aos="zoom-in"
                 data-aos-easing="ease"
-                data-aos-delay="800">Our Partners</h3>
+                data-aos-delay="500">Our Partners</h3>
             </div>
           </div>
         </div>
@@ -125,6 +128,20 @@ h1 {
   font-size: 70px;
   font-weight: bold;
 }
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.5em;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.1em;
+  }
+
+}
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 30px;
@@ -133,10 +150,12 @@ h1 {
     line-height: 1.5em;
   }
 }
-h2 {
-  margin: 0 0 20px;
-  font-weight: 200;
-  font-size: 40px;
+@media screen and (min-width: 1000px) {
+  h2 {
+    margin: 0 0 20px;
+    font-weight: 200;
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 700px) {
   h2 {
@@ -214,6 +233,7 @@ h4 {
   }
 }
 .block_one {
+  background: white;
   display: flex;
   height: 100%;
   padding: 40px 0;
@@ -244,6 +264,10 @@ h4 {
   .block_one-item-2{
     width: 50%;
     padding: 80px 200px 0px 40px;
+  }
+  .arrow-btn{
+    margin-left: 15px;
+    height: 10px;
   }
 @media screen and (max-width: 920px) {
   .block_one-item-2 {
