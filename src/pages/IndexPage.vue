@@ -235,7 +235,7 @@ h4 {
 .block_one {
   background: white;
   display: flex;
-  height: 100%;
+  min-height: 100vh;
   padding: 40px 0;
 }
 @media screen and (max-width: 700px) {
@@ -308,7 +308,7 @@ h4 {
   flex-direction: column;
   background-color: black;
   color: white;
-  height: 100%;
+  min-height: 100vh;
   padding: 30px 8% 20px 8%;
   }
 .block_three-item{
