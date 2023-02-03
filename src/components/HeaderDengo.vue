@@ -6,7 +6,7 @@
       </div>
     </div>
       <div class="logo-block">
-        <img src="/icons/logoWhite.svg">
+        <img alt="" src="/icons/logoWhite.svg">
       </div>
   </div>
   <transition name="burger-animation">
@@ -20,7 +20,7 @@
             @click="blockBurgerMenu"
             class="xicon-btn"
           >
-            <img class="img-x" src="/icons/xicon.svg">
+            <img alt="" class="img-x" src="/icons/xicon.svg">
           </btn>
         </div>
         <div class="block-content"
@@ -180,11 +180,6 @@ export default {
       flex-direction: column;
       align-items: center;
     }
-  .menu {
-    display: flex;
-    flex-direction: column;
-    color: black;
-  }
     .logo-block{
       display: block;
       width: 186px;
@@ -203,7 +198,6 @@ export default {
     padding: 10px 30px;
     font-size: 20px;
     color: white;
-
   }
 
   .q-btn:before {

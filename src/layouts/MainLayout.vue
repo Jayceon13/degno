@@ -9,7 +9,7 @@
   </q-layout>
 </template>
 <script>
-import { defineComponent, ref, onMounted, nextTick } from 'vue'
+import { defineComponent } from 'vue'
 import HeaderDengo from "components/HeaderDengo.vue";
 import FooterDengo from "components/FooterDengo";
 import PreloaderMenu from "components/PreloaderMenu.vue";

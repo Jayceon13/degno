@@ -58,30 +58,30 @@
 
               <div class="block_three-item--logo">
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="/img/ref1.png">
+                  <img alt="" class="part-img" src="/img/ref1.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="/img/ref2.png">
+                  <img alt="" class="part-img" src="/img/ref2.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="/img/ref3.png">
+                  <img alt="" class="part-img" src="/img/ref3.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="/img/ref4.png">
+                  <img alt="" class="part-img" src="/img/ref4.png">
                 </div>
               </div>
               <div class="block_three-item--logo">
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="/img/ref5.png">
+                  <img alt="" class="part-img" src="/img/ref5.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="/img/ref6.png">
+                  <img alt="" class="part-img" src="/img/ref6.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="/img/ref7.png">
+                  <img alt="" class="part-img" src="/img/ref7.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img class="part-img" src="/img/ref8.png">
+                  <img alt="" class="part-img" src="/img/ref8.png">
                 </div>
               </div>
 
@@ -183,7 +183,7 @@ h4 {
 .title-name {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   text-align: center;
   color: white;
   height: 100vh;
@@ -197,10 +197,7 @@ h4 {
 }
 
 
-  .arrow-block{
-    height: 40px;
-    position: relative;
-  }
+
   .arrow-block img{
     height: 17px;
     position: absolute;
@@ -304,9 +301,7 @@ h4 {
   color: white;
   text-transform: uppercase;
 }
-.bg-block--two{
-  background-size: cover;
-}
+
 
 .block_three{
   display: flex;
