@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="home-btn">
+    <div class="home-btn" v-if="$route.path !== '/'">
       <btn
         @click="$router.push('/')"
         style="cursor: pointer"
