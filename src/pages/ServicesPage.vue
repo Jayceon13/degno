@@ -13,7 +13,7 @@
       <div class="second-block">
         <img src="/img/services2.jpg">
         <div class="second-block-text">
-          <p style="font-weight: bold">
+          <p style="font-weight: bold; margin-bottom: 40px">
             Our highly skilled team has global expertise and can support
             the successful execution of projects, regardless of their
             complexity
@@ -26,8 +26,9 @@
       </div>
       <div class="third-block">
         <div class="third-block-text">
-            <p style="font-weight: bold">Our key element is the high level of support
-              towards the client, that is why we offer:</p>
+            <p style="font-weight: bold; padding-left: 10px; padding-right: 10px">Our key element is the high level of support
+              towards the client,<br> that is why we offer:</p>
+          <div class="third-block-text-li">
             <li>Meetings & negotiations</li>
             <li>Supplier & contractor search</li>
             <li>Project implementation, support & coordination</li>
@@ -36,6 +37,7 @@
             <li>Design, delivery & commissioning</li>
             <li>Search for alternative solutions & adaptations</li>
             <li>Risk Assessment</li>
+          </div>
         </div>
         <div class="third-block-img">
           <img src="/img/services3.jpg">
@@ -161,17 +163,20 @@ export default defineComponent({
 .third-block{
   display: flex;
   width: 100%;
+
 }
 .third-block-text{
   flex-flow: column;
   display: flex;
   padding: 40px;
   width: 50%;
+  align-self: center;
 }
-.third-block-text li {
-  text-align: left;
+.third-block-text-li {
+  display: flex;
   justify-content: center;
-  padding-left: 40px;
+  flex-flow: column;
+  align-self: center;
 }
 .third-block-img{
   width: 50%;
@@ -221,7 +226,7 @@ export default defineComponent({
   font-size: 20px;
 }
 .third-block-text p{
-  text-align: center;
+  align-self: center;
   font-size: 18px;
 }
 @media screen and (max-width: 1050px){
