@@ -1,18 +1,26 @@
 <template>
   <q-page class="" style="">
     <div class="main-block">
-      <h3 style="color: white">DISCOVER OUR FULL RANGE OF EXPERTISE</h3>
+      <h3 style="color: white"
+          data-aos="zoom-in"
+          data-aos-easing="ease"
+          data-aos-delay="500"
+      >DISCOVER OUR FULL RANGE OF EXPERTISE</h3>
     </div>
     <div class="services-page">
       <div class="first-block">
-        <h4>We offer a
+        <h4
+          data-aos="zoom-in"
+          data-aos-easing="ease"
+          data-aos-delay="500">We offer a
           range of services, including consulting,<br>
           agency and project management, to help clients and<br>
           partners grow their businesses effectively</h4>
       </div>
       <div class="second-block">
-        <img src="/img/services2.jpg">
-        <div class="second-block-text">
+        <img src="/img/services2.jpg"
+             data-aos="fade-right">
+        <div class="second-block-text" data-aos="fade-left">
           <p style="font-weight: bold; margin-bottom: 40px">
             Our highly skilled team has global expertise and can support
             the successful execution of projects, regardless of their
@@ -25,7 +33,8 @@
         </div>
       </div>
       <div class="third-block">
-        <div class="third-block-text">
+        <div class="third-block-text"
+             data-aos="fade-right">
             <p style="font-weight: bold; padding-left: 10px; padding-right: 10px">Our key element is the high level of support
               towards the client,<br> that is why we offer:</p>
           <div class="third-block-text-li">
@@ -39,12 +48,15 @@
             <li>Risk Assessment</li>
           </div>
         </div>
-        <div class="third-block-img">
+        <div class="third-block-img" data-aos="fade-left">
           <img src="/img/services3.jpg">
         </div>
         </div>
       <div class="fourth-block">
-        <h4>Supporting and guiding your requirement from the beginning to the very end</h4>
+        <h4
+          data-aos="zoom-in"
+          data-aos-easing="ease"
+          data-aos-delay="500">Supporting and guiding your requirement from the beginning to the very end</h4>
       </div>
     </div>
   </q-page>
@@ -104,22 +116,6 @@ export default defineComponent({
   }
   .fourth-block h4{
     font-size: 20px;
-  }
-}
-@keyframes moveImage{
-  0%{
-    opacity: 0;
-    bottom: 40px;
-  }
-  25%{
-    opacity: 1;
-  }
-  75%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    bottom: 0;
   }
 }
 
