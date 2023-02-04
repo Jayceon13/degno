@@ -227,11 +227,11 @@ export default defineComponent({
 }
 .third-block-text p{
   align-self: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 @media screen and (max-width: 1050px){
   .second-block-text p{
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 970px){
@@ -239,7 +239,7 @@ export default defineComponent({
     font-size: 15px;
   }
   .third-block-text p{
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 850px){
