@@ -5,7 +5,7 @@
         @click="$router.push('/')"
         style="cursor: pointer"
         >
-        <img src="/icons/logoWhite.svg" alt="" style="width: 80px">
+        <img src="/icons/fireWhite.svg" alt="" style="width: 80px" >
       </btn>
     </div>
     <div class="hamburger hamburger--elastic">
@@ -13,7 +13,7 @@
         <div class="hamburger-inner"></div>
       </div>
     </div>
-      <div class="logo-block">
+      <div class="logo-block" v-if="$route.path !== '/services'">
         <img alt="" src="/icons/logoWhite.svg">
       </div>
   </div>
@@ -176,7 +176,6 @@ export default {
   position: fixed;
   display: flex;
   width: 100%;
-  margin-top: 10px;
   margin-left: 24px;
   align-self: flex-start;
 }

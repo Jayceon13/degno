@@ -36,7 +36,6 @@
             <li>Design, delivery & commissioning</li>
             <li>Search for alternative solutions & adaptations</li>
             <li>Risk Assessment</li>
-            <p>Supporting and guiding your requirement from the beginning to the very end. </p>
         </div>
         <div class="third-block-img">
           <img src="/img/services3.jpg">
@@ -166,7 +165,7 @@ export default defineComponent({
 .third-block-text{
   flex-flow: column;
   display: flex;
-  padding: 30px;
+  padding: 40px;
   width: 50%;
 }
 .third-block-text li {
@@ -222,11 +221,12 @@ export default defineComponent({
   font-size: 20px;
 }
 .third-block-text p{
-  font-size: 20px;
+  text-align: center;
+  font-size: 18px;
 }
 @media screen and (max-width: 1050px){
   .second-block-text p{
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 970px){
@@ -234,7 +234,7 @@ export default defineComponent({
     font-size: 15px;
   }
   .third-block-text p{
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 850px){

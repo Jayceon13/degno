@@ -1,10 +1,11 @@
 <template>
-  <div class="footer">
-    <div class="footer_block">
+  <div :class="['footer', { 'footer-black': isBlack }]" >
+    <div :class="['footer_block', { 'footer_block-black': isBlack }]">
       <div class="footer_block-logo">
-        <img class="footer-logo" src="icons/logoBlack.svg">
+        <img class="footer-logo" src="/icons/logoBlack.svg" v-if="$route.path == '/'">
+        <img class="footer-logo" src="/icons/logoWhite.svg" v-if="$route.path == '/services' || $route.path == '/projects' || $route.path == '/achievements'">
       </div>
-    <div class="footer_block-item">
+    <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
       <div class="block-dubai">
         <p style="font-weight: bold">Dubai, UAE</p>
         <p>Sultan Business Centre,<br>Office 410.<br>Oud Metha,<br>Dubai</p>
@@ -18,9 +19,9 @@
         <p>Paytagt Business Center,<br>6th Floor,<br>1945 street</p>
       </div>
 
-      <div class="footer_block-item--mail">
+      <div :class="['footer_block-item--mail', { 'footer_block-item--mail-black': isBlack }]">
         <p style="font-weight: bold">Contact Us</p>
-        <p>Email:<a href="mailto: info@sman-group.com" style="color: black; text-decoration: none">info@sman-group.com></a></p>
+        <p>Email:<a href="mailto: info@sman-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@sman-group.com></a></p>
       </div>
     </div>
   </div>
@@ -31,8 +32,32 @@
 </template>
 
 <script>
-export default {
+import {onMounted, watch} from 'vue'
 
+export default {
+  data() {
+    return {
+      isBlack: false
+    }
+  },
+  props: {
+    black: {
+      type: Boolean,
+      default: false
+    }
+  },
+  onMounted() {
+    this.isBlack = this.black;
+  },
+  watch: {
+    $route(to, from) {
+      if (to.path === '/services' || to.path === '/projects' || to.path === '/achievements') {
+        this.isBlack = true;
+      } else {
+        this.isBlack = this.black;
+      }
+    }
+  }
 }
 </script>
 
@@ -104,5 +129,27 @@ export default {
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+.footer_block-mail{
+  text-decoration: none;
+  color: black;
+}
+.footer_block-mail-black{
+  text-decoration: none;
+  color: white;
+}
+.footer-black {
+  background-color: black;
+  color: white;
+}
+.footer_block-black{
+  color: white;
+  border-bottom: solid 1px white;
+}
+.footer_block-item-black{
+  color: white;
+}
+.footer_block-item--mail-black{
+  color: white;
 }
 </style>
