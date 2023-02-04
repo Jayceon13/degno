@@ -1,7 +1,7 @@
 <template>
   <q-page class="">
-        <video class="bgvdo" poster="https://cdn.quasar.dev/img/polina.jpg" playsinline autoplay loop muted>
-          <source type="video/mp4" src="/img/test1.mp4">
+        <video class="bgvdo" poster="/img/mainposter.jpg" playsinline autoplay loop muted>
+          <source type="video/mp4" src="/video/mainpage.mp4">
         </video>
       <div class="title-name"
            data-aos="zoom-in"
