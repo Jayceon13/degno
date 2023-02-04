@@ -68,7 +68,8 @@
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref1.png">
                 </div>
-                <div class="block_three-item--logo_img">
+                <div class="block_three-item--logo_img"
+                style="background: white; padding: 10px">
                   <img alt="" class="part-img" src="/img/ref2.png">
                 </div>
                 <div class="block_three-item--logo_img">
@@ -85,7 +86,8 @@
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref6.png">
                 </div>
-                <div class="block_three-item--logo_img">
+                <div class="block_three-item--logo_img"
+                style="background: white">
                   <img alt="" class="part-img" src="/img/ref7.png">
                 </div>
                 <div class="block_three-item--logo_img">
@@ -314,7 +316,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/ParPartners.png");
+  background-image: url("/img/partners.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -337,7 +339,8 @@ h5 {
   background-color: black;
   color: white;
   min-height: 100vh;
-  padding: 30px 8% 20px 8%;
+  padding: 20px 8% 20px 8%;
+  justify-content: center;
   }
 .block_three-item{
   display: flex;

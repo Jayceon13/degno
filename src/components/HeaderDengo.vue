@@ -88,7 +88,7 @@
             @click="showList2 = true"
             class="buttons-header"
           >
-            ACHIEVEMENTSS & PROJECTS
+            ACHIEVEMENTS & PROJECTS
           </btn>
           <transition name="list-animation">
             <div v-if="showList2"
