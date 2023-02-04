@@ -227,6 +227,9 @@ export default defineComponent({
 }
 .third-block-text p{
   align-self: center;
+  font-size: 22px;
+}
+.third-block-text-li li{
   font-size: 20px;
 }
 @media screen and (max-width: 1050px){
@@ -239,6 +242,9 @@ export default defineComponent({
     font-size: 15px;
   }
   .third-block-text p{
+    font-size: 16px;
+  }
+  .third-block-text-li li{
     font-size: 15px;
   }
 }
@@ -248,6 +254,9 @@ export default defineComponent({
   }
   .third-block-text p{
     font-size: 13px;
+  }
+  .third-block-text-li li{
+    font-size: 12px;
   }
 }
 </style>
