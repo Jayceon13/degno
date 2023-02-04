@@ -1,5 +1,13 @@
 <template>
   <div class="header">
+    <div class="home-btn">
+      <btn
+        @click="$router.push('/')"
+        style="cursor: pointer"
+        >
+        <img src="/icons/logoWhite.svg" alt="" style="width: 80px">
+      </btn>
+    </div>
     <div class="hamburger hamburger--elastic">
       <div class="hamburger-box" @click="blockBurgerMenu">
         <div class="hamburger-inner"></div>
@@ -164,7 +172,14 @@ export default {
 </script>
 
 <style scoped>
-
+.home-btn{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 24px;
+  align-self: flex-start;
+}
   .header{
     position: absolute;
     display: flex;
