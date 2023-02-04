@@ -55,7 +55,7 @@
                    data-aos="zoom-in"
                    data-aos-easing="ease"
                    data-aos-delay="500">
-                <h4>We are an official representative developing business for leading
+                <h4 style="font-style: normal">We are an official representative developing business for leading
                   manufacturers and traders globally in the Turkmenistan market </h4>
               </div>
               </div>
