@@ -1,7 +1,7 @@
 <template>
   <div class="preloader">
     <div class="preloader-logo">
-      <img src="/icons/logoWhite.svg">
+      <img class="preloader-img" src="/icons/logoWhite.svg">
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@
   overflow: hidden;
 }
 @media screen and (max-width: 720px){
-  img{
+  .preloader-img{
     width: 300px;
   }
 }

@@ -1,30 +1,50 @@
 <template>
   <q-page class="" style="">
-
-    <q-parallax :height="700" class="parallax">
-      <template v-slot:media>
-        <img src="/img/ParAbout.jpg" alt="">
-      </template>
-      <p style="color: white">We offer a range of services, including consulting, agency and project management, to help clients and partners grow their businesses effectively. </p>
-    </q-parallax>
+    <div class="main-block">
+      <h3 style="color: white">DISCOVER OUR FULL RANGE OF EXPERTISE</h3>
+    </div>
     <div class="services-page">
       <div class="first-block">
-      <p>Our highly skilled team has global expertise and can support the successful execution of projects, regardless of their complexity.
-        Our company, SMAN, is adaptable in negotiations and provides expert guidance in business decision making. With a presence in Dubai, Moscow, Istanbul, and Ashgabat, we offer comprehensive regional coverage.
-      </p>
+        <h4>We offer a
+          range of services, including consulting,<br>
+          agency and project management, to help clients and<br>
+          partners grow their businesses effectively</h4>
       </div>
       <div class="second-block">
-      <p>Our key element is the high level of support towards the client, that is why we offer:</p>
-        <ol>Meetings & negotiations</ol>
-        <li>Supplier & contractor search</li>
-        <li>Project implementation, support & coordination</li>
-        <li>Marketing, development & brand adaptation</li>
-        <li>Project and client search</li>
-        <li>Design, delivery & commissioning</li>
-        <li>Search for alternative solutions & adaptations</li>
-        <li>Risk Assessment</li>
-        <p>Supporting and guiding your requirement from the beginning to the very end. </p>
+        <img src="/img/services2.jpg">
+        <div class="second-block-text">
+          <p style="font-weight: bold">
+            Our highly skilled team has global expertise and can support
+            the successful execution of projects, regardless of their
+            complexity
+          </p>
+          <p>Our company, DEGNO, is adaptable in negotiations and provides expert
+            guidance in business decision making. With a presence in <b>Dubai</b>, <b>Moscow</b>,
+            <b>Istanbul</b>, and <b>Ashgabat</b>, we offer comprehensive regional coverage</p>
+          <p></p>
         </div>
+      </div>
+      <div class="third-block">
+        <div class="third-block-text">
+            <p style="font-weight: bold">Our key element is the high level of support
+              towards the client, that is why we offer:</p>
+            <li>Meetings & negotiations</li>
+            <li>Supplier & contractor search</li>
+            <li>Project implementation, support & coordination</li>
+            <li>Marketing, development & brand adaptation</li>
+            <li>Project and client search</li>
+            <li>Design, delivery & commissioning</li>
+            <li>Search for alternative solutions & adaptations</li>
+            <li>Risk Assessment</li>
+            <p>Supporting and guiding your requirement from the beginning to the very end. </p>
+        </div>
+        <div class="third-block-img">
+          <img src="/img/services3.jpg">
+        </div>
+        </div>
+      <div class="fourth-block">
+        <h4>Supporting and guiding your requirement from the beginning to the very end</h4>
+      </div>
     </div>
   </q-page>
 </template>
@@ -38,20 +58,52 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.parallax{
-  z-index: -1;
+.main-block{
   width: 100vw;
   height: 100vh;
+  background-image: url("/img/services.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.arrow-block{
-  height: 40px;
-  position: relative;
+.main-block h3{
+  font-weight: bold;
 }
-.arrow-block img{
-  height: 17px;
-  position: absolute;
-  bottom: 0;
-  animation: moveImage 3s linear infinite;
+.fourth-block{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.fourth-block h4{
+  text-align: center;
+  font-style: italic;
+}
+@media screen and (max-width: 985px){
+  .main-block h3{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 720px){
+  .main-block {
+    height: 600px;
+  }
+  .main-block h3{
+    font-size: 20px;
+  }
+  .fourth-block h4{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px){
+  .main-block{
+    background-position: 30%;
+  }
+  .main-block h3{
+    font-size: 15px;
+  }
+  .fourth-block h4{
+    font-size: 20px;
+  }
 }
 @keyframes moveImage{
   0%{
@@ -77,9 +129,120 @@ export default defineComponent({
   display: flex;
   flex-flow: column;
 }
+.first-block{
+  text-align: center;
+}
+.first-block h4{
+  font-weight: bold;
+}
+@media screen and (max-width: 985px){
+  .first-block h4{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 720px){
+  .first-block h4{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 450px){
+  .first-block h4{
+    font-size: 13px;
+  }
+}
 @media (max-width: 736px) {
   .services-page{
     text-align: center;
+  }
+}
+.second-block{
+  display: flex;
+  width: 100%;
+}
+.third-block{
+  display: flex;
+  width: 100%;
+}
+.third-block-text{
+  flex-flow: column;
+  display: flex;
+  padding: 30px;
+  width: 50%;
+}
+.third-block-text li {
+  text-align: left;
+  justify-content: center;
+  padding-left: 40px;
+}
+.third-block-img{
+  width: 50%;
+}
+@media (max-width: 720px) {
+  .second-block{
+    flex-flow: column;
+    text-align: center;
+  }
+  .second-block img {
+    width: 100%;
+  }
+  .third-block img {
+    width: 100%;
+  }
+  .third-block{
+    flex-flow: column-reverse;
+    text-align: center;
+  }
+  .third-block-img{
+    width: 100%
+  }
+  .third-block-text{
+    width: 100%;
+  }
+}
+@media (min-width: 720px){
+  .second-block img{
+    width: 50%;
+  }
+  .third-block text{
+    width: 50%;
+  }
+  .third-block img{
+    width: 100%;
+  }
+
+}
+.second-block-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 30px;
+}
+.second-block-text p{
+  font-size: 20px;
+}
+.third-block-text p{
+  font-size: 20px;
+}
+@media screen and (max-width: 1050px){
+  .second-block-text p{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 970px){
+  .second-block-text p{
+    font-size: 15px;
+  }
+  .third-block-text p{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 850px){
+  .second-block-text p{
+    font-size: 13px;
+  }
+  .third-block-text p{
+    font-size: 13px;
   }
 }
 </style>
