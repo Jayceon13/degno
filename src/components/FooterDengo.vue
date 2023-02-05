@@ -1,15 +1,21 @@
 <template>
   <div :class="['footer', { 'footer-black': isBlack }]" >
     <div :class="['footer_block', { 'footer_block-black': isBlack }]">
+      <div class="main-block">
+      <div class="first-block">
       <div class="footer_block-logo">
         <img class="footer-logo" src="/icons/logoBlack.svg" v-if="$route.path == '/'">
-        <img class="footer-logo" src="/icons/logoWhite.svg" v-if="$route.path == '/services' || $route.path == '/projects' || $route.path == '/achievements'">
+        <img class="footer-logo-black" src="/icons/logoWhite.svg" v-if="$route.path == '/services' || $route.path == '/projects' || $route.path == '/achievements'">
       </div>
+      <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
+        <div class="block-dubai">
+          <p style="font-weight: bold">Dubai, UAE</p>
+          <p>Sultan Business Centre,<br>Office 410.<br>Oud Metha,<br>Dubai</p>
+        </div>
+      </div>
+    </div>
+      <div class="second-block">
     <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
-      <div class="block-dubai">
-        <p style="font-weight: bold">Dubai, UAE</p>
-        <p>Sultan Business Centre,<br>Office 410.<br>Oud Metha,<br>Dubai</p>
-      </div>
       <div class="block-turkey">
         <p style="font-weight: bold">Istanbul, Turkey</p>
         <p>Torn Business Center,<br>Office 74а/205,<br>Buyukdere Cd. Fulya mah,<br>Sisli/Istanbul</p>
@@ -18,12 +24,13 @@
         <p style="font-weight: bold">Ashgabat, Turkmenistan</p>
         <p>Paytagt Business Center,<br>6th Floor,<br>1945 street</p>
       </div>
-
+    </div>
+      </div>
+      </div>
       <div :class="['footer_block-item--mail', { 'footer_block-item--mail-black': isBlack }]">
         <p style="font-weight: bold">Contact Us</p>
         <p>Email:<a href="mailto: info@sman-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@sman-group.com></a></p>
       </div>
-    </div>
   </div>
     <div class="block-rights">
       <p style="margin: 0">© Degno Group | All Rights Reserved 2022</p>
@@ -75,38 +82,111 @@ export default {
   width: 100%;
   border-bottom: solid 1px black;
 }
-@media screen and (max-width: 720px) {
-  .footer_block {
-    flex-direction: column;
+.main-block {
+  display: flex;
+  justify-content: space-around;
+}
+.first-block{
+  display: flex;
+}
+.footer_block-item{
+  justify-content: end;
+}
+@media screen and (max-width: 920px) {
+  .footer_block{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  .footer_block-black{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  .main-block{
+    display: flex;
+    width: 100%;
   }
   .footer_block-item{
-    flex-direction: column;
-    width: 100%;
+    text-align: center;
+  }
+  .footer_block-item-black{
     text-align: center;
   }
   .footer_block-logo {
     text-align: center;
-    width: 100%;
     padding: 30px;
+    height: 197px;
   }
   .footer-logo {
+  }
+  .footer_block-item--mail{
+
+  }
+  .first-block{
+    flex-flow: column;
     width: 50%;
   }
-}
-@media screen and (min-width: 720px) {
-  .footer_block-item {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
+  .second-block{
+    width: 50%;
   }
-
+  .footer-logo-black{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 427px) {
   .footer_block-logo {
-    height: 100%;
-    width: 20%;
+    display: flex;
+    align-items: center;
+    height: 218px;
+  }
+  .footer-logo-black{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 427px) {
+  .footer_block-logo {
+    height: 218px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .footer_block-item {
+    display: flex;
+  }
+  .footer_block-item-black {
+    display: flex;
+  }
+  .footer_block{
+    display: flex;
+  }
+  .footer_block-black{
+    display: flex;
+  }
+  .main-block{
+    text-align: center;
+    align-self: center;
+  }
+  .footer_block-logo {
+    height: 218px;
     padding: 20px;
   }
+  .first-block{
+    display: flex;
+  }
+  .second-block{
+    display: flex;
+  }
   .footer-logo {
-    width: 100%;
+    height: 130px;
+  }
+  .footer-logo-black {
+    height: 130px;
+  }
+  .footer_block-item--mail{
+    width: min-content;
+  }
+  .footer_block-item--mail-black{
+    width: min-content;
   }
 }
 
@@ -120,6 +200,10 @@ export default {
   padding: 30px;
 }
 .footer_block-item--mail{
+  text-align: center;
+  padding: 30px;
+}
+.footer_block-item--mail-black{
   text-align: center;
   padding: 30px;
 }
