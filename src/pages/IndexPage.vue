@@ -55,7 +55,7 @@
                    data-aos="zoom-in"
                    data-aos-easing="ease"
                    data-aos-delay="500">
-                <h4 style="font-style: normal">We are an official representative developing business for leading
+                <h4>We are an official representative developing business for leading
                   manufacturers and traders globally in the Turkmenistan market </h4>
               </div>
               </div>
@@ -68,8 +68,7 @@
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref1.png">
                 </div>
-                <div class="block_three-item--logo_img"
-                style="background: white; padding: 10px">
+                <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref2.png">
                 </div>
                 <div class="block_three-item--logo_img">
@@ -86,8 +85,7 @@
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref6.png">
                 </div>
-                <div class="block_three-item--logo_img"
-                style="background: white">
+                <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref7.png">
                 </div>
                 <div class="block_three-item--logo_img">
@@ -134,52 +132,56 @@ export default defineComponent({
 @media screen and (max-width: 700px) {
   .bgvdo {
     width: 100%;
-    height: 600px;
   }
 }
+p {
+  font-size: 20px;
+}
+
 h1 {
   margin: 0 0 20px;
   font-size: 70px;
-  font-weight: bold;
+  font-weight: lighter;
+  font-style: italic;
 }
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 40px;
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.5em;
-  }
-  h2 {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.1em;
-  }
-  .arrow-btn{
-    display: flex;
-  }
 
-}
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0;
     line-height: 1.5em;
   }
 }
-@media screen and (min-width: 1000px) {
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+@media screen and (max-height: 620px) {
+  h1{
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 1.1em;
+}
+@media screen and (max-width: 1300px) {
   h2 {
     margin: 0 0 20px;
-    font-weight: 200;
     font-size: 40px;
   }
 }
 @media screen and (max-width: 700px) {
   h2 {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.1em;
+    font-size: 28px;
 }
+}
+@media screen and (max-height: 620px) {
+  h2{
+    font-size: 28px;
+  }
 }
 h3 {
   margin: 0 0 20px;
@@ -187,7 +189,6 @@ h3 {
 }
 h4 {
   margin: 0 0 20px;
-  font-style: italic;
 }
 @media screen and (max-width: 700px) {
   h4{
@@ -204,23 +205,32 @@ h5 {
     font-size: 30px;
   }
 }
+
+
 .title-name {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: center;
   color: white;
   height: 100vh;
   padding: 50px 200px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1300px) {
   .title-name{
-    height: 600px;
-    padding: 100px 60px;
+    padding: 200px 70px;
+  }
+}
+@media screen and (max-height: 750px) {
+  .title-name{
+    justify-content: flex-end;
+    padding: 30px 70px;
   }
 }
 
-
+.arrow-btn{
+  display: flex;
+}
 
   .arrow-block img{
     height: 17px;
@@ -349,6 +359,12 @@ h5 {
 }
 .block_three-item--info{
   text-align: center;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 700px) {
+  .block_three-item--info {
+    padding-bottom: 0;
+  }
 }
 .block_three-item--logo{
   display: flex;
@@ -361,7 +377,7 @@ h5 {
   }
 }
 .block_three-item--logo_img{
-  width: 10%;
+  width: 14%;
   padding: 30px 0;
 }
 @media screen and (max-width: 1300px) {

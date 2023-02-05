@@ -9,13 +9,13 @@
     </div>
     <div class="services-page">
       <div class="first-block">
-        <h4
+        <h2
           data-aos="zoom-in"
           data-aos-easing="ease"
           data-aos-delay="500">We offer a
           range of services, including consulting,<br>
           agency and project management, to help clients and<br>
-          partners grow their businesses effectively</h4>
+          partners grow their businesses effectively</h2>
       </div>
       <div class="second-block">
         <img src="/img/services2.jpg"
@@ -71,6 +71,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+p {
+  font-size: 20px;
+}
 .main-block{
   width: 100vw;
   height: 100vh;
@@ -80,7 +83,16 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
 }
+h2 {
+  font-size: 30px;
+}
+@media screen and (max-width: 985px){
+  h2{
+    line-height: 1.3em;
+  }
+}
 .main-block h3{
+  text-align: center;
   font-weight: bold;
 }
 .fourth-block{
@@ -100,9 +112,6 @@ export default defineComponent({
   .main-block {
     height: 600px;
   }
-  .main-block h3{
-    font-size: 20px;
-  }
   .fourth-block h4{
     font-size: 30px;
   }
@@ -112,10 +121,12 @@ export default defineComponent({
     background-position: 30%;
   }
   .main-block h3{
-    font-size: 15px;
+    font-size: 24px;
+    text-align: center;
+
   }
   .fourth-block h4{
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -127,26 +138,23 @@ export default defineComponent({
   flex-flow: column;
 }
 .first-block{
+  padding: 30px;
   text-align: center;
 }
-.first-block h4{
+.first-block p{
   font-weight: bold;
 }
 @media screen and (max-width: 985px){
-  .first-block h4{
+  .first-block p{
     font-size: 25px;
   }
 }
 @media screen and (max-width: 720px){
-  .first-block h4{
-    font-size: 17px;
+  .first-block p{
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 450px){
-  .first-block h4{
-    font-size: 13px;
-  }
-}
+
 @media (max-width: 736px) {
   .services-page{
     text-align: center;
@@ -230,29 +238,29 @@ export default defineComponent({
 }
 @media screen and (max-width: 1050px){
   .second-block-text p{
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 970px){
   .second-block-text p{
-    font-size: 15px;
+    font-size: 20px;
   }
   .third-block-text p{
-    font-size: 16px;
+    font-size: 20px;
   }
   .third-block-text-li li{
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 850px){
   .second-block-text p{
-    font-size: 13px;
+    font-size: 20px;
   }
   .third-block-text p{
-    font-size: 13px;
+    font-size: 20px;
   }
   .third-block-text-li li{
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 </style>

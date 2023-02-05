@@ -216,8 +216,8 @@
             </q-btn>
             <div class="block_info" data-aos="zoom-in" v-if="showGurlushyk">
               <div class="block_logo block_logo-border">
-              <h3>Dost Gurlushyk, Sowda,<br>
-                Onumchilik XO</h3>
+              <h4>Dost Gurlushyk, Sowda,<br>
+                Onumchilik XO</h4>
             </div>
               <div class="block_li block_li-border">
                 <li>Project: construction of the "Akhal City" water treatment plant</li>
@@ -297,9 +297,39 @@ export default defineComponent({
 </script>
 
 <style scoped>
-h3 {
-  font-size: 30px;
+li {
+  font-size: 16px;
 }
+
+h3 {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0 20%;
+  text-align: center;
+  line-height: 1.0em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1450px) {
+  h3 {
+    width: 100%;
+
+  }
+}
+@media screen and (max-width: 1450px) {
+  h3 {
+    font-size: 40px;
+
+  }
+}
+@media screen and (max-width: 950px) {
+  h3 {
+    margin: 0 20px;
+    font-size: 30px;
+
+  }
+}
+
 .btn-name {
   margin: 0px;
   font-size: 16px;
@@ -309,6 +339,7 @@ h3 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
 }
 .block_info{
   display: flex;
@@ -391,38 +422,7 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-.main-block h3{
-  font-size: 60px;
-  font-weight: bold;
-  margin: 0 20%;
-  text-align: center;
-  line-height: 1.0em;
-}
-@media screen and (max-width: 1450px) {
-  .main-block h3 {
-    width: 100%;
-    font-size: 40px;
 
-  }
-}
-@media screen and (max-width: 1450px) {
-  .main-block h3 {
-    font-size: 40px;
-
-  }
-}
-@media screen and (max-width: 950px) {
-  .main-block h3 {
-    font-size: 30px;
-
-  }
-}
-@media screen and (max-width: 700px) {
-  .main-block h3 {
-    font-size: 20px;
-
-  }
-}
 .project {
   display: flex;
   justify-content: center;
