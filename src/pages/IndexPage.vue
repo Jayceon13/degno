@@ -181,6 +181,11 @@ h2 {
     font-size: 28px;
 }
 }
+@media screen and (max-height: 820px) {
+  h2{
+    font-size: 40px;
+  }
+}
 @media screen and (max-height: 620px) {
   h2{
     font-size: 28px;
