@@ -18,7 +18,9 @@
             <img alt="" class="block_logo-img" src="img/ProjectsLogoTurkGaz.jpeg">
           </div>
         </div>
+
         <div class="project_page-block--item">
+
           <div class="block_items">
             <li>Project:  Booster compressor station "Malay" Shop A & B / total capacity 90 million m3 per day.</li>
 
@@ -176,6 +178,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.content_info-name{
+  width: 400px;
+  justify-content: space-between;
+}
 h3 {
   font-size: 30px;
 }

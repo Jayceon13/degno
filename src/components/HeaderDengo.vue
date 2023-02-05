@@ -176,8 +176,24 @@ export default {
   position: fixed;
   display: flex;
   width: 100%;
-  margin-left: 24px;
+  margin-left: 0;
   align-self: flex-start;
+}
+@media screen and (max-width: 500px){
+  .home-btn{
+    margin-left: -22px;
+    margin-top: -20px;
+  }
+  .hamburger{
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 500px){
+  .hamburger{
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 }
   .header{
     position: absolute;
@@ -224,8 +240,6 @@ export default {
 
   .hamburger {
     position: fixed;
-    margin-top: 20px;
-    margin-right: 20px;
     align-self: flex-end;
     display: flex;
     align-items: center;
