@@ -1,5 +1,5 @@
 <template>
-  <q-page class="">
+  <q-page>
         <video class="bgvdo" poster="/img/mainposter.jpg" playsinline autoplay loop muted>
           <source type="video/mp4" src="/video/mainpage.mp4">
         </video>
