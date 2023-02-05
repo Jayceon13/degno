@@ -13,19 +13,19 @@
           data-aos="zoom-in"
           data-aos-easing="ease"
           data-aos-delay="500">We offer a
-          range of services, including consulting,<br>
-          agency and project management, to help clients and<br>
+          range of services, including consulting,
+          agency and project management, to help clients and
           partners grow their businesses effectively</h2>
       </div>
       <div class="second-block">
         <img src="/img/services2.jpg"
              data-aos="fade-right">
         <div class="second-block-text" data-aos="fade-left">
-          <p style="font-weight: bold; margin-bottom: 40px">
+          <h6 style="font-weight: bold; margin-bottom: 40px">
             Our highly skilled team has global expertise and can support
             the successful execution of projects, regardless of their
             complexity
-          </p>
+          </h6>
           <p>Our company, DEGNO, is adaptable in negotiations and provides expert
             guidance in business decision making. With a presence in <b>Dubai</b>, <b>Moscow</b>,
             <b>Istanbul</b>, and <b>Ashgabat</b>, we offer comprehensive regional coverage</p>
@@ -35,8 +35,8 @@
       <div class="third-block">
         <div class="third-block-text"
              data-aos="fade-right">
-            <p style="font-weight: bold; padding-left: 10px; padding-right: 10px">Our key element is the high level of support
-              towards the client,<br> that is why we offer:</p>
+          <h6>Our key element is the high level of support
+            towards the client, that is why we offer:</h6>
           <div class="third-block-text-li">
             <li>Meetings & negotiations</li>
             <li>Supplier & contractor search</li>
@@ -51,7 +51,7 @@
         <div class="third-block-img" data-aos="fade-left">
           <img src="/img/services3.jpg">
         </div>
-        </div>
+      </div>
       <div class="fourth-block">
         <h4
           data-aos="zoom-in"
@@ -74,6 +74,17 @@ export default defineComponent({
 p {
   font-size: 20px;
 }
+h6 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin-top: 0;
+}
+@media screen and (max-width: 720px){
+  h6{
+    font-size: 24px;
+  }
+}
 .main-block{
   width: 100vw;
   height: 100vh;
@@ -82,13 +93,17 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
 }
 h2 {
   font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2em;
 }
 @media screen and (max-width: 985px){
   h2{
-    line-height: 1.3em;
+    font-size: 24px;
+    line-height: 1.2em;
   }
 }
 .main-block h3{
@@ -96,12 +111,17 @@ h2 {
   font-weight: bold;
 }
 .fourth-block{
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 0 60px;
 }
 .fourth-block h4{
   text-align: center;
-  font-style: italic;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+@media screen and (max-width: 720px){
+  .fourth-block h4{
+    text-align: left;
+  }
 }
 @media screen and (max-width: 985px){
   .main-block h3{
@@ -121,12 +141,13 @@ h2 {
     background-position: 30%;
   }
   .main-block h3{
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
 
   }
   .fourth-block h4{
-    font-size: 30px;
+    font-size: 24px;
+
   }
 }
 
@@ -138,8 +159,19 @@ h2 {
   flex-flow: column;
 }
 .first-block{
-  padding: 30px 60px 30px 60px;
+  padding: 30px 300px;
   text-align: center;
+}
+@media screen and (max-width: 1000px){
+  .first-block{
+    padding: 30px 150px;
+  }
+}
+@media screen and (max-width: 720px){
+  .first-block{
+    padding: 30px 60px;
+    text-align: left;
+  }
 }
 .first-block p{
   font-weight: bold;
@@ -157,7 +189,7 @@ h2 {
 
 @media (max-width: 736px) {
   .services-page{
-    text-align: center;
+    text-align: left;
   }
 }
 .second-block{
@@ -172,7 +204,7 @@ h2 {
 .third-block-text{
   flex-flow: column;
   display: flex;
-  padding: 30px 60px 30px 60px;
+  padding: 40px 60px;
   width: 50%;
   align-self: center;
 }
@@ -188,7 +220,7 @@ h2 {
 @media (max-width: 720px) {
   .second-block{
     flex-flow: column;
-    text-align: center;
+    text-align: left;
   }
   .second-block img {
     width: 100%;
@@ -198,7 +230,7 @@ h2 {
   }
   .third-block{
     flex-flow: column-reverse;
-    text-align: center;
+    text-align: left;
   }
   .third-block-img{
     width: 100%
@@ -209,6 +241,7 @@ h2 {
 }
 @media (min-width: 720px){
   .second-block img{
+    height: 100%;
     width: 50%;
   }
   .third-block text{
@@ -224,7 +257,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  padding: 30px 60px 30px 60px;
+  padding: 30px 60px;
 }
 .second-block-text p{
   font-size: 20px;
@@ -264,3 +297,4 @@ h2 {
   }
 }
 </style>
+
