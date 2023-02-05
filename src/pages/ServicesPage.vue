@@ -96,8 +96,8 @@ h2 {
   font-weight: bold;
 }
 .fourth-block{
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .fourth-block h4{
   text-align: center;
@@ -138,7 +138,7 @@ h2 {
   flex-flow: column;
 }
 .first-block{
-  padding: 30px;
+  padding: 30px 60px 30px 60px;
   text-align: center;
 }
 .first-block p{
@@ -172,7 +172,7 @@ h2 {
 .third-block-text{
   flex-flow: column;
   display: flex;
-  padding: 40px;
+  padding: 30px 60px 30px 60px;
   width: 50%;
   align-self: center;
 }
@@ -224,7 +224,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  padding: 30px;
+  padding: 30px 60px 30px 60px;
 }
 .second-block-text p{
   font-size: 20px;
