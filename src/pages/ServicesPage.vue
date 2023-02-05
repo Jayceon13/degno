@@ -239,6 +239,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+
   padding: 30px 60px;
 }
 .second-block-text p{
