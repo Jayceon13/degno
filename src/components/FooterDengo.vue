@@ -149,6 +149,11 @@ export default {
     height: 218px;
   }
 }
+@media screen and (max-width: 390px) {
+  .footer_block-logo {
+    height: 239px;
+  }
+}
 @media screen and (min-width: 920px) {
   .footer_block-item {
     display: flex;
