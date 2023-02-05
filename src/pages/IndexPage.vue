@@ -16,7 +16,7 @@
         <div class="index_item-block">
           <div class="block_one">
             <div class="block_one-item " data-aos="fade-right">
-              <h4 >Our mission is to ensure and maintain sustainable growth for both our Clients and our Partners</h4>
+              <h6 >Our mission is to ensure and maintain sustainable growth for both our Clients and our Partners</h6>
               <h3>About Us:</h3>
               <p>We are in a team of expert consultants with over twenty years of experience, providing our
                 Partners with the most competitive agency and consulting services, focused on sustainable
@@ -69,7 +69,7 @@
                   <img alt="" class="part-img" src="/img/ref1.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref2.png">
+                  <img style="scale: 3;}" alt="" class="part-img" src="/img/ref2.png">
                 </div>
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref3.png">
@@ -85,7 +85,7 @@
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref6.png">
                 </div>
-                <div class="block_three-item--logo_img">
+                <div style="scale: 1.3;" class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref7.png">
                 </div>
                 <div class="block_three-item--logo_img">
@@ -203,6 +203,20 @@ h5 {
 @media screen and (max-width: 700px) {
   h5{
     font-size: 30px;
+  }
+}
+h6 {
+  font-size: 40px;
+  font-style: italic;
+  line-height: 1.5;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 700px) {
+  h6{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: normal;
   }
 }
 
