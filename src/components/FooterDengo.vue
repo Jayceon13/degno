@@ -153,7 +153,7 @@ export default {
     display: flex;
   }
   .footer-logo {
-    height: 100%;
+    height: 130px;
   }
   .footer_block-item--mail{
 
