@@ -188,7 +188,7 @@ h3 {
   font-weight: 900;
 }
 h4 {
-  margin: 0 0 20px;
+  margin: 0 20px 20px;
 }
 @media screen and (max-width: 700px) {
   h4{
@@ -218,16 +218,15 @@ h5 {
 }
 @media screen and (max-width: 1300px) {
   .title-name{
-    padding: 200px 70px;
+    padding: 200px 30px;
   }
 }
 @media screen and (max-height: 650px) {
-  .title-name{
+  .title-name {
     justify-content: flex-end;
-    padding: 30px 70px;
+    padding: 30px 30px;
   }
 }
-
 .arrow-btn{
   display: flex;
 }
@@ -388,7 +387,12 @@ h5 {
 @media screen and (max-width: 700px) {
   .block_three-item--logo_img {
     width: 50%;
-    padding: 50px;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .block_three-item--logo_img {
+    padding: 20px;
   }
 }
 
