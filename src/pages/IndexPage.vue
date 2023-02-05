@@ -129,6 +129,9 @@ export default defineComponent({
   bottom: 0;
   z-index: -1;
 }
+.block_three-item--info h4{
+  font-size: 20px;
+}
 @media screen and (max-width: 700px) {
   .bgvdo {
     width: 100%;
@@ -188,10 +191,12 @@ h3 {
   font-weight: 900;
 }
 h4 {
+  justify-content: center;
   margin: 0 20px 20px;
 }
 @media screen and (max-width: 700px) {
   h4{
+    justify-content: center;
     font-size: 20px;
   }
 }
@@ -371,7 +376,7 @@ h6 {
   align-items: center;
 }
 .block_three-item--info{
-  text-align: center;
+  text-align: left;
   padding-bottom: 60px;
 }
 @media screen and (max-width: 700px) {
