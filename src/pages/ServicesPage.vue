@@ -13,8 +13,8 @@
           data-aos="zoom-in"
           data-aos-easing="ease"
           data-aos-delay="500">We offer a
-          range of services, including consulting,<br>
-          agency and project management, to help clients and<br>
+          range of services, including consulting,
+          agency and project management, to help clients and
           partners grow their businesses effectively</h2>
       </div>
       <div class="second-block">
@@ -82,13 +82,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
 }
 h2 {
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
 }
 @media screen and (max-width: 985px){
   h2{
-    line-height: 1.3em;
+    line-height: 1.2em;
   }
 }
 .main-block h3{
@@ -96,12 +99,18 @@ h2 {
   font-weight: bold;
 }
 .fourth-block{
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 0 60px;
 }
 .fourth-block h4{
   text-align: center;
   font-style: italic;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+@media screen and (max-width: 720px){
+  .fourth-block h4{
+    text-align: left;
+  }
 }
 @media screen and (max-width: 985px){
   .main-block h3{
@@ -126,7 +135,8 @@ h2 {
 
   }
   .fourth-block h4{
-    font-size: 30px;
+    font-size: 24px;
+
   }
 }
 
@@ -138,8 +148,13 @@ h2 {
   flex-flow: column;
 }
 .first-block{
-  padding: 30px 60px 30px 60px;
+  padding: 30px 60px;
   text-align: center;
+}
+@media screen and (max-width: 720px){
+  .first-block{
+    text-align: left;
+  }
 }
 .first-block p{
   font-weight: bold;
@@ -157,7 +172,7 @@ h2 {
 
 @media (max-width: 736px) {
   .services-page{
-    text-align: center;
+    text-align: left;
   }
 }
 .second-block{
@@ -172,7 +187,7 @@ h2 {
 .third-block-text{
   flex-flow: column;
   display: flex;
-  padding: 30px 60px 30px 60px;
+  padding: 40px 60px;
   width: 50%;
   align-self: center;
 }
@@ -188,7 +203,7 @@ h2 {
 @media (max-width: 720px) {
   .second-block{
     flex-flow: column;
-    text-align: center;
+    text-align: left;
   }
   .second-block img {
     width: 100%;
@@ -198,7 +213,7 @@ h2 {
   }
   .third-block{
     flex-flow: column-reverse;
-    text-align: center;
+    text-align: left;
   }
   .third-block-img{
     width: 100%
@@ -224,7 +239,8 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  padding: 30px 60px 30px 60px;
+
+  padding: 30px 60px;
 }
 .second-block-text p{
   font-size: 20px;
