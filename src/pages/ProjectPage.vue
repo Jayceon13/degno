@@ -139,9 +139,19 @@
             <li>Partners/Manufacturers: KSB Group</li>
           </div>
           <div class="block_items">
-            <div class="block_logo">
-              <h3>Dost Gurlushyk, Sowda,<br>
-                Onumchilik XO</h3>
+
+            <q-btn class="block_name block_border-btn" data-aos="fade-right" @click="blockGurlushyk">
+              <div class="btn-content">
+                <p class="btn-name"> Dost Gurlushyk, Sowda, Onumchilik XO </p>
+                <img :class="!showGurlushyk ? 'rotate-animation' : 'rotate-animation-obj'" src="/icons/Arrowblack.svg">
+              </div>
+
+            </q-btn>
+            <div class="block_info" data-aos="zoom-in" v-if="showGurlushyk">
+              <div class="block_logo block_logo-border">
+              <h4>Dost Gurlushyk, Sowda,<br>
+                Onumchilik XO</h4>
+
             </div>
             <li>Project: construction of the "Akhal City" water treatment plant</li>
 
@@ -176,41 +186,86 @@ export default defineComponent({
 </script>
 
 <style scoped>
-h3 {
-  font-size: 30px;
+li {
+  font-size: 16px;
 }
+
+h3 {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0 20%;
+  text-align: center;
+  line-height: 1.0em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1450px) {
+  h3 {
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  h3 {
+    font-size: 40px;
+
+  }
+}
+@media screen and (max-width: 950px) {
+  h3 {
+    margin: 0 20px;
+    font-size: 30px;
+
+  }
+}
+
+.btn-name {
+  margin: 0px;
+  font-size: 16px;
+  text-align: center;
+}
+.btn-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.block_info{
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  .block_info {
+    flex-direction: column;
+
+  }
+}
+
+.block_name {
+  width: 100%;
+  z-index: 1;
+}
+
+.block_li{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 66.6%;
+}
+@media screen and (max-width: 1000px) {
+  .block_li {
+    width: 100%;
+
+  }
+}
+
 
 .parallax{
   z-index: -1;
   width: 100vw;
   height: 100vh;
 }
-.arrow-block{
-  height: 40px;
-  position: relative;
-}
-.arrow-block img{
-  height: 17px;
-  position: absolute;
-  bottom: 0;
-  animation: moveImage 3s linear infinite;
-}
-@keyframes moveImage{
-  0%{
-    opacity: 0;
-    bottom: 40px;
-  }
-  25%{
-    opacity: 1;
-  }
-  75%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    bottom: 0;
-  }
-}
+
 .project {
   display: flex;
   justify-content: center;

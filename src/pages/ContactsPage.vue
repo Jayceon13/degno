@@ -51,6 +51,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+p {
+  font-size: 20px;
+}
 .parallax{
   z-index: -1;
   width: 100vw;

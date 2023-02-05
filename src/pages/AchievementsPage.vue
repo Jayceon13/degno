@@ -35,6 +35,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
 .achievements-page{
   background: white;
 }
@@ -50,7 +51,7 @@ export default defineComponent({
 .main-block h3{
   font-weight: bold;
   font-size: 70px;
-  margin-top: 300px;
+
 }
 @media screen and (max-width: 985px){
   .main-block h3{
@@ -65,7 +66,7 @@ export default defineComponent({
     height: 600px;
   }
   .main-block h3{
-    margin-top: 200px;
+
     font-size: 40px;
   }
   .main-block{
@@ -100,7 +101,7 @@ export default defineComponent({
   color: #00274d;
 }
 .block-achieve-2 p,.block-achieve-1 p{
-  font-size: 16px;
+  font-size: 20px;
 }
 @media (max-width: 736px) {
   .achievements-page{
