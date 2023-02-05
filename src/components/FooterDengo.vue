@@ -5,7 +5,7 @@
       <div class="first-block">
       <div class="footer_block-logo">
         <img class="footer-logo" src="/icons/logoBlack.svg" v-if="$route.path == '/'">
-        <img class="footer-logo" src="/icons/logoWhite.svg" v-if="$route.path == '/services' || $route.path == '/projects' || $route.path == '/achievements'">
+        <img class="footer-logo-black" src="/icons/logoWhite.svg" v-if="$route.path == '/services' || $route.path == '/projects' || $route.path == '/achievements'">
       </div>
       <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
         <div class="block-dubai">
@@ -98,11 +98,19 @@ export default {
     display: flex;
     flex-flow: column;
   }
+  .footer_block-black{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
   .main-block{
     display: flex;
     width: 100%;
   }
   .footer_block-item{
+    text-align: center;
+  }
+  .footer_block-item-black{
     text-align: center;
   }
   .footer_block-logo {
@@ -117,6 +125,13 @@ export default {
   }
   .first-block{
     flex-flow: column;
+    width: 50%;
+  }
+  .second-block{
+    width: 50%;
+  }
+  .footer-logo-black{
+    width: 100%;
   }
 }
 @media screen and (max-width: 427px) {
@@ -124,6 +139,9 @@ export default {
     display: flex;
     align-items: center;
     height: 218px;
+  }
+  .footer-logo-black{
+    width: 100%;
   }
 }
 @media screen and (max-width: 427px) {
@@ -135,7 +153,13 @@ export default {
   .footer_block-item {
     display: flex;
   }
+  .footer_block-item-black {
+    display: flex;
+  }
   .footer_block{
+    display: flex;
+  }
+  .footer_block-black{
     display: flex;
   }
   .main-block{
@@ -155,8 +179,13 @@ export default {
   .footer-logo {
     height: 130px;
   }
+  .footer-logo-black {
+    height: 130px;
+  }
   .footer_block-item--mail{
-
+    width: min-content;
+  }
+  .footer_block-item--mail-black{
     width: min-content;
   }
 }
@@ -171,6 +200,10 @@ export default {
   padding: 30px;
 }
 .footer_block-item--mail{
+  text-align: center;
+  padding: 30px;
+}
+.footer_block-item--mail-black{
   text-align: center;
   padding: 30px;
 }
