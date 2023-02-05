@@ -221,7 +221,7 @@ h5 {
     padding: 200px 70px;
   }
 }
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 650px) {
   .title-name{
     justify-content: flex-end;
     padding: 30px 70px;
