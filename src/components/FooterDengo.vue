@@ -144,16 +144,12 @@ export default {
     width: 100%;
   }
 }
-@media screen and (max-width: 427px) {
+@media screen and (max-width: 429px) {
   .footer_block-logo {
     height: 218px;
   }
 }
-@media screen and (max-width: 390px) {
-  .footer_block-logo {
-    height: 239px;
-  }
-}
+
 @media screen and (min-width: 920px) {
   .footer_block-item {
     display: flex;
