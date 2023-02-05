@@ -29,7 +29,7 @@
       </div>
       <div :class="['footer_block-item--mail', { 'footer_block-item--mail-black': isBlack }]">
         <p style="font-weight: bold">Contact Us</p>
-        <p>Email:<a href="mailto: info@sman-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@sman-group.com></a></p>
+        <p>Email:<a href="mailto: info@degno-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@degno-group.com></a></p>
       </div>
   </div>
     <div class="block-rights">
