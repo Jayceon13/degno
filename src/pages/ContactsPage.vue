@@ -6,7 +6,7 @@
           <source type="video/mp4" src="/video/videobgInd.mp4">
         </video>
       </template>
-      <p  style="color: white">Welcome to Sman Group
+      <p  style="color: white">Welcome to Degno Group
         We are leading oil & gas and chemical industry specialists</p>
       <div class="arrow-block">
         <img alt="" src="/icons/Arrow.svg"/>

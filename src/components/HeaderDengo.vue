@@ -8,6 +8,17 @@
         <img src="/icons/fireWhite.svg" alt="" style="width: 80px" >
       </btn>
     </div>
+    <div class="change-language">
+      <div class="button-language" @click="changeLang">Languages</div>
+      <div class="choise-language" v-if="showLang">
+        <div class="rus-language" @click="$router.push('/ru')">
+          RU
+        </div>
+        <div class="eng-language" @click="$router.push('/')">
+          EN
+        </div>
+      </div>
+    </div>
     <div class="hamburger hamburger--elastic">
       <div class="hamburger-box" @click="blockBurgerMenu">
         <div class="hamburger-inner"></div>
@@ -134,10 +145,12 @@ export default {
     const showList2 = ref(false)
     const showList3 = ref(false)
     const showBurgerMenu = ref(false)
+    const showLang = ref(false)
     return {
       showList1,
       showList2,
       showList3,
+      showLang,
       blockShowList() {
         showList2.value = !showList2.value
       },
@@ -166,12 +179,26 @@ export default {
           this.showList3 = true;
         }
       },
+      changeLang() {
+        if (window.innerWidth > 720) {
+          showLang.value = !showLang.value;
+        }
+      },
     }
   }
 }
 </script>
 
 <style scoped>
+.change-language{
+  color: white;
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  align-self: flex-end;
+  margin: 12px 90px 0 0;
+  cursor: pointer;
+}
 .home-btn{
   position: fixed;
   display: flex;
