@@ -5,7 +5,7 @@
           data-aos="zoom-in"
           data-aos-easing="ease"
           data-aos-delay="500">
-        RusThe showcase of grand projects executed by the Dengo team</h3>
+        КРУПНЫЕ ПРОЕКТЫ, РЕАЛИЗОВАННЫЕ КОМАНДОЙ DENGO</h3>
     </div>
     <div class="project">
       <div class="project_page">
@@ -23,41 +23,41 @@
                 </div>
                 <div class="block_li">
                   <div class="block_li-one block_li-border">
-                    <li>Project:  Booster compressor station "Malay" Shop A & B / total capacity 90 million m3 per day.</li>
+                    <li>Проект: дожимная компрессорная станция "Малай" Цех A & Б / общая производительность 90 млн. м3 в день. </li>
 
-                    <li>Products:  ball valves / gate valves / valves / pumps / fittings / flanges.</li>
+                    <li>Продукция: шаровые краны / задвижки / клапаны / насосы / фитинги / фланцы.</li>
 
-                    <li>Partners/Manufacturers: RMA Kehl GmbH & Co. KG. / KSB Group / Allied International S.r.l.</li>
+                    <li>Партнеры/Производители: RMA Kehl GmbH & Co. KG. / KSB Group / Allied International S.r.l.</li>
 
-                    <li>Project: main gas pipeline "East-West" with a length of 818 km</li>
+                    <li>Проект: магистральный газопровод «Восток-Запад» протяженностью 818 км</li>
 
-                    <li>Products: 14 sets of pig launcher and receiver</li>
+                    <li>Продукция: 14 комплектов устройств камер приема и запуска</li>
 
-                    <li>Partners/Manufacturers: RMA Kehl GmbH & Co. KG.</li>
+                    <li>Партнеры/Производители: RMA Kehl GmbH & Co. KG. </li>
 
-                    <li>Project: gas pipeline «Looping»</li>
+                    <li>Проект: газопровод «Лупинг»</li>
 
-                    <li>Products: 2 sets of pig launcher and receiver</li>
+                    <li>Продукция: 2 комплекта устройств камер приема и запуска</li>
 
-                    <li>Partners/Manufacturers: RMA Kehl GmbH & Co KG.</li></div>
+                    <li>Партнеры/Производители: RMA Kehl GmbH & Co. KG. </li></div>
                   <div class="block_li-two block_li-border">
-                    <li> Project: Expansion of the Bagtyyarlyk-1 compressor station with a total capacity of 60 million m3 per day</li>
+                    <li> Проект: Расширение компрессорной станции "Багтыярлык-1" с общей производительностью 60 млн. м3 в день </li>
 
-                    <li>Products:  ball valves / gate valves / valves / fittings / flanges</li>
+                    <li>Продукция: шаровые краны / задвижки / клапаны / фитинги / фланцы</li>
 
-                    <li>Partners/Manufacturers: RMA Kehl GmbH & Co. KG. / Allied International S.r.l.</li>
+                    <li>Партнеры/Производители: RMA Kehl GmbH & Co. KG. / Allied International S.r.l.</li>
 
-                    <li>Project: own needs</li>
+                    <li>Проект: производственные нужды</li>
 
-                    <li>Products: ball valves</li>
+                    <li>Продукция: шаровые краны</li>
 
-                    <li>Partners/Manufacturers: RMA Kehl GmbH & Co. KG.</li>
+                    <li>Партнеры/Производители: RMA Kehl GmbH & Co. KG.</li>
 
-                    <li>Project:  own needs</li>
+                    <li>Проект: производственные нужды</li>
 
-                    <li>Products: check valves</li>
+                    <li>Продукция: обратные клапаны</li>
 
-                    <li>Partners/Manufacturers: RMA Kehl GmbH & Co. KG.</li>
+                    <li>Партнеры/Производители: RMA Kehl GmbH & Co. KG.</li>
                   </div>
 
                 </div>
@@ -82,11 +82,13 @@
                   <img alt="" class="block_logo-img" src="/img/ProjectsLogoPetrofac.jpeg">
                 </div>
                 <div class="block_li block_li-border">
-                  <li>Project:  gas pipeline at the “Galkynysh” field</li>
+                  <li>Проект: газопровод на месторождении «Галкыныш»</li>
 
-                  <li>Products: 2 sets of pig launcher and receiver</li>
+                  <li>Продукция: 2 комплекта устройств камер приема и
 
-                  <li>Partners/Manufacturers: RMA Kehl GmbH & Co. KG.</li>
+                    запуска</li>
+
+                  <li>Партнеры/Производители: RMA Kehl GmbH & Co. KG. </li>
                 </div>
               </div>
             </div>
@@ -104,13 +106,13 @@
                   <img alt="" class="block_logo-img" src="/img/ProjectsLogoMitsubishi.jpeg">
                 </div>
                 <div class="block_li block_li-border">
-                  <li>Project:  construction of the “Garabogazkarbamid” plant</li>
+                  <li>Проект: строительство завода «Гарабогазкарбамид»</li>
 
-                  <li>End User: SC «Turkmenhimiya»</li>
+                  <li>Конечный пользователь: ГК «Туркменхимия»</li>
 
-                  <li>Products:  centrifugal pumps</li>
+                  <li>Продукция: центробежные насосы </li>
 
-                  <li>Partners/Manufacturers: KSB Group</li>
+                  <li>Партнеры/Производители: KSB Group</li>
                 </div>
               </div>
             </div>
@@ -138,13 +140,13 @@
                   <img alt="" class="block_logo-img" src="/img/ProjectsLogoToyo.jpeg">
                 </div>
                 <div class="block_li block_li-border">
-                  <li>Project:  construction of the "Kiyanly" gas chemical complex</li>
+                  <li>Проект: строительство газохимического комплекса «Киянлы»</li>
 
-                  <li>End user: SC «Turkmengaz”</li>
+                  <li>Конечный пользователь: ГК «Туркменгаз»</li>
 
-                  <li>Products:  centrifugal pumps</li>
+                  <li>Продукция: центробежные насосы </li>
 
-                  <li>Partners/Manufacturers: KSB Group</li>
+                  <li>Партнеры/Производители: KSB Group</li>
                 </div>
               </div>
 
@@ -162,13 +164,13 @@
                   <img alt="" class="block_logo-img" src="/img/ProjectsLogoBouygues.jpeg">
                 </div>
                 <div class="block_li block_li-border">
-                  <li> Project:  construction of the "Arkadag" hotel</li>
+                  <li> Проект: строительство отеля «Аркадаг»</li>
 
-                  <li>End User: Ashgabat city hall</li>
+                  <li>Конечный пользователь: Администрация города Ашхабад</li>
 
-                  <li>Products:  centrifugal pumps</li>
+                  <li>Продукция: центробежные насосы</li>
 
-                  <li>Partners/Manufacturers: KSB Group</li>
+                  <li>Партнеры/Производители: KSB Group</li>
                 </div>
               </div>
 
@@ -195,13 +197,13 @@
                   <img alt="" class="block_logo-img" src="/img/ProjectsLogoRonesans.jpeg">
                 </div>
                 <div class="block_li block_li-border">
-                  <li>Project: construction of the Garagum Hotel</li>
+                  <li>Проект: строительство отеля «Гарагум»</li>
 
-                  <li>End User:  Ashgabat city hall</li>
+                  <li>Конечный по льзователь: Администрация города Ашхабад</li>
 
-                  <li>Products:  centrifugal pumps</li>
+                  <li>Продукция: центробежные насосы</li>
 
-                  <li>Partners/Manufacturers: KSB Group</li>
+                  <li>Партнеры/Производители: KSB Group</li>
                 </div>
               </div>
 
@@ -220,21 +222,21 @@
                     Onumchilik XO</h4>
                 </div>
                 <div class="block_li block_li-border">
-                  <li>Project: construction of the "Akhal City" water treatment plant</li>
+                  <li>Проект: строительство водоочистного сооружения для «Ахал Сити»</li>
 
-                  <li>End User:  Akhal region hall</li>
+                  <li>Конечный пользователь: Администрация Ахалского велаята </li>
 
-                  <li>Products:  centrifugal pumps</li>
+                  <li>Продукция: центробежные насосы</li>
 
-                  <li>Partners/Manufacturers: KSB Group</li>
+                  <li>Партнеры/Производители: KSB Group</li>
 
-                  <li>Project: construction of the Kaka irrigation pumping station</li>
+                  <li>Проект: строительство ирригационной насосной станции «Кака»</li>
 
-                  <li>End User:  Akhal region hall</li>
+                  <li>Конечный пользователь: Администрация Ахалского велаята </li>
 
-                  <li>Products:  centrifugal pumps</li>
+                  <li>Продукция: центробежные насосы</li>
 
-                  <li>Partners/Manufacturers: KSB Group</li>
+                  <li>Партнеры/Производители: KSB Group</li>
                 </div></div>
 
             </div>

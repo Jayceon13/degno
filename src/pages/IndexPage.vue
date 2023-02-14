@@ -86,10 +86,10 @@
                   <img alt="" class="part-img" src="/img/ref3.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref4.png">
+                  <img style="scale: 1.4" alt="" class="part-img" src="/img/ref4.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref5.png">
+                  <img style="scale: 1.2" alt="" class="part-img" src="/img/ref5.png">
                 </div>
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref6.png">
@@ -209,6 +209,7 @@ h4 {
   h4{
     justify-content: center;
     font-size: 20px;
+    margin: 0;
   }
 }
 h5 {
@@ -378,7 +379,7 @@ h6 {
   background-color: black;
   color: white;
   min-height: 100vh;
-  justify-content: center;
+  justify-content: space-between;
   }
 .block_three-item{
   display: flex;
@@ -388,12 +389,14 @@ h6 {
 .block_three-item--info{
   display: flex;
   justify-content: space-between;
-  padding-bottom: 60px;
+  padding: 60px 100px;
   font-weight: lighter;
 }
 @media screen and (max-width: 700px) {
   .block_three-item--info {
-    padding-bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 60px;
   }
 }
 
@@ -402,12 +405,30 @@ h6 {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 700px) {
+  .three_block-one {
+    width: 100%;
+  }
+}
 .three_block-two {
   width: 30%;
-  margin-right: 20px;
+  margin-right: 100px;
 }
+@media screen and (max-width: 1300px) {
+  .three_block-two {
+    margin-right: 30px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .three_block-two {
+    width: 100%;
+    margin-bottom: 40px;
 
+  }
+}
 .three_block-one--logo {
+  margin: 30px 0;
   width: 20%;
 }
 .block_three-item--logo{
@@ -426,7 +447,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 260px;
   padding: 50px 50px;
   border: solid 1px white;
 }

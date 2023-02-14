@@ -1,36 +1,34 @@
 <template>
   <q-page class="">
-        <video class="bgvdo" poster="/img/mainposter.jpg" playsinline autoplay loop muted>
-          <source type="video/mp4" src="/video/mainpage.mp4">
-        </video>
-      <div class="title-name"
-           data-aos="zoom-in"
-           data-aos-easing="ease"
-           data-aos-delay="500">
-      <h1>Добро пожаловать в Degno Group</h1>
-      <h2>We provide tailored solutions for our clients to meet
-        their unique needs, with a focus on quality and reliability.</h2>
-      </div>
+    <video class="bgvdo" poster="/img/mainposter.jpg" playsinline autoplay loop muted>
+      <source type="video/mp4" src="/video/mainpage.mp4">
+    </video>
+    <div class="title-name"
+         data-aos="zoom-in"
+         data-aos-easing="ease"
+         data-aos-delay="500">
+      <h1>Добро пожаловать в Dengno Group</h1>
+      <h2>Мы являемся ведущими специалистами в нефтегазовой и химической промышленности</h2>
+    </div>
     <div class="index">
       <div class="index_item">
         <div class="index_item-block">
           <div class="block_one">
             <div class="block_one-item " data-aos="fade-right">
-              <h6 >Our mission is to ensure and maintain sustainable growth for both our Clients and our Partners</h6>
-              <h3>About Us:</h3>
-              <p>We are in a team of expert consultants with over twenty years of experience, providing our
-                Partners with the most competitive agency and consulting services, focused on sustainable
-                business development in the Chemical and Oil &amp; Gas industry.</p>
+              <h6> Наша миссия — обеспечить и поддерживать устойчивый рост как для наших клиентов, так и для наших партнеров.</h6>
+              <h3>О нас: </h3>
+              <p>Мы команда опытных консультантов с более чем двадцатилетним опытом,
+                предоставляющая нашим партнерам наиболее
+                конкурентоспособные агентские и консалтинговые услуги.</p>
             </div>
             <div class="block_one-item-2" data-aos="fade-left">
-              <h3>Services:</h3>
-              <p> "Our services include business development,
-                support, and project management, all focused
-                on driving growth and success in the chemical and oil and gas industry."</p>
+              <h3>Наши Услуги:</h3>
+              <p> Мы предлагаем ряд услуг, включая консалтинг и управление проектами,
+                чтобы помочь клиентам и партнерам эффективно развивать свой бизнес</p>
               <q-btn
                 @click="$router.push('/services')"
                 class="btn-with-arrow" unelevated rounded color="black" >
-                OUR SERVICES   <img alt="" class="arrow-btn" src="/icons/ArrowBtn.svg">
+                НАШИ УСЛУГИ   <img alt="" class="arrow-btn" src="/icons/ArrowBtn.svg">
               </q-btn>
             </div>
           </div>
@@ -43,7 +41,7 @@
               <h5
                 data-aos="zoom-in"
                 data-aos-easing="ease"
-                data-aos-delay="500">Our Partners</h5>
+                data-aos-delay="500">НАШИ ПАРТНЕРЫ</h5>
             </div>
           </div>
         </div>
@@ -51,14 +49,25 @@
         <div class="index_item-block">
           <div class="block_three">
             <div class="block_three-item">
+
               <div class="block_three-item--info"
                    data-aos="zoom-in"
                    data-aos-easing="ease"
                    data-aos-delay="500">
-                <h4>We are an official representative developing business for leading
-                  manufacturers and traders globally in the Turkmenistan market </h4>
+                <div class="three_block-one">
+                  <div class="three_block-one--info">
+                    <p>МЫ РАБОТАЕМ С ПЕРВОКЛАССНЫМИ КЛИЕНТАМИ</p>
+                  </div>
+                  <div class="three_block-one--logo">
+                    <img style="width: 100%" src="/icons/Union.png">
+                  </div>
+                </div>
+                <div class="three_block-two">
+                  <h4>Благодаря качественным продуктам и услугам наших партнеров, за долгие
+                    годы сотрудничества команда DEGNO заслужила доверие клиентов на рынке </h4>
+                </div>
               </div>
-              </div>
+            </div>
             <div class="block_three-item"
                  data-aos="zoom-in"
                  data-aos-easing="ease"
@@ -69,28 +78,23 @@
                   <img alt="" class="part-img" src="/img/ref1.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img style="scale: 3;}" alt="" class="part-img" src="/img/ref2.png">
+                  <img alt="" class="part-img" src="/img/ref2.png">
                 </div>
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref3.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref4.png">
+                  <img style="scale: 1.4" alt="" class="part-img" src="/img/ref4.png">
                 </div>
-              </div>
-              <div class="block_three-item--logo">
                 <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref5.png">
+                  <img style="scale: 1.2" alt="" class="part-img" src="/img/ref5.png">
                 </div>
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref6.png">
                 </div>
-                <div style="scale: 1.3;" class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref7.png">
-                </div>
-                <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref8.png">
-                </div>
+              </div>
+              <div class="block_three-item--logo">
+
               </div>
 
 
@@ -116,7 +120,7 @@ export default defineComponent({
 <style scoped>
 .btn-with-arrow{
   display: flex;
-  width: 156px;
+  width: 180px;
 }
 .bgvdo{
   height: 100vh;
@@ -144,7 +148,7 @@ p {
 h1 {
   margin: 0 0 20px;
   font-size: 70px;
-  font-weight: lighter;
+  font-weight: 400;
   font-style: italic;
 }
 @media screen and (max-width: 1000px) {
@@ -154,11 +158,11 @@ h1 {
     line-height: 1.5em;
   }
 }
-  @media screen and (max-width: 700px) {
-    h1 {
-      font-size: 30px;
-    }
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
   }
+}
 @media screen and (max-height: 620px) {
   h1{
     font-size: 30px;
@@ -179,7 +183,7 @@ h2 {
 @media screen and (max-width: 700px) {
   h2 {
     font-size: 28px;
-}
+  }
 }
 @media screen and (max-height: 820px) {
   h2{
@@ -203,6 +207,7 @@ h4 {
   h4{
     justify-content: center;
     font-size: 20px;
+    margin: 0;
   }
 }
 h5 {
@@ -255,28 +260,28 @@ h6 {
   display: flex;
 }
 
-  .arrow-block img{
-    height: 17px;
-    position: absolute;
+.arrow-block img{
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+  animation: moveImage 3s linear infinite;
+}
+@keyframes moveImage{
+  0%{
+    opacity: 0;
+    bottom: 40px;
+  }
+  25%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
     bottom: 0;
-    animation: moveImage 3s linear infinite;
   }
-  @keyframes moveImage{
-    0%{
-      opacity: 0;
-      bottom: 40px;
-    }
-    25%{
-      opacity: 1;
-    }
-    75%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-      bottom: 0;
-    }
-  }
+}
 .index_item {
   display: flex;
   flex-direction: column;
@@ -324,15 +329,15 @@ h6 {
     border-right: none;
   }
 }
-  .block_one-item-2{
-    width: 50%;
-    padding: 80px 200px 0 40px;
-  }
-  .arrow-btn{
-    margin-left: 15px;
-    height: 10px;
-    width: 10px;
-  }
+.block_one-item-2{
+  width: 50%;
+  padding: 80px 200px 0 40px;
+}
+.arrow-btn{
+  margin-left: 15px;
+  height: 10px;
+  width: 10px;
+}
 @media screen and (max-width: 920px) {
   .block_one-item-2 {
     padding: 80px 100px 0 40px;
@@ -372,27 +377,63 @@ h6 {
   background-color: black;
   color: white;
   min-height: 100vh;
-  padding: 20px 8% 20px 8%;
-  justify-content: center;
-  }
+  justify-content: space-between;
+}
 .block_three-item{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 .block_three-item--info{
-  text-align: left;
-  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+  font-weight: lighter;
 }
 @media screen and (max-width: 700px) {
   .block_three-item--info {
-    padding-bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 60px;
   }
+}
+
+.three_block-one {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  .three_block-one {
+    width: 100%;
+  }
+}
+.three_block-two {
+  width: 30%;
+  margin-right: 100px;
+}
+@media screen and (max-width: 1300px) {
+  .three_block-two {
+    margin-right: 30px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .three_block-two {
+    width: 100%;
+    margin-bottom: 40px;
+
+  }
+}
+.three_block-one--logo {
+  margin: 30px 0;
+  width: 20%;
 }
 .block_three-item--logo{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 @media screen and (max-width: 700px) {
   .block_three-item--logo {
@@ -400,12 +441,17 @@ h6 {
   }
 }
 .block_three-item--logo_img{
-  width: 14%;
-  padding: 30px 0;
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  padding: 50px 50px;
+  border: solid 1px white;
 }
 @media screen and (max-width: 1300px) {
   .block_three-item--logo_img {
-    width: 20%;
+  ;
   }
 }
 @media screen and (max-width: 700px) {
@@ -421,7 +467,7 @@ h6 {
 }
 
 .part-img {
-  width: 100%;
+  width: 120px;
 }
 
 </style>

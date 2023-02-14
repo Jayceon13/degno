@@ -9,7 +9,7 @@
       </div>
       <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
         <div class="block-dubai" @click="goToDubai">
-          <p style="font-weight: bold">Dubai, UAE</p>
+          <p style="font-weight: bold">Дубай (ОАЭ)</p>
           <p>Sultan Business Centre,<br>Office 410.<br>Oud Metha,<br>Dubai</p>
         </div>
       </div>
@@ -17,18 +17,18 @@
       <div class="second-block">
     <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
       <div class="block-turkey" @click="goToTurkey">
-        <p style="font-weight: bold">Istanbul, Turkey</p>
+        <p style="font-weight: bold">Стамбулл, Турция</p>
         <p>Torn Business Center,<br>Office 74а/205,<br>Buyukdere Cd. Fulya mah,<br>Sisli/Istanbul</p>
       </div>
       <div class="block-turkmenistan" @click="goToTurkmenistan">
-        <p style="font-weight: bold">Ashgabat, Turkmenistan</p>
+        <p style="font-weight: bold">Ашхабад, Туркменистан</p>
         <p>Paytagt Business Center,<br>6th Floor,<br>1945 street</p>
       </div>
     </div>
       </div>
       </div>
       <div :class="['footer_block-item--mail', { 'footer_block-item--mail-black': isBlack }]">
-        <p style="font-weight: bold">Contact Us</p>
+        <p style="font-weight: bold">Контакты</p>
         <p>Email:<a href="mailto: info@degno-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@degno-group.com></a></p>
       </div>
   </div>

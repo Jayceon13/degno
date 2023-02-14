@@ -1,22 +1,21 @@
 <template>
   <div class="header">
-    <div class="home-btn" v-if="$route.path !== '/ru'">
+    <div class="home-btn" v-if="$route.path !== '/ru/'">
       <btn
-        @click="$router.push('/ru')"
+        @click="$router.push('/')"
         style="cursor: pointer"
-        >
+      >
         <img src="/icons/fireWhite.svg" alt="" style="width: 80px" >
       </btn>
     </div>
     <div class="change-language">
-      <div class="button-language" @click="changeLang">Languages</div>
-      <div class="choise-language" v-if="showLang">
-        <div class="rus-language" @click="$router.push('/ru')">
+      <div class="choise-language">
+        <button class="rus-language" @click="$router.push('/ru')">
           RU
-        </div>
-        <div class="eng-language" @click="$router.push('/')">
+        </button>
+        <button class="eng-language" @click="$router.push('/')">
           EN
-        </div>
+        </button>
       </div>
     </div>
     <div class="hamburger hamburger--elastic">
@@ -75,7 +74,7 @@
             @click="() => { $router.push('/ru/services'); blockBurgerMenu(); }"
             class="buttons-header"
           >
-            LOCATIONS & SERVICES
+            НАШИ УСЛУГИ
           </btn>
             <transition name="list-animation">
               <div v-if="showList1"
@@ -86,7 +85,7 @@
                   @click="() => { $router.push('/ru/services'); blockBurgerMenu(); blockShowList1()}"
                   :class="$route.path === '/ru/achievements' ? 'active-button' : 'buttons-header'"
                 >
-                  LOCATIONS & SERVICES
+                  НАШИ УСЛУГИ
                 </btn>
 
               </div>
@@ -99,7 +98,7 @@
             @click="showList2 = true"
             class="buttons-header"
           >
-            ACHIEVEMENTS & PROJECTS
+            НАШИ ПРОЕКТЫ
           </btn>
           <transition name="list-animation">
             <div v-if="showList2"
@@ -111,13 +110,13 @@
                 :class="$route.path === '/ru/achievements' ? 'active-button' : 'buttons-header'"
                 style="margin-bottom: 40px; align-items: flex-end"
               >
-                PROJECTS
+                ПРОЕКТЫ
               </btn>
               <btn
                 @click="() => { $router.push('/ru/achievements'); blockBurgerMenu(); blockShowList() }"
                 :class="$route.path === '/ru/achievements' ? 'active-button' : 'buttons-header'"
                 style="align-items: flex-start">
-                ACHIEVEMENTS
+                КЛЮЧЕВЫЕ ДОСТИЖЕНИЯ
               </btn>
             </div>
           </transition>
@@ -145,12 +144,10 @@ export default {
     const showList2 = ref(false)
     const showList3 = ref(false)
     const showBurgerMenu = ref(false)
-    const showLang = ref(false)
     return {
       showList1,
       showList2,
       showList3,
-      showLang,
       blockShowList() {
         showList2.value = !showList2.value
       },
@@ -179,30 +176,58 @@ export default {
           this.showList3 = true;
         }
       },
-      changeLang() {
-        if (window.innerWidth > 720) {
-          showLang.value = !showLang.value;
-        }
-      },
     }
   }
 }
 </script>
 
 <style scoped>
+
 .change-language{
   color: white;
   position: fixed;
   display: flex;
-  flex-flow: column;
-  align-self: flex-end;
-  margin: 12px 90px 0 0;
-  cursor: pointer;
+  left: 20px;
+  top: 20px;
+  margin: 0;
 }
+@media screen and (min-width: 500px){
+  .change-language{
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+}
+.choise-language {
+  display: flex;
+}
+.eng-language {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  background: black;
+  border: solid #939393 2px;
+  color: white;
+  font-weight: 500;
+  width: 60px;
+}
+.rus-language {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  background: black;
+  border: solid #939393 2px;
+  color: white;
+  font-weight: 500;
+  width: 60px;
+}
+
 .home-btn{
   position: fixed;
   display: flex;
-  width: 100%;
   margin-left: 0;
   align-self: flex-start;
 }
@@ -222,329 +247,329 @@ export default {
     margin-right: 20px;
   }
 }
-  .header{
-    position: absolute;
-    display: flex;
-    width: 100vw;
-    z-index: 999;
-    align-items: center;
-  }
+.header{
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  z-index: 999;
+  align-items: center;
+}
 
-    .header{
-      mix-blend-mode: difference;
-      display: flex;
-      padding: 20px;
-      flex-direction: column;
-      align-items: center;
-    }
-    .logo-block{
-      display: block;
-      width: 186px;
-      height: 166px;
-    }
-    .logo-block img{
-      width: 186px;
-      height: 166px;
-    }
+.header{
+  mix-blend-mode: difference;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-block{
+  display: block;
+  width: 186px;
+  height: 166px;
+}
+.logo-block img{
+  width: 186px;
+  height: 166px;
+}
 
-  .menu_burger{
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu_burger-button {
-    padding: 10px 30px;
-    font-size: 20px;
-    color: white;
-  }
+.menu_burger{
+  display: flex;
+  justify-content: space-between;
+}
+.menu_burger-button {
+  padding: 10px 30px;
+  font-size: 20px;
+  color: white;
+}
 
-  .q-btn:before {
-    box-shadow: none;
-  }
-  .logo_burger {
-    width: 80px;
-    margin: 20px 30px;
-  }
+.q-btn:before {
+  box-shadow: none;
+}
+.logo_burger {
+  width: 80px;
+  margin: 20px 30px;
+}
 
-  .hamburger {
-    position: fixed;
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    overflow: visible;
-  }
+.hamburger {
+  position: fixed;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  overflow: visible;
+}
 
-  .hamburger:hover {
-    opacity: 0.7;
-  }
+.hamburger:hover {
+  opacity: 0.7;
+}
 
-  .hamburger.is-active:hover {
-    opacity: 0.7;
-  }
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
 
-  .hamburger.is-active .hamburger-inner,
-  .hamburger.is-active .hamburger-inner::before,
-  .hamburger.is-active .hamburger-inner::after {
-    background-color: white;
-  }
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: white;
+}
 
-  .hamburger-box {
-    width: 40px;
-    height: 24px;
-    display: inline-block;
-    position: relative;
-  }
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
 
-  .hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px;
-  }
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
 
-  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
-    background-color: white;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
-  }
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
 
-  .hamburger-inner::before, .hamburger-inner::after {
-    content: "";
-    display: block;
-  }
-
-
-  .hamburger-inner::before {
-    top: -10px;
-  }
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
 
 
-  .hamburger-inner::after {
-    bottom: -10px;
-  }
+.hamburger-inner::before {
+  top: -10px;
+}
 
 
-  .hamburger--elastic .hamburger-inner {
-    top: 2px;
-    transition-duration: 0.275s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+.hamburger-inner::after {
+  bottom: -10px;
+}
 
-  .hamburger--elastic .hamburger-inner::before {
-    top: 10px;
-    transition: opacity 0.125s 0.275s ease;
-  }
 
-  .hamburger--elastic .hamburger-inner::after {
-    top: 20px;
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+.hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 
-  .hamburger--elastic.is-active .hamburger-inner {
-    transform: translate3d(0, 10px, 0) rotate(135deg);
-    transition-delay: 0.075s;
-  }
+.hamburger--elastic .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
+}
 
-  .hamburger--elastic.is-active .hamburger-inner::before {
-    transition-delay: 0s;
+.hamburger--elastic .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s;
+}
+
+.hamburger--elastic.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+.hamburger--elastic.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s;
+}
+.block-projects-1{
+  width: 200px;
+  background: #062141;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.my-btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.burgerMenuLeft{
+  position: fixed;
+  background: white;
+  z-index: 9999;
+  height: 100%;
+  animation: slide-left 1s ease-in-out forwards;
+  width: 100%;
+}
+@keyframes slide-left {
+  0%{
+    transform: translateX(100%);
     opacity: 0;
   }
-
-  .hamburger--elastic.is-active .hamburger-inner::after {
-    transform: translate3d(0, -20px, 0) rotate(-270deg);
-    transition-delay: 0.075s;
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
   }
-  .block-projects-1{
-    width: 200px;
-    background: #062141;
-    position: absolute;
-    margin-top: 20px;
-  }
+}
 
-  .my-btn {
+.burgerMenuRight{
+  position: absolute;
+  background: white;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  animation: x-left 1s ease-in-out forwards;
+}
+@keyframes x-left {
+  0%{
+    width: 100%;
+    opacity: 0;
+  }
+  100%{
+    width: 60px;
+    opacity: 1;
+  }
+}
+
+.q-btn {
+  height: auto;
+  width: auto;
+  margin: 6px;
+}
+
+.q-btn:before {
+  box-shadow: none;
+}
+span.q-btn__content {
+  display: flex;
+  flex-direction: column;
+}
+.BtnLink-contact {
+
+  margin: 6px 20px 0px;
+  font-size: 10px;
+  text-transform: none;
+}
+.my-btn{
+  font-size: 18px;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+.my-btn-services {
+  font-size: 12px;
+  margin: 2px 0px;
+}
+@media (min-height: 736px) {
+  .logo {
+    margin: 70px 0px 0px;
+  }
+}
+.xicon-btn{
+  cursor: pointer;
+}
+.img-x{
+  margin-top: 20px;
+  width: 13px;
+}
+.block-x{
+  width: 60px;
+  height: 100%;
+  background-color: black;
+  animation: x-left 1s ease-in-out forwards;
+  text-align: center;
+}
+@keyframes slide-right {
+  0%{
+    width: 100%;
+    opacity: 0;
+  }
+  100%{
+    width: 60px;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 720px){
+  .block-content{
     height: 100%;
     width: 100%;
     display: flex;
-    flex-flow: row;
   }
-  .menu{
+  .block-content .buttons-block{
+    width: 33.3%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    color: black;
+    transition: color 1s;
+    background: transparent;
+    text-align: center;
     align-items: center;
+    justify-content: center;
   }
-
-  .burgerMenuLeft{
-    position: fixed;
-    background: white;
-    z-index: 9999;
-    height: 100%;
-    animation: slide-left 1s ease-in-out forwards;
-    width: 100%;
-  }
-  @keyframes slide-left {
-    0%{
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100%{
-      transform: translateX(0%);
-      opacity: 1;
-    }
-  }
-
-  .burgerMenuRight{
-    position: absolute;
-    background: white;
-    z-index: 9999;
-    height: 100%;
-    width: 100%;
-    animation: x-left 1s ease-in-out forwards;
-  }
-  @keyframes x-left {
-    0%{
-      width: 100%;
-      opacity: 0;
-    }
-    100%{
-      width: 60px;
-      opacity: 1;
-    }
-  }
-
-  .q-btn {
-    height: auto;
-    width: auto;
-    margin: 6px;
-  }
-
-  .q-btn:before {
-    box-shadow: none;
-  }
-  span.q-btn__content {
-    display: flex;
-    flex-direction: column;
-  }
-  .BtnLink-contact {
-
-    margin: 6px 20px 0px;
-    font-size: 10px;
-    text-transform: none;
-  }
-  .my-btn{
-    font-size: 18px;
-    margin: 0;
-    font-family: 'PT Sans', sans-serif;
-  }
-  .my-btn-services {
-    font-size: 12px;
-    margin: 2px 0px;
-  }
-  @media (min-height: 736px) {
-    .logo {
-      margin: 70px 0px 0px;
-    }
-  }
-  .xicon-btn{
+  .block-content .buttons-block:hover {
+    background-color: transparent;
     cursor: pointer;
   }
-  .img-x{
-    margin-top: 20px;
-    width: 13px;
-  }
-  .block-x{
-    width: 60px;
+  .block-content .buttons-block btn{
+    display: flex;
     height: 100%;
-    background-color: black;
-    animation: x-left 1s ease-in-out forwards;
-    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
   }
-  @keyframes slide-right {
+  .list2{
+    background: #F0F0F0;
+    z-index: 9999;
+    height: 100%;
+    width: 32%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    animation: slide-down 0.5s ease-in-out forwards;
+  }
+  @keyframes slide-down {
     0%{
-      width: 100%;
       opacity: 0;
+      transform: translateY(-100%);
     }
     100%{
-      width: 60px;
       opacity: 1;
+      transform: translateY(0%);
     }
   }
-  @media screen and (min-width: 720px){
-    .block-content{
-      height: 100%;
-      width: 100%;
-      display: flex;
+  .list-animation-leave-active {
+    animation: slide-up 1s ease-in-out forwards;
+  }
+  @keyframes slide-up {
+    0%{
+      opacity: 1;
+      transform: translateY(0%);
     }
-    .block-content .buttons-block{
-      width: 33.3%;
-      display: flex;
-      color: black;
-      transition: color 1s;
-      background: transparent;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-    }
-    .block-content .buttons-block:hover {
-      background-color: transparent;
-      cursor: pointer;
-    }
-    .block-content .buttons-block btn{
-      display: flex;
-      height: 100%;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-    }
-    .list2{
-      background: #F0F0F0;
-      z-index: 9999;
-      height: 100%;
-      width: 32%;
-      display: flex;
-      position: absolute;
-      flex-direction: column;
-      justify-content: center;
-      animation: slide-down 0.5s ease-in-out forwards;
-    }
-    @keyframes slide-down {
-      0%{
-        opacity: 0;
-        transform: translateY(-100%);
-      }
-      100%{
-        opacity: 1;
-        transform: translateY(0%);
-      }
-    }
-    .list-animation-leave-active {
-      animation: slide-up 1s ease-in-out forwards;
-    }
-    @keyframes slide-up {
-      0%{
-        opacity: 1;
-        transform: translateY(0%);
-      }
-      100%{
-        opacity: 0;
-        transform: translateY(-100%);
-      }
+    100%{
+      opacity: 0;
+      transform: translateY(-100%);
     }
   }
-  @media  screen and (max-width: 720px){
+}
+@media  screen and (max-width: 720px){
 
   .block-content{
     align-self: flex-start;
@@ -562,38 +587,38 @@ export default {
     background-color: transparent;
     cursor: pointer;
   }
-    .list2{
-      background: white;
-      z-index: 9999;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: absolute;
-      animation: slide-left-proj 0.5s ease-in-out forwards;
-    }
-    @keyframes slide-left-proj {
-      0%{
+  .list2{
+    background: white;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    animation: slide-left-proj 0.5s ease-in-out forwards;
+  }
+  @keyframes slide-left-proj {
+    0%{
       opacity: 0;
       transform: translateX(100%);
-    }
-      100%{
-      opacity: 1;
-      transform: translateX(0%);
-    }
-    }
-  }
-  .burger-animation-leave-active {
-    animation: slide-right 1s ease-in-out forwards;
-  }
-  @keyframes slide-right {
-    0%{
-      transform: translateX(0%);
-      opacity: 1;
     }
     100%{
-      transform: translateX(100%);
-      opacity: 0;
+      opacity: 1;
+      transform: translateX(0%);
     }
   }
+}
+.burger-animation-leave-active {
+  animation: slide-right 1s ease-in-out forwards;
+}
+@keyframes slide-right {
+  0%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
 </style>
