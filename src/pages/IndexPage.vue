@@ -51,12 +51,23 @@
         <div class="index_item-block">
           <div class="block_three">
             <div class="block_three-item">
+
               <div class="block_three-item--info"
                    data-aos="zoom-in"
                    data-aos-easing="ease"
                    data-aos-delay="500">
-                <h4>We are an official representative developing business for leading
-                  manufacturers and traders globally in the Turkmenistan market </h4>
+                <div class="three_block-one">
+                  <div class="three_block-one--info">
+                    <p>WE WORK WITH TOP NOTCH CLIENTS</p>
+                  </div>
+                  <div class="three_block-one--logo">
+                    <img style="width: 100%" src="/icons/Union.png">
+                  </div>
+                </div>
+                <div class="three_block-two">
+                  <h4>We are an official representative developing business for leading
+                    manufacturers and traders globally in the Turkmenistan market </h4>
+                </div>
               </div>
               </div>
             <div class="block_three-item"
@@ -69,7 +80,7 @@
                   <img alt="" class="part-img" src="/img/ref1.png">
                 </div>
                 <div class="block_three-item--logo_img">
-                  <img style="scale: 3;}" alt="" class="part-img" src="/img/ref2.png">
+                  <img alt="" class="part-img" src="/img/ref2.png">
                 </div>
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref3.png">
@@ -77,20 +88,15 @@
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref4.png">
                 </div>
-              </div>
-              <div class="block_three-item--logo">
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref5.png">
                 </div>
                 <div class="block_three-item--logo_img">
                   <img alt="" class="part-img" src="/img/ref6.png">
                 </div>
-                <div style="scale: 1.3;" class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref7.png">
-                </div>
-                <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref8.png">
-                </div>
+              </div>
+              <div class="block_three-item--logo">
+
               </div>
 
 
@@ -372,27 +378,43 @@ h6 {
   background-color: black;
   color: white;
   min-height: 100vh;
-  padding: 20px 8% 20px 8%;
   justify-content: center;
   }
 .block_three-item{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 .block_three-item--info{
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 60px;
+  font-weight: lighter;
 }
 @media screen and (max-width: 700px) {
   .block_three-item--info {
     padding-bottom: 0;
   }
 }
+
+.three_block-one {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.three_block-two {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.three_block-one--logo {
+  width: 20%;
+}
 .block_three-item--logo{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 @media screen and (max-width: 700px) {
   .block_three-item--logo {
@@ -400,12 +422,17 @@ h6 {
   }
 }
 .block_three-item--logo_img{
-  width: 14%;
-  padding: 30px 0;
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 50px 50px;
+  border: solid 1px white;
 }
 @media screen and (max-width: 1300px) {
   .block_three-item--logo_img {
-    width: 20%;
+    ;
   }
 }
 @media screen and (max-width: 700px) {
@@ -421,7 +448,7 @@ h6 {
 }
 
 .part-img {
-  width: 100%;
+  width: 120px;
 }
 
 </style>
