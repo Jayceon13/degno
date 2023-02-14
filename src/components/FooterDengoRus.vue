@@ -4,8 +4,8 @@
       <div class="main-block">
       <div class="first-block">
       <div class="footer_block-logo">
-        <img class="footer-logo" src="/icons/logoBlack.svg" v-if="$route.path == '/'">
-        <img class="footer-logo-black" src="/icons/logoWhite.svg" v-if="$route.path == '/services' || $route.path == '/projects' || $route.path == '/achievements'">
+        <img class="footer-logo" src="/icons/logoBlack.svg" v-if="$route.path == '/ru'">
+        <img class="footer-logo-black" src="/icons/logoWhite.svg" v-if="$route.path == '/ru/services' || $route.path == '/ru/projects' || $route.path == '/ru/achievements'">
       </div>
       <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
         <div class="block-dubai" @click="goToDubai">
