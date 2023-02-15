@@ -6,20 +6,20 @@
           data-aos="zoom-in"
           data-aos-easing="ease"
           data-aos-delay="500"
-      >KEY ACHIEVEMENTS</h3>
+      >КЛЮЧЕВЫЕ ДОСТИЖЕНИЯ</h3>
     </div>
       <div class="first-block">
         <div class="block-achieve-1" data-aos="fade-right">
           <h3>1</h3>
-          <p>Signing of the Memorandum of Understanding between KSB Group and UNDP Turkmenistan</p>
+          <p>Подписание Меморандума о взаимопонимании между KSB Group и ПРООН в Туркменистане</p>
           <h3>2</h3>
-          <p>Opening of the official KSB Group Showroom and Service Center in Ashgabat</p>
+          <p>Открытие официального Шоурума и Сервисного Центра KSB Group в Ашхабаде</p>
         </div>
         <div class="block-achieve-2" data-aos="fade-left">
           <h3>3</h3>
-          <p>Implementation of the production of Sulphur-Bentonite based on IPCO technology in Turkmenistan</p>
+          <p>Внедрение производства Серо-Бентонита по технологии IPCO в Туркменистане   </p>
           <h3>4</h3>
-          <p>Organization of export deliveries of polymer products from Turkmenistan to China and Turkey</p>
+          <p>Организация Экспортных поставок полимерной продукции из Туркменистана в Китай и Турцию</p>
         </div>
       </div>
     </div>

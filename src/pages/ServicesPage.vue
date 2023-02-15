@@ -21,11 +21,11 @@
         <img src="/img/services2.jpg"
              data-aos="fade-right">
         <div class="second-block-text" data-aos="fade-left">
-          <h6 style="font-weight: bold; margin-bottom: 40px">
+          <p style="font-weight: bold; margin-bottom: 40px">
             Our highly skilled team has global expertise and can support
             the successful execution of projects, regardless of their
             complexity
-          </h6>
+          </p>
           <p>Our company, DEGNO, is adaptable in negotiations and provides expert
             guidance in business decision making. With a presence in <b>Dubai</b>, <b>Moscow</b>,
             <b>Istanbul</b>, and <b>Ashgabat</b>, we offer comprehensive regional coverage</p>
@@ -35,8 +35,8 @@
       <div class="third-block">
         <div class="third-block-text"
              data-aos="fade-right">
-          <h6>Our key element is the high level of support
-            towards the client, that is why we offer:</h6>
+            <p style="font-weight: bold; padding-left: 10px; padding-right: 10px">Our key element is the high level of support
+              towards the client,<br> that is why we offer:</p>
           <div class="third-block-text-li">
             <li>Meetings & negotiations</li>
             <li>Supplier & contractor search</li>
@@ -51,7 +51,7 @@
         <div class="third-block-img" data-aos="fade-left">
           <img src="/img/services3.jpg">
         </div>
-      </div>
+        </div>
       <div class="fourth-block">
         <h4
           data-aos="zoom-in"
@@ -74,17 +74,6 @@ export default defineComponent({
 p {
   font-size: 20px;
 }
-h6 {
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 1.2em;
-  margin-top: 0;
-}
-@media screen and (max-width: 720px){
-  h6{
-    font-size: 24px;
-  }
-}
 .main-block{
   width: 100vw;
   height: 100vh;
@@ -96,13 +85,12 @@ h6 {
   text-align: left;
 }
 h2 {
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 1.2em;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
 }
 @media screen and (max-width: 985px){
   h2{
-    font-size: 24px;
     line-height: 1.2em;
   }
 }
@@ -115,6 +103,7 @@ h2 {
 }
 .fourth-block h4{
   text-align: center;
+  font-style: italic;
   line-height: 1.2em;
   font-weight: 400;
 }
@@ -141,7 +130,7 @@ h2 {
     background-position: 30%;
   }
   .main-block h3{
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
 
   }
@@ -159,17 +148,11 @@ h2 {
   flex-flow: column;
 }
 .first-block{
-  padding: 30px 300px;
+  padding: 30px 60px;
   text-align: center;
-}
-@media screen and (max-width: 1000px){
-  .first-block{
-    padding: 30px 150px;
-  }
 }
 @media screen and (max-width: 720px){
   .first-block{
-    padding: 30px 60px;
     text-align: left;
   }
 }
@@ -241,7 +224,6 @@ h2 {
 }
 @media (min-width: 720px){
   .second-block img{
-    height: 100%;
     width: 50%;
   }
   .third-block text{
@@ -257,6 +239,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+
   padding: 30px 60px;
 }
 .second-block-text p{
@@ -297,4 +280,3 @@ h2 {
   }
 }
 </style>
-

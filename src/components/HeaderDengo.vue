@@ -9,8 +9,7 @@
       </btn>
     </div>
     <div class="change-language">
-      <div class="button-language" @click="changeLang">Languages</div>
-      <div class="choise-language" v-if="showLang">
+      <div class="choise-language">
         <div class="rus-language" @click="$router.push('/ru')">
           RU
         </div>
@@ -145,12 +144,10 @@ export default {
     const showList2 = ref(false)
     const showList3 = ref(false)
     const showBurgerMenu = ref(false)
-    const showLang = ref(false)
     return {
       showList1,
       showList2,
       showList3,
-      showLang,
       blockShowList() {
         showList2.value = !showList2.value
       },
@@ -179,11 +176,6 @@ export default {
           this.showList3 = true;
         }
       },
-      changeLang() {
-        if (window.innerWidth > 720) {
-          showLang.value = !showLang.value;
-        }
-      },
     }
   }
 }
@@ -194,15 +186,47 @@ export default {
   color: white;
   position: fixed;
   display: flex;
-  flex-flow: column;
-  align-self: flex-end;
-  margin: 12px 90px 0 0;
-  cursor: pointer;
+  left: 20px;
+  top: 20px;
+  margin: 0;
 }
+@media screen and (min-width: 500px){
+  .change-language{
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+}
+.choise-language {
+  display: flex;
+}
+.eng-language {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  background: black;
+  border: solid #939393 2px;
+  color: white;
+  font-weight: 500;
+  width: 60px;
+}
+.rus-language {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  background: black;
+  border: solid #939393 2px;
+  color: white;
+  font-weight: 500;
+  width: 60px;
+}
+
 .home-btn{
   position: fixed;
   display: flex;
-  width: 100%;
   margin-left: 0;
   align-self: flex-start;
 }

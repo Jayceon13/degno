@@ -5,47 +5,48 @@
           data-aos="zoom-in"
           data-aos-easing="ease"
           data-aos-delay="500"
-      > RUSDISCOVER OUR FULL RANGE OF EXPERTISE</h3>
+      > МЫ ПРЕДОСТАВЛЯЕМ ШИРОКИЙ СПЕКТР БИЗНЕС УСЛУГ</h3>
     </div>
     <div class="services-page">
       <div class="first-block">
         <h2
           data-aos="zoom-in"
           data-aos-easing="ease"
-          data-aos-delay="500">We offer a
-          range of services, including consulting,
-          agency and project management, to help clients and
-          partners grow their businesses effectively</h2>
+          data-aos-delay="500">Мы предлагаем ряд услуг,
+          включая консалтинг и управление проектами, чтобы помочь
+          клиентам и партнерам эффективно развивать свой бизнес</h2>
       </div>
       <div class="second-block">
         <img src="/img/services2.jpg"
              data-aos="fade-right">
         <div class="second-block-text" data-aos="fade-left">
           <h6 style="font-weight: bold; margin-bottom: 40px">
-            Our highly skilled team has global expertise and can support
-            the successful execution of projects, regardless of their
-            complexity
+            Наша высококвалифицированная команда обладает
+            глобальным опытом и может поддержать
+            успешное выполнение проектов, независимо от их сложности.
           </h6>
-          <p>Our company, DEGNO, is adaptable in negotiations and provides expert
-            guidance in business decision making. With a presence in <b>Dubai</b>, <b>Moscow</b>,
-            <b>Istanbul</b>, and <b>Ashgabat</b>, we offer comprehensive regional coverage</p>
+          <p>Компания DEGNO адаптируется к переговорам
+            и обеспечивает экспертное руководство в принятии
+            деловых решений и является квалифицированным Советником в принятии
+            бизнес-решений с региональным охватом и офисами в <b>Дубае (ОАЭ)</b>, <b>Москве (Россия)</b>,
+            <b>Стамбуле (Турция)</b>, and <b>Ашхабаде (Туркменистан)</b>, we offer comprehensive regional coverage</p>
           <p></p>
         </div>
       </div>
       <div class="third-block">
         <div class="third-block-text"
              data-aos="fade-right">
-          <h6>Our key element is the high level of support
-            towards the client, that is why we offer:</h6>
+          <h6>Нашим ключевым элементом является высокий уровень
+            поддержки клиента, поэтому мы предлагаем:</h6>
           <div class="third-block-text-li">
-            <li>Meetings & negotiations</li>
-            <li>Supplier & contractor search</li>
-            <li>Project implementation, support & coordination</li>
-            <li>Marketing, development & brand adaptation</li>
-            <li>Project and client search</li>
-            <li>Design, delivery & commissioning</li>
-            <li>Search for alternative solutions & adaptations</li>
-            <li>Risk Assessment</li>
+            <li>Встречи и переговоры</li>
+            <li>Поиск поставщика и подрядчика</li>
+            <li>Реализация проекта, поддержка и координация</li>
+            <li>Маркетинг, развитие и адаптация бренда</li>
+            <li>Поиск проектов и клиентов</li>
+            <li>Организация проектирования, доставка и ввод в эксплуатацию</li>
+            <li>Поиск альтернативных решений и адаптация</li>
+            <li>Оценка рисков</li>
           </div>
         </div>
         <div class="third-block-img" data-aos="fade-left">
@@ -56,7 +57,8 @@
         <h4
           data-aos="zoom-in"
           data-aos-easing="ease"
-          data-aos-delay="500">Supporting and guiding your requirement from the beginning to the very end</h4>
+          data-aos-delay="500">Поддержка и сопровождение ваших
+          требований с самого начала и до самого конца</h4>
       </div>
     </div>
   </q-page>
