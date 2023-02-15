@@ -434,6 +434,7 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 700px) {
   .block_three-item--logo {

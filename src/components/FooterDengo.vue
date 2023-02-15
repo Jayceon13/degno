@@ -205,18 +205,21 @@ export default {
 .block-dubai{
   padding: 30px;
   cursor: pointer;
+  text-align: left;
 }
 .block-turkey{
   cursor: pointer;
   padding: 30px;
+  text-align: left;
 }
 .block-turkmenistan{
   padding: 30px;
   cursor: pointer;
+  text-align: left;
 }
 .footer_block-item--mail{
-  text-align: center;
   padding: 30px;
+  text-align: left;
 }
 .footer_block-item--mail-black{
   text-align: center;
