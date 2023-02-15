@@ -109,6 +109,7 @@ h2 {
   }
 }
 .main-block h3{
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
 }

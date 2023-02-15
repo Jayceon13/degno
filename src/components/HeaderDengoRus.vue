@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <div class="home-btn" v-if="$route.path !== '/ru/'">
+    <div class="home-btn" v-if="$route.path !== '/ru'">
       <btn
-        @click="$router.push('/')"
+        @click="$router.push('/ru')"
         style="cursor: pointer"
       >
         <img src="/icons/fireWhite.svg" alt="" style="width: 80px" >
@@ -10,7 +10,7 @@
     </div>
     <div class="change-language">
       <div class="choise-language">
-        <button class="rus-language" @click="$router.push('/ru')">
+        <button class="rus-language">
           RU
         </button>
         <button class="eng-language" @click="$router.push('/')">
@@ -187,21 +187,29 @@ export default {
   color: white;
   position: fixed;
   display: flex;
-  left: 20px;
-  top: 20px;
+  align-self: flex-end;
+  top: 18px;
   margin: 0;
+  height: 27px;
 }
 @media screen and (min-width: 500px){
   .change-language{
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 500px){
+  .change-language{
+    margin-top: 1px;
+    margin-right: 70px;
   }
 }
 .choise-language {
   display: flex;
+
 }
 .eng-language {
-  font-size: 18px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,19 +218,24 @@ export default {
   border: solid #939393 2px;
   color: white;
   font-weight: 500;
-  width: 60px;
+  width: 50px;
+  cursor: pointer;
+}
+.eng-language:hover{
+  scale: 1.2;
+  transition: 0.5s ease-in-out;
 }
 .rus-language {
-  font-size: 18px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 6px;
   background: black;
   border: solid #939393 2px;
-  color: white;
+  color: grey;
   font-weight: 500;
-  width: 60px;
+  width: 50px;
 }
 
 .home-btn{

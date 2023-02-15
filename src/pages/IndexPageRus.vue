@@ -147,8 +147,8 @@ p {
 
 h1 {
   margin: 0 0 20px;
-  font-size: 70px;
-  font-weight: 400;
+  font-size: 60px;
+  font-weight: 100;
   font-style: italic;
 }
 @media screen and (max-width: 1000px) {
@@ -165,7 +165,7 @@ h1 {
 }
 @media screen and (max-height: 620px) {
   h1{
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
