@@ -26,7 +26,7 @@
               <p> Мы предлагаем ряд услуг, включая консалтинг и управление проектами,
                 чтобы помочь клиентам и партнерам эффективно развивать свой бизнес</p>
               <q-btn
-                @click="$router.push('/services')"
+                @click="$router.push('/ru/services')"
                 class="btn-with-arrow" unelevated rounded color="black" >
                 НАШИ УСЛУГИ   <img alt="" class="arrow-btn" src="/icons/ArrowBtn.svg">
               </q-btn>

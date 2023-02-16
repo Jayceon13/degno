@@ -220,10 +220,12 @@ export default {
 .footer_block-item--mail{
   padding: 30px;
   text-align: left;
+  align-self: center;
 }
 .footer_block-item--mail-black{
-  text-align: center;
   padding: 30px;
+  text-align: left;
+  align-self: center;
 }
 .block-rights{
   height: 50px;
