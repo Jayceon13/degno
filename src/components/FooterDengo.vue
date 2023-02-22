@@ -132,7 +132,10 @@ export default {
   .footer-logo {
   }
   .footer_block-item--mail{
-
+    align-self: center;
+  }
+  .footer_block-item--mail-black{
+    align-self: center;
   }
   .first-block{
     flex-flow: column;
@@ -220,12 +223,10 @@ export default {
 .footer_block-item--mail{
   padding: 30px;
   text-align: left;
-  align-self: center;
 }
 .footer_block-item--mail-black{
   padding: 30px;
   text-align: left;
-  align-self: center;
 }
 .block-rights{
   height: 50px;

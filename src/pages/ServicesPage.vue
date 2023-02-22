@@ -27,8 +27,8 @@
             complexity
           </p>
           <p>Our company, DEGNO, is adaptable in negotiations and provides expert
-            guidance in business decision making. With a presence in <b>Dubai</b>, <b>Moscow</b>,
-            <b>Istanbul</b>, and <b>Ashgabat</b>, we offer comprehensive regional coverage</p>
+            guidance in business decision making. With a presence in <b>Dubai</b>,
+            <b>Istanbul</b> and <b>Ashgabat</b>, we offer comprehensive regional coverage</p>
           <p></p>
         </div>
       </div>
@@ -36,7 +36,7 @@
         <div class="third-block-text"
              data-aos="fade-right">
             <p style="font-weight: bold; padding-left: 10px; padding-right: 10px">Our key element is the high level of support
-              towards the client,<br> that is why we offer:</p>
+              towards the client, that is why we offer:</p>
           <div class="third-block-text-li">
             <li>Meetings & negotiations</li>
             <li>Supplier & contractor search</li>
