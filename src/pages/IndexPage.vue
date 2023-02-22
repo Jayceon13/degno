@@ -74,33 +74,167 @@
                  data-aos="zoom-in"
                  data-aos-easing="ease"
                  data-aos-delay="500">
+              <q-carousel
+                v-if="$q.screen.width >= 600"
+                v-model="slide"
+                swipeable
+                animated
+                navigation
+                infinite
+                :autoplay="autoplay"
+                arrows
+                transition-prev="slide-right"
+                transition-next="slide-left"
+                @mouseenter="autoplay = false"
+                @mouseleave="autoplay = true"
+                height="300px"
+                class="bg-black shadow-2 rounded-borders full-width"
+                style="background: black"
+              >
+                <q-carousel-slide :name="1" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <img class="slide" src="/img/ref1.png" />
+                    <img class="slide" src="/img/ref2.png" />
+                    <img class="slide" src="/img/ref3.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="2" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref5.png" />
+                    <q-img class="slide"  src="/img/ref4.png" />
+                    <q-img class="slide" src="/img/ref6.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="3" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref7.png" />
+                    <q-img class="slide"  src="/img/ref8.png" />
+                    <q-img class="slide" src="/img/ref9.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="4" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref10.png" />
+                    <q-img class="slide"  src="/img/ref11.svg" />
+                    <q-img class="slide" src="/img/ref12.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="5" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref13.png" />
+                    <q-img class="slide"  src="/img/ref14.png" />
+                    <q-img class="slide" src="/img/ref15.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="6" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref16.png" />
+                    <q-img class="slide"  src="/img/ref17.png" />
+                    <q-img class="slide" src="/img/ref18.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="7" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref19.png" />
+                    <q-img class="slide"  src="/img/ref20.png" />
+                    <q-img class="slide" src="/img/ref21.png" />
+                  </div>
+                </q-carousel-slide>
+                  <q-carousel-slide :name="8" class="column no-wrap">
+                    <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                      <q-img class="slide" src="/img/ref22.png" />
+                      <q-img class="slide"  src="/img/ref23.png" />
+                    </div>
+                  </q-carousel-slide>
+              </q-carousel>
+              <q-carousel
+                v-if="$q.screen.width <= 600"
+                v-model="slide"
+                swipeable
+                animated
+                navigation
+                infinite
+                :autoplay="autoplay"
+                @mouseenter="autoplay = false"
+                @mouseleave="autoplay = true"
+                height="300px"
+                class="bg-black shadow-2 rounded-borders full-width"
+                style="background: black"
+                :max-slide="maxSlide"
+              >
 
-              <div class="block_three-item--logo">
-                <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref1.png">
-                </div>
-                <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref2.png">
-                </div>
-                <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref3.png">
-                </div>
-                <div class="block_three-item--logo_img">
-                  <img style="scale: 1.4" alt="" class="part-img" src="/img/ref4.png">
-                </div>
-                <div class="block_three-item--logo_img">
-                  <img style="scale: 1.2" alt="" class="part-img" src="/img/ref5.png">
-                </div>
-                <div class="block_three-item--logo_img">
-                  <img alt="" class="part-img" src="/img/ref6.png">
-                </div>
-              </div>
-              <div class="block_three-item--logo">
-
-              </div>
-
-
-
+                <q-carousel-slide :name="1" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <img class="slide" src="/img/ref1.png" />
+                    <img class="slide" src="/img/ref2.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="2" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <img class="slide" src="/img/ref3.png" />
+                    <q-img class="slide" src="/img/ref5.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="3" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide"  src="/img/ref4.png" />
+                    <q-img class="slide" src="/img/ref6.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="4" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref7.png" />
+                    <q-img class="slide"  src="/img/ref8.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="5" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref9.png" />
+                    <q-img class="slide" src="/img/ref10.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="6" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide"  src="/img/ref11.svg" />
+                    <q-img class="slide" src="/img/ref12.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="7" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref13.png" />
+                    <q-img class="slide"  src="/img/ref14.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="8" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref15.png" />
+                    <q-img class="slide" src="/img/ref16.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="9" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide"  src="/img/ref17.png" />
+                    <q-img class="slide" src="/img/ref18.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="10" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref19.png" />
+                    <q-img class="slide"  src="/img/ref20.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="11" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide" src="/img/ref21.png" />
+                    <q-img class="slide" src="/img/ref22.png" />
+                  </div>
+                </q-carousel-slide>
+                <q-carousel-slide :name="12" class="column no-wrap">
+                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+                    <q-img class="slide"  src="/img/ref23.png" />
+                  </div>
+                </q-carousel-slide>
+              </q-carousel>
             </div>
           </div>
         </div>
@@ -110,16 +244,88 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   name: 'IndexPage',
   components: {},
-
+  setup () {
+    return {
+      slide: ref(1),
+      autoplay: ref(true)
+    }
+  },
+  data() {
+    return {
+      slides: [
+        { name: 'slide1', title: 'Slide 1', description: 'This is slide 1' },
+        { name: 'slide2', title: 'Slide 2', description: 'This is slide 2' },
+        { name: 'slide3', title: 'Slide 3', description: 'This is slide 3' }
+      ],
+      slideIndex: 0
+    }
+  },
+  computed: {
+    maxSlide() {
+      return this.slides.length - 1
+    }
+  }
 })
 </script>
 
 <style scoped>
+.q-btn {
+  width: 5px;
+}
+
+.fit{
+  justify-content: space-around;
+}
+.slide{
+  margin: 10px;
+  width: 10%;
+}
+@media screen and (max-width: 425px){
+  .slide{
+    margin: 10px;
+    width: 30%;
+  }
+}
+.q-carousel {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.q-carousel-arrow {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+}
+
+.q-carousel-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.q-carousel-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.q-carousel-navigation-item {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 5px;
+  width: 10px;
+}
 .btn-with-arrow{
   display: flex;
   width: 156px;
