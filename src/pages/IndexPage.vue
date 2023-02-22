@@ -152,16 +152,27 @@
                 v-model="slide"
                 swipeable
                 animated
-                navigation
                 infinite
+                arrows
                 :autoplay="autoplay"
                 @mouseenter="autoplay = false"
                 @mouseleave="autoplay = true"
                 height="300px"
                 class="bg-black shadow-2 rounded-borders full-width"
                 style="background: black"
-                :max-slide="maxSlide"
               >
+                <q-carousel-control
+                  v-slot="{ goTo, slide }"
+                  :max-visible-items="5"
+                >
+                  <q-carousel-control-icon
+                    v-for="i in slideCount"
+                    :key="i"
+                    :name="i"
+                    @click="goTo(i-1)"
+                    :active="slide === i-1"
+                  />
+                </q-carousel-control>
 
                 <q-carousel-slide :name="1" class="column no-wrap">
                   <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
