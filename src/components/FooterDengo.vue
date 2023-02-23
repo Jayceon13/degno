@@ -16,21 +16,18 @@
     </div>
       <div class="second-block">
     <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
-      <div class="block-turkey" @click="goToTurkey">
-        <p style="font-weight: bold">Istanbul, Turkey</p>
-        <p>Torn Business Center,<br>Office 74а/205,<br>Buyukdere Cd. Fulya mah,<br>Sisli/Istanbul</p>
-      </div>
       <div class="block-turkmenistan" @click="goToTurkmenistan">
         <p style="font-weight: bold">Ashgabat, Turkmenistan</p>
         <p>Paytagt Business Center,<br>6th Floor,<br>1945 street</p>
       </div>
     </div>
+        <div :class="['footer_block-item--mail', { 'footer_block-item--mail-black': isBlack }]">
+          <p style="font-weight: bold">Contact Us</p>
+          <p>Email:<a href="mailto: info@degno-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@degno-group.com></a></p>
+        </div>
       </div>
       </div>
-      <div :class="['footer_block-item--mail', { 'footer_block-item--mail-black': isBlack }]">
-        <p style="font-weight: bold">Contact Us</p>
-        <p>Email:<a href="mailto: info@degno-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@degno-group.com></a></p>
-      </div>
+
   </div>
     <div class="block-rights">
       <p style="margin: 0">© Degno Group | All Rights Reserved 2022</p>
