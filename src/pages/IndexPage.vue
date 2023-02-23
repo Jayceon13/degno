@@ -122,7 +122,7 @@
                 <q-carousel-slide :name="5" class="column no-wrap">
                   <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <q-img class="slide" src="/img/ref13.jpg" />
-                    <q-img class="slide"  src="/img/ref14.jpg" />
+                    <q-img class="slide"  src="/img/ref3.jpg" />
                     <q-img class="slide" src="/img/ref15.jpg" />
                   </div>
                 </q-carousel-slide>
@@ -201,7 +201,7 @@
                 <q-carousel-slide :name="7" class="column no-wrap">
                   <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <q-img class="slide" src="/img/ref13.jpg" />
-                    <q-img class="slide"  src="/img/ref14.jpg" />
+                    <q-img class="slide"  src="/img/ref3.jpg" />
                   </div>
                 </q-carousel-slide>
                 <q-carousel-slide :name="8" class="column no-wrap">
