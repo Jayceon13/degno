@@ -81,36 +81,6 @@
               </div>
             </transition>
           </div>
-          <div class="buttons-block"
-               @mouseenter="checkScreenWidth"
-                @mouseleave="showList2 = false">
-          <btn
-            @click="showList2 = true"
-            class="buttons-header"
-          >
-            ACHIEVEMENTS & PROJECTS
-          </btn>
-          <transition name="list-animation">
-            <div v-if="showList2"
-                 class="list2"
-                 @click="showList2 = false">
-
-              <btn
-                @click="() => { $router.push('/projects'); blockBurgerMenu(); blockShowList()}"
-                :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
-                style="margin-bottom: 40px; align-items: flex-end"
-              >
-                PROJECTS
-              </btn>
-              <btn
-                @click="() => { $router.push('/achievements'); blockBurgerMenu(); blockShowList() }"
-                :class="$route.path === '/achievements' ? 'active-button' : 'buttons-header'"
-                style="align-items: flex-start">
-                ACHIEVEMENTS
-              </btn>
-            </div>
-          </transition>
-          </div>
         </div>
       </div>
     </div>
@@ -461,7 +431,7 @@ export default {
       display: flex;
     }
     .block-content .buttons-block{
-      width: 33.3%;
+      width: 50%;
       display: flex;
       color: black;
       transition: color 1s;
@@ -486,7 +456,7 @@ export default {
       background: #F0F0F0;
       z-index: 9999;
       height: 100%;
-      width: 32%;
+      width: 48%;
       display: flex;
       position: absolute;
       flex-direction: column;

@@ -10,7 +10,7 @@
       <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
         <div class="block-dubai" @click="goToDubai">
           <p style="font-weight: bold">Dubai, UAE</p>
-          <p>Sultan Business Centre,<br>Office 410.<br>Oud Metha,<br>Dubai</p>
+          <p>Office No. 078,<br>Alothman BLDG -<br>Eyal Nasser 5<br>Dubai</p>
         </div>
       </div>
     </div>
@@ -152,6 +152,9 @@ export default {
     height: 218px;
   }
   .footer-logo-black{
+    width: 100%;
+  }
+  .footer-logo{
     width: 100%;
   }
 }
