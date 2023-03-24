@@ -10,20 +10,20 @@
       <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
         <div class="block-dubai" @click="goToDubai">
           <p style="font-weight: bold">Dubai, UAE</p>
-          <p>Office No. 078,<br>Alothman BLDG -<br>Eyal Nasser 5<br>Dubai</p>
+          <p>Office No. 078,<br>Alothman BLDG -<br>Eyal Nasser 5<br>Dubai, UAE</p>
         </div>
       </div>
     </div>
       <div class="second-block">
-    <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
+<!--    <div :class="['footer_block-item', { 'footer_block-item-black': isBlack }]">
       <div class="block-turkmenistan" @click="goToTurkmenistan">
         <p style="font-weight: bold">Ashgabat, Turkmenistan</p>
         <p>Paytagt Business Center,<br>6th Floor,<br>1945 street</p>
       </div>
-    </div>
+    </div>-->
         <div :class="['footer_block-item--mail', { 'footer_block-item--mail-black': isBlack }]">
           <p style="font-weight: bold">Contact Us</p>
-          <p>Email:<a href="mailto: info@degno-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@degno-group.com></a></p>
+          <p>Email:<a href="mailto: info@degno-group.com" :class="['footer_block-mail', { 'footer_block-mail-black': isBlack }]">info@degno-group.com</a></p>
         </div>
       </div>
       </div>
@@ -125,6 +125,7 @@ export default {
     text-align: center;
     padding: 30px;
     height: 197px;
+    width: 50%;
   }
   .footer-logo {
   }
@@ -135,8 +136,7 @@ export default {
     align-self: center;
   }
   .first-block{
-    flex-flow: column;
-    width: 50%;
+    width: 100%;
   }
   .second-block{
     width: 50%;
@@ -161,6 +161,10 @@ export default {
 @media screen and (max-width: 429px) {
   .footer_block-logo {
     height: 218px;
+    width: 50%;
+  }
+  .main-block{
+    flex-flow: column;
   }
 }
 
