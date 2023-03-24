@@ -138,9 +138,6 @@ export default {
   .first-block{
     width: 100%;
   }
-  .second-block{
-    width: 50%;
-  }
   .footer-logo-black{
     width: 100%;
   }
@@ -200,9 +197,6 @@ export default {
   }
   .footer-logo-black {
     height: 130px;
-  }
-  .footer_block-item--mail{
-    width: min-content;
   }
   .footer_block-item--mail-black{
     width: min-content;
