@@ -93,60 +93,18 @@
               >
                 <q-carousel-slide :name="1" class="column no-wrap">
                   <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref1.jpg" />
-                    <q-img class="slide" src="/img/ref2.jpg" />
-                    <q-img class="slide" src="/img/ref3.jpg" />
+                    <q-img class="slide" src="/img/ref10.jpg" />
+                    <q-img class="slide" src="/img/ref5.jpg" />
+                    <q-img class="slide"  src="/img/ref4.jpg" />
                   </div>
                 </q-carousel-slide>
                 <q-carousel-slide :name="2" class="column no-wrap">
                   <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref5.jpg" />
-                    <q-img class="slide"  src="/img/ref4.jpg" />
                     <q-img class="slide" src="/img/ref6.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="3" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref7.jpg" />
                     <q-img class="slide"  src="/img/ref8.jpg" />
                     <q-img class="slide" src="/img/ref9.jpg" />
                   </div>
                 </q-carousel-slide>
-                <q-carousel-slide :name="4" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref10.jpg" />
-                    <q-img class="slide"  src="/img/ref11.jpg" />
-                    <q-img class="slide" src="/img/ref12.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="5" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref13.jpg" />
-                    <q-img class="slide"  src="/img/ref3.jpg" />
-                    <q-img class="slide" src="/img/ref15.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="6" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref16.jpg" />
-                    <q-img class="slide"  src="/img/ref17.jpg" />
-                    <q-img class="slide" src="/img/ref18.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="7" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref19.jpg" />
-                    <q-img class="slide"  src="/img/ref20.jpg" />
-                    <q-img class="slide" src="/img/ref21.jpg" />
-                  </div>
-                </q-carousel-slide>
-                  <q-carousel-slide :name="8" class="column no-wrap">
-                    <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                      <q-img class="slide" src="/img/ref22.jpg" />
-                      <q-img class="slide"  src="/img/ref23.jpg" />
-                      <q-img class="slide"  src="/img/ref24.jpg" />
-                    </div>
-                  </q-carousel-slide>
               </q-carousel>
               <q-carousel
                 v-if="$q.screen.width <= 600"
@@ -164,74 +122,20 @@
               >
                 <q-carousel-slide :name="1" class="column no-wrap">
                   <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref1.jpg" />
-                    <q-img class="slide" src="/img/ref2.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="2" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref3.jpg" />
+                    <q-img class="slide" src="/img/ref10.jpg" />
                     <q-img class="slide" src="/img/ref5.jpg" />
                   </div>
                 </q-carousel-slide>
-                <q-carousel-slide :name="3" class="column no-wrap">
+                <q-carousel-slide :name="2" class="column no-wrap">
                   <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <q-img class="slide"  src="/img/ref4.jpg" />
                     <q-img class="slide" src="/img/ref6.jpg" />
                   </div>
                 </q-carousel-slide>
-                <q-carousel-slide :name="4" class="column no-wrap">
+                <q-carousel-slide :name="3" class="column no-wrap">
                   <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref7.jpg" />
                     <q-img class="slide"  src="/img/ref8.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="5" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <q-img class="slide" src="/img/ref9.jpg" />
-                    <q-img class="slide" src="/img/ref10.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="6" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide"  src="/img/ref11.jpg" />
-                    <q-img class="slide" src="/img/ref12.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="7" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref13.jpg" />
-                    <q-img class="slide"  src="/img/ref3.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="8" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref15.jpg" />
-                    <q-img class="slide" src="/img/ref16.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="9" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide"  src="/img/ref17.jpg" />
-                    <q-img class="slide" src="/img/ref18.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="10" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref19.jpg" />
-                    <q-img class="slide"  src="/img/ref20.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="11" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide" src="/img/ref21.jpg" />
-                    <q-img class="slide" src="/img/ref22.jpg" />
-                  </div>
-                </q-carousel-slide>
-                <q-carousel-slide :name="12" class="column no-wrap">
-                  <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-                    <q-img class="slide"  src="/img/ref23.jpg" />
-                    <q-img class="slide"  src="/img/ref24.jpg" />
                   </div>
                 </q-carousel-slide>
               </q-carousel>
